@@ -30,6 +30,10 @@ const Navbar = ({ toggleMenubar }) => {
       '--content',
       day ? '#3e3d3d' : '#d8d8d8'
     );
+    document.documentElement.style.setProperty(
+      '--project_link',
+      day ? '#1a181b' : '#f2994a'
+    );
   };
 
   return (

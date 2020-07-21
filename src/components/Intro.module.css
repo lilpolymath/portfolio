@@ -1,0 +1,64 @@
+main {
+  margin-top: 40px;
+}
+
+.intro {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.image {
+  display: flex;
+  width: 400px;
+  margin-right: 32px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.about {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.skills {
+  font-size: 1.25rem;
+  line-height: 3rem;
+  margin: 0.25em 0;
+  color: var(--content);
+  text-transform: uppercase;
+}
+
+.specialization {
+  font-size: 2.875rem;
+  color: var(--content);
+}
+
+.title {
+  font-size: 5.5rem;
+  font-weight: bold;
+}
+
+.desc {
+  font-family: 'Inter';
+  font-size: 1.875rem;
+  color: var(--content);
+  width: 50%;
+  margin: 0.5em 0;
+}
+
+.next {
+  font-size: 1.875rem;
+  margin-top: 2em;
+  color: var(--text);
+  font-weight: bold;
+}
+
+.next:hover {
+  cursor: pointer;
+}

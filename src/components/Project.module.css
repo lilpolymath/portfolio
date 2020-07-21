@@ -1,0 +1,139 @@
+.selected_works {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.breadcrumb {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.inactive {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: bold;
+  color: var(--content);
+}
+
+.active {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: bold;
+  color: var(--first);
+}
+
+.section_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.main_container {
+  display: flex;
+}
+
+.main {
+  font-size: 5.5rem;
+  font-weight: bold;
+  margin: 0.25em 0;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+}
+
+.arrow_front {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  border: 2px solid;
+  border-color: var(--text);
+}
+
+.arrow_back {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 4rem;
+  position: relative;
+  border: 2px solid;
+  border-color: var(--text);
+}
+
+.arrow_left {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  border: solid;
+  border-color: var(--text);
+  transform: translate(-50%, -50%) rotate(135deg);
+  border-width: 0 6px 6px 0;
+  padding: 4px;
+}
+
+.arrow_right {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  border: solid;
+  border-color: var(--text);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  border-width: 0 6px 6px 0;
+  padding: 4px;
+}
+
+.projects {
+  width: auto;
+  /* overflow: auto; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 3rem;
+}
+
+.project_screenshot {
+  width: 400px;
+  height: 300px;
+}
+
+.project_name {
+  font-size: 2.5rem;
+  margin-top: 0.5em;
+  font-weight: bold;
+}
+
+.project_desc {
+  font-size: 1.875rem;
+  margin: 0.875em 0;
+  width: 70%;
+}
+
+.project_link {
+  font-size: 1.875rem;
+  color: var(--project_link);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.right {
+  display: inline-block;
+  border: solid;
+  border-color: var(--project_link);
+  transform: rotate(-45deg);
+  border-width: 0 6px 6px 0;
+  padding: 3px;
+  margin-left: 8px;
+}
