@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Transition } from 'react-spring/renderprops';
-import { animated, useTransition, config } from 'react-spring';
+import { animated, config } from 'react-spring';
 
 import Intro from './Intro';
 import Project from './Project';
@@ -20,7 +20,7 @@ const Main = () => {
         from={{
           transform: active
             ? 'translate3d(-50%,100%,0)'
-            : 'translate3d(50%,0,0)',
+            : 'translate3d(75%,0,0)',
           opacity: 0,
           position: "absolute"
         }}
@@ -28,10 +28,10 @@ const Main = () => {
         leave={{
           transform: active
             ? 'translate3d(50%,0,0)'
-            : 'translate3d(-50%,100%,0)',
+            : 'translate3d(-75%,100%,0)',
           opacity: 0,
         }}
-        config={{ ...config.molasses, duration: 1000 }}
+        config={{ ...config.stiff, duration: 250 }}
       >
         {active =>
           active
