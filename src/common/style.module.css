@@ -1,0 +1,17 @@
+.wrapper {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 0px 12px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    padding-top: 36px;
+  }
+}
