@@ -26,6 +26,10 @@ const Navbar = ({ toggleMenubar }) => {
       '--text',
       day ? '#1a181b' : '#ffffff'
     );
+    document.documentElement.style.setProperty(
+      '--content',
+      day ? '#3e3d3d' : '#d8d8d8'
+    );
   };
 
   return (
