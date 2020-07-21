@@ -34,6 +34,10 @@ const Navbar = ({ toggleMenubar }) => {
       '--project_link',
       day ? '#1a181b' : '#f2994a'
     );
+    document.documentElement.style.setProperty(
+      '--nav',
+      day ? '#f2994a' : '#ffffff'
+    );
   };
 
   return (
