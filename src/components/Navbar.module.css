@@ -1,0 +1,93 @@
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+/* Logo-ish */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_text {
+  font-size: 2.375rem;
+  color: var(--text);
+  font-weight: bold;
+  margin: 0 2rem;
+}
+
+.menu_button {
+  padding: 12px 16px;
+  color: var(--main);
+  background-color: var(--text);
+  font-size: 2.375rem;
+  border: none;
+}
+
+.menubar {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  width: 40%;
+  min-width: 300px;
+  padding: 52px 3rem 0;
+  min-height: 100vh;
+  max-height: 100vh;
+  background: #1a181b;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+}
+
+.menubar_list {
+  display: flex;
+}
+
+ul {
+  padding: 16px;
+}
+
+.menubar_link {
+  font-size: 6rem;
+  color: white;
+  margin: 4rem 0;
+  cursor: pointer;
+}
+
+.menubar_link:active,
+.menubar_link:hover {
+  color: #f2994a;
+}
+
+.menubar_close {
+  font-size: 3rem;
+  border: none;
+  color: white;
+  background-color: #1a181b;
+  padding: 12px;
+  display: flex;
+  margin-left: auto;
+}
+
+.menubar_close:hover {
+  text-decoration: underline;
+}
+
+.first > path {
+  fill: var(--first);
+}
+
+.second path {
+  fill: var(--second);
+}
+
+@media screen and (max-width: 500px) {
+  .menubar {
+    padding: 12px 2rem 0;
+  }
+}

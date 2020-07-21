@@ -1,3 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --first: #f2994a;
+  --second: #bdbdbd;
+  --text: #1a181b;
+  --main: 'white';
+}
+
+* {
+  margin: 0;
+  font: 62.5% 'Futura', sans-serif;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +28,12 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+svg {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
 }
