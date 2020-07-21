@@ -10,7 +10,7 @@ const AnimatedProject = animated(Project);
 const Main = () => {
   const [active, setActive] = useState('about');
   const transitions = useTransition(active, null, {
-    from: { position: 'absolute', opacity: 0 },
+    from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
     config: config.molasses,

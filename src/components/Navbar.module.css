@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   height: 80px;
+  z-index: 3;
 }
 
 /* Logo-ish */
@@ -26,20 +27,22 @@
   background-color: var(--text);
   font-size: 2.375rem;
   border: none;
+  font-weight: bold;
 }
 
 .menubar {
   position: absolute;
   display: block;
   top: 0;
-  right: 0;
+  right: -80px;
   width: 35%;
   min-width: 300px;
-  padding: 52px 3rem 0;
+  padding: 52px 100px 0 3rem;
   min-height: 100vh;
   max-height: 100vh;
   background: #1a181b;
   z-index: 20;
+  box-shadow: -40px 0px 80px rgba(0, 0, 0, 0.25);
 }
 
 .menubar_list {

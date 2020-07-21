@@ -4,7 +4,6 @@ import styles from './Project.module.css';
 import projects from './projects.json';
 
 const Project = ({ active, setActive, style }) => {
-  console.log(style);
   return (
     <section className={[styles.selected_works + ' ' + style]}>
       <div onClick={() => setActive(!active)} className={styles.breadcrumb}>

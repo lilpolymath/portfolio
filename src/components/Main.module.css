@@ -1,4 +1,4 @@
 main {
   margin-top: 40px;
-  position: relative;
+  z-index: 2;
 }

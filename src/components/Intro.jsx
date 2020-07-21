@@ -23,7 +23,7 @@ const Intro = ({ active, setActive, style }) => {
           making it easier to test usability.
         </p>
         <button onClick={() => setActive(!active)} className={styles.next}>
-          View Select Projects
+          View Select Projects <div className={styles.right}></div>
         </button>
       </div>
     </section>

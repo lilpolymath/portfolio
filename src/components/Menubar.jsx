@@ -6,10 +6,8 @@ import { useSpring, animated, config } from 'react-spring';
 const Menubar = ({ open, toggleMenubar }) => {
   const sidebar = useSpring({
     transform: open ? `translateX(0)` : `translateX(100%)`,
-    config: { ...config.stiff, duration: 800 },
+    config: { ...config.molasses, duration: 500 },
   });
-
-  console.log(sidebar);
 
   return (
     <animated.div style={sidebar} className={styles.menubar}>
@@ -22,6 +20,15 @@ const Menubar = ({ open, toggleMenubar }) => {
         <li className={styles.menubar_link}>Projects</li>
         <li className={styles.menubar_link}>Contact</li>
       </ul>
+
+      {
+        // const transitions = useTransition(active, null, {
+        //   from: { transform: active ? `translateX(0)` : `translateX(100%)` },
+        //   enter: { transform: `translateX(0)` },
+        //   leave: { transform: active ? `translateX(0)` : `translateX(-100%)` },
+        //   config: config.molasses,
+        // });
+      }
     </animated.div>
   );
 };

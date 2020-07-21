@@ -16,7 +16,18 @@ const App = () => {
     <Container>
       <Navbar toggleMenubar={toggleMenubar} />
       <Main />
-      <Menubar open={openMenu} toggleMenubar={toggleMenubar} />
+      <Menubar
+        
+        open={openMenu}
+        toggleMenubar={toggleMenubar}
+      />
+      <div
+        className='wrap'
+        style={{
+          opacity: openMenu ? 0.4 : 0,
+          display: openMenu ? 'block' : 'none',
+        }}
+      ></div>
     </Container>
   );
 };
