@@ -9,6 +9,9 @@
   --second: #bdbdbd;
   --text: #1a181b;
   --main: 'white';
+  --content: #d8d8d8;
+  --project_link: #1a181b;
+  --nav: #f2994a;
 }
 
 * {
