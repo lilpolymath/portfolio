@@ -7,7 +7,8 @@
   min-height: 100vh;
   width: 100%;
   padding: 0px 12px;
-  background-repeat: no-repeat;
+  background: var(--main);
+  color: var(--text);
 }
 
 @media screen and (min-width: 769px) {
