@@ -17,7 +17,6 @@ const App = () => {
       <Navbar toggleMenubar={toggleMenubar} />
       <Main />
       <Menubar
-        
         open={openMenu}
         toggleMenubar={toggleMenubar}
       />

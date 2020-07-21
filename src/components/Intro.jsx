@@ -1,9 +1,10 @@
 import React from 'react';
+// import {animated} from 'react-spring'''
 import styles from './Intro.module.css';
 
 const Intro = ({ active, setActive, style }) => {
   return (
-    <section className={styles.intro}>
+    <section style={style} className={styles.intro}>
       <div className={styles.image}>
         <figure>
           <img

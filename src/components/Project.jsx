@@ -5,7 +5,7 @@ import projects from './projects.json';
 
 const Project = ({ active, setActive, style }) => {
   return (
-    <section className={[styles.selected_works + ' ' + style]}>
+    <section style={style} className={styles.selected_works}>
       <div onClick={() => setActive(!active)} className={styles.breadcrumb}>
         <p className={styles.inactive}>Home/</p>
         <p className={styles.active}>Selected</p>

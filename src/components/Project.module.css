@@ -2,8 +2,8 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  will-change: auto;
   will-change: opacity;
+  width: 100%;
 }
 
 .breadcrumb {

@@ -1,5 +1,8 @@
 main {
   margin-top: 40px;
+  position: relative;
+  /* overflow: hidden; */
+  width: auto;
 }
 
 .intro {
