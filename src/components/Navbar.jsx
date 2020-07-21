@@ -5,16 +5,11 @@ import { ReactComponent as Night } from '../assets/night.svg';
 
 import styles from './Navbar.module.css';
 
-const Navbar = () => {
+const Navbar = ({ toggleMenubar }) => {
   const [day, setDay] = useState(true);
-  const [openMenu, setOpenMenu] = useState(false);
-
-  const toggleMenubar = () => {
-    setOpenMenu(!openMenu);
-  };
 
   const switchBG = () => {
-    setDay(!day);
+    setDay(prevState => !prevState);
     document.documentElement.style.setProperty(
       '--first',
       day ? '#f2994a' : '#bdbdbd'
@@ -40,11 +35,9 @@ const Navbar = () => {
         <h1 className={styles.logo_text}>Ayobami Adedapo</h1>
         <Night onClick={switchBG} className={styles.second} />
       </div>
-      <button className={styles.menu_button}>Menu</button>
-      <div
-        style={{ display: openMenu ? 'block' : 'none' }}
-        className={styles.menubar}
-      ></div>
+      <button onClick={toggleMenubar} className={styles.menu_button}>
+        Menu
+      </button>
     </nav>
   );
 };

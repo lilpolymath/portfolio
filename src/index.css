@@ -7,8 +7,8 @@
 :root {
   --first: #f2994a;
   --second: #bdbdbd;
-  --text: 'white';
-  --main: #1a181b;
+  --text: #1a181b;
+  --main: 'white';
 }
 
 * {
@@ -32,4 +32,8 @@ code {
 
 svg {
   cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
 }
