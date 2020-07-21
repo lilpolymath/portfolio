@@ -6,11 +6,12 @@ main {
   display: flex;
   flex: 1;
   align-items: center;
+  will-change: opacity;
 }
 
 .image {
   display: flex;
-  width: 400px;
+  width: 430px;
   margin-right: 32px;
 }
 
@@ -54,11 +55,11 @@ img {
 
 .next {
   font-size: 1.875rem;
-  margin-top: 2em;
   color: var(--text);
   font-weight: bold;
-}
-
-.next:hover {
-  cursor: pointer;
+  width: 200px;
+  margin-left: -6px;
+  padding: 0;
+  background: none;
+  border: none;
 }

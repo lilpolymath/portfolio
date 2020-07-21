@@ -8,8 +8,8 @@
   --first: #f2994a;
   --second: #bdbdbd;
   --text: #1a181b;
-  --main: 'white';
-  --content: #d8d8d8;
+  --main: #ffffff;
+  --content: #3e3d3d;
   --project_link: #1a181b;
   --nav: #f2994a;
 }
@@ -39,4 +39,8 @@ svg {
 
 ul {
   list-style-type: none;
+}
+
+section {
+  transition: width 2s, height 2s, transform 2s;
 }

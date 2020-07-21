@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
 import { ReactComponent as Day } from '../assets/day.svg';
 import { ReactComponent as Night } from '../assets/night.svg';
@@ -8,8 +8,7 @@ import styles from './Navbar.module.css';
 const Navbar = ({ toggleMenubar }) => {
   const [day, setDay] = useState(true);
 
-  const switchBG = () => {
-    setDay(prevState => !prevState);
+  const switchBG = useCallback(() => {
     document.documentElement.style.setProperty(
       '--first',
       day ? '#f2994a' : '#bdbdbd'
@@ -38,14 +37,28 @@ const Navbar = ({ toggleMenubar }) => {
       '--nav',
       day ? '#f2994a' : '#ffffff'
     );
+  }, [day]);
+
+  const nightMode = () => {
+    setDay(false);
+    switchBG();
   };
+
+  const dayMode = () => {
+    setDay(true);
+    switchBG();
+  };
+
+  useEffect(() => {
+    switchBG();
+  }, [switchBG]);
 
   return (
     <nav className={styles.nav}>
       <div className={styles.logo}>
-        <Day onClick={switchBG} className={styles.first} />
+        <Day onClick={dayMode} className={styles.first} />
         <h1 className={styles.logo_text}>Ayobami Adedapo</h1>
-        <Night onClick={switchBG} className={styles.second} />
+        <Night onClick={nightMode} className={styles.second} />
       </div>
       <button onClick={toggleMenubar} className={styles.menu_button}>
         Menu

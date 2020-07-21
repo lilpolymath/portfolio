@@ -1,14 +1,44 @@
 [
   {
+    "key": 1,
     "name": "Landing Pages",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1588659120/Browser_xoynxe.png",
-    "description": "Collection of landing Pages",
+    "description": "Collection of Landing Pages designed by Gravity",
     "link": "https://lilpolymath.github.io/landing-pages/"
   },
   {
+    "key": 2,
     "name": "Path To Img",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1595317033/Screenshot_from_2020-07-09_17-25-51_pkpdgk.png",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1594830785/Placeholder_6_ukdlcp.png",
     "description": "Bit.ly but for images",
     "link": "https://pathtoimg.netlify.app"
+  },
+  {
+    "key": 3,
+    "name": "Error Pages",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1588659120/Browser_xoynxe.png",
+    "description": "A collection of implemented error page designs. Contributor.",
+    "link": "https://errorpages.netlify.app/"
+  },
+  {
+    "key": 4,
+    "name": "Nigeria Police Emergency Contact",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1594830785/Placeholder_6_ukdlcp.png",
+    "description": "A bunch of VCF files, containing the emergency contact for the Nigerian Police in the 36 states, and FCT. Contributor. Built with JavaScript.",
+    "link": "https://mykeels.github.io/police-ng-emergency/"
+  },
+  {
+    "key": 5,
+    "name": "farm-invest-cli",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1588659120/Browser_xoynxe.png",
+    "description": "A CLI tool built to detect updates to the products on eFarms, FarmCrowdy, ThriveAgric and AgroPartnerships. Contributor. Built with JavaScript.",
+    "link": "https://errorpages.netlify.app/"
+  },
+  {
+    "key": 6,
+    "name": "COVID-19 Awareness.",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1594830785/Placeholder_6_ukdlcp.png",
+    "description": "A website that displays basic information about the current pandemic.",
+    "link": "https://mykeels.github.io/police-ng-emergency/"
   }
 ]

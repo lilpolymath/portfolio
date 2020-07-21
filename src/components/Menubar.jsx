@@ -1,22 +1,28 @@
 import React from 'react';
 
 import styles from './Navbar.module.css';
+import { useSpring, animated, config } from 'react-spring';
 
 const Menubar = ({ open, toggleMenubar }) => {
+  const sidebar = useSpring({
+    transform: open ? `translateX(0)` : `translateX(100%)`,
+    config: { ...config.stiff, duration: 800 },
+  });
+
+  console.log(sidebar);
+
   return (
-    <div
-      style={{ display: open ? 'block' : 'none' }}
-      className={styles.menubar}
-    >
+    <animated.div style={sidebar} className={styles.menubar}>
       <button onClick={toggleMenubar} className={styles.menubar_close}>
         Close
       </button>
       <ul>
         <li className={styles.menubar_link}>Home</li>
         <li className={styles.menubar_link}>About</li>
+        <li className={styles.menubar_link}>Projects</li>
         <li className={styles.menubar_link}>Contact</li>
       </ul>
-    </div>
+    </animated.div>
   );
 };
 
