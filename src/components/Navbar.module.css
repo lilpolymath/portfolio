@@ -1,0 +1,40 @@
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+/* Logo-ish */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_text {
+  font-size: 2.375rem;
+  color: #1a181b;
+  font-weight: bold;
+  margin: 0 2rem;
+}
+
+/* Mudia abeg noo vex */
+.menu {
+  padding: 12px;
+  background: #1a181b;
+  color: white;
+  font-size: 2.375rem;
+}
+
+.menubar {
+  position: absolute;
+  display: none;
+  top: -36px;
+  right: 0;
+  width: 300px;
+  min-height: 100vh;
+  max-height: 100vh;
+  background: #1a181b;
+}
