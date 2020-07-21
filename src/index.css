@@ -8,8 +8,8 @@
   --first: #f2994a;
   --second: #bdbdbd;
   --text: #1a181b;
-  --main: 'white';
-  --content: #d8d8d8;
+  --main: #ffffff;
+  --content: #3e3d3d;
   --project_link: #1a181b;
   --nav: #f2994a;
 }
@@ -39,4 +39,20 @@ svg {
 
 ul {
   list-style-type: none;
+}
+
+/* section {
+  transition: width 2s, height 2s, transform 2s;
+} */
+
+.wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: #1a181b;
+  z-index: 2;
 }

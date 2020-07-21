@@ -1,16 +1,20 @@
 main {
   margin-top: 40px;
+  position: relative;
+  /* overflow: hidden; */
+  width: auto;
 }
 
 .intro {
   display: flex;
   flex: 1;
   align-items: center;
+  will-change: opacity;
 }
 
 .image {
   display: flex;
-  width: 400px;
+  width: 430px;
   margin-right: 32px;
 }
 
@@ -30,6 +34,7 @@ img {
   font-size: 1.25rem;
   line-height: 3rem;
   margin: 0.25em 0;
+  font-weight: 300;
   color: var(--content);
   text-transform: uppercase;
 }
@@ -53,12 +58,23 @@ img {
 }
 
 .next {
-  font-size: 1.875rem;
-  margin-top: 2em;
+  font-size: 1.75rem;
   color: var(--text);
   font-weight: bold;
+  width: 200px;
+  margin-top: 2rem;
+  padding: 12px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-.next:hover {
-  cursor: pointer;
+.right {
+  display: inline-block;
+  border: solid;
+  border-color: var(--text);
+  transform: rotate(-45deg);
+  border-width: 0 6px 6px 0;
+  padding: 3px;
+  margin-left: 12px;
 }

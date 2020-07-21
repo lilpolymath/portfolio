@@ -3,10 +3,10 @@ import styles from './Project.module.css';
 
 import projects from './projects.json';
 
-const Project = () => {
+const Project = ({ active, setActive, style }) => {
   return (
-    <section className={styles.selected_works}>
-      <div className={styles.breadcrumb}>
+    <section style={style} className={styles.selected_works}>
+      <div onClick={() => setActive(!active)} className={styles.breadcrumb}>
         <p className={styles.inactive}>Home/</p>
         <p className={styles.active}>Selected</p>
       </div>
@@ -25,7 +25,7 @@ const Project = () => {
       </div>
       <div className={styles.projects}>
         {projects.map(project => (
-          <div className={styles.project}>
+          <div key={project.key} className={styles.project}>
             <img
               src={project.image}
               alt=''

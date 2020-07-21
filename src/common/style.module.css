@@ -10,6 +10,7 @@
   padding: 0px 12px;
   background: var(--main);
   color: var(--text);
+  overflow: hidden;
 }
 
 @media screen and (min-width: 769px) {

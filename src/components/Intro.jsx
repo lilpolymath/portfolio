@@ -1,9 +1,10 @@
 import React from 'react';
+// import {animated} from 'react-spring'''
 import styles from './Intro.module.css';
 
-const Intro = () => {
+const Intro = ({ active, setActive, style }) => {
   return (
-    <section className={styles.intro}>
+    <section style={style} className={styles.intro}>
       <div className={styles.image}>
         <figure>
           <img
@@ -22,7 +23,9 @@ const Intro = () => {
           where we're trying to make people's digital experiences better by
           making it easier to test usability.
         </p>
-        <p className={styles.next}>View Selected Project</p>
+        <button onClick={() => setActive(!active)} className={styles.next}>
+          View Select Projects <div className={styles.right}></div>
+        </button>
       </div>
     </section>
   );
