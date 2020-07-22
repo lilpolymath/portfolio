@@ -10,7 +10,7 @@
     "key": 2,
     "name": "Path To Img",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1594830785/Placeholder_6_ukdlcp.png",
-    "description": "Bit.ly but for images",
+    "description": "Bit.ly but for images. Converts your images into Imgur links.",
     "link": "https://pathtoimg.netlify.app"
   },
   {

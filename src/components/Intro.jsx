@@ -1,6 +1,7 @@
 import React from 'react';
 // import {animated} from 'react-spring'''
 import styles from './Intro.module.css';
+import { ReactComponent as Chevron } from '../assets/chevron_right.svg';
 
 const Intro = ({ active, setActive, style }) => {
   return (
@@ -24,7 +25,7 @@ const Intro = ({ active, setActive, style }) => {
           making it easier to test usability.
         </p>
         <button onClick={() => setActive(!active)} className={styles.next}>
-          View Select Projects <div className={styles.right}></div>
+          View Select Projects <Chevron />
         </button>
       </div>
     </section>

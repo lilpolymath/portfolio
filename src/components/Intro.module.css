@@ -61,20 +61,23 @@ img {
   font-size: 1.75rem;
   color: var(--text);
   font-weight: bold;
-  width: 200px;
+  width: 220px;
   margin-top: 2rem;
   padding: 12px 0;
   background: none;
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
-.right {
-  display: inline-block;
-  border: solid;
-  border-color: var(--text);
-  transform: rotate(-45deg);
-  border-width: 0 6px 6px 0;
-  padding: 3px;
-  margin-left: 12px;
+
+.next svg {
+  width: 30px;
+  height: 30px;
+  margin-left: 1.5rem;
+}
+
+.next path {
+  fill: var(--text);;
 }
