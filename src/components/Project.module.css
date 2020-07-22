@@ -7,24 +7,22 @@
 }
 
 .breadcrumb {
-  display: flex;
-  flex: 1;
-  align-items: center;
   cursor: pointer;
+  width: 250px;
 }
 
 .inactive {
   font-size: 2rem;
   line-height: 3rem;
   font-weight: bold;
-  opacity: 0.7;
-  color: var(--content);
+  color: #7A7A7A;
 }
 
 .active {
   font-size: 2rem;
   line-height: 3rem;
   font-weight: bold;
+  color: var(--text);
 }
 
 .section_heading {
@@ -130,7 +128,8 @@
   font-size: 1.75rem;
   color: var(--project_link);
   font-weight: bold;
-  width: 220px;
+  width: 150px;
+  text-decoration: none;
   padding: 12px 0;
   background: none;
   border: none;

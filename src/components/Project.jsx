@@ -9,8 +9,10 @@ const Project = ({ active, setActive, style }) => {
   return (
     <section style={style} className={styles.selected_works}>
       <div onClick={() => setActive(!active)} className={styles.breadcrumb}>
-        <p className={styles.inactive}>Home/</p>
-        <p className={styles.active}>Selected Projects</p>
+        <p className={styles.inactive}>
+          Home/
+          <span className={styles.active}>Selected Projects</span>
+        </p>
       </div>
       <div className={styles.section_heading}>
         <div className={styles.main_container}>
@@ -31,7 +33,7 @@ const Project = ({ active, setActive, style }) => {
             />
             <h3 className={styles.project_name}>{project.name}</h3>
             <p className={styles.project_desc}>{project.description}</p>
-            <a className={styles.project_link} href={project.url}>
+            <a className={styles.project_link} href={project.link}>
               View Project <Chevron />
             </a>
           </div>
