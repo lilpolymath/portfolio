@@ -5,10 +5,15 @@ import projects from './projects.json';
 import { ReactComponent as Arrow } from '../assets/arrow.svg';
 import { ReactComponent as Chevron } from '../assets/chevron_right.svg';
 
-const Project = ({ active, setActive, style }) => {
+const Project = ({ active, setActive, style, MouseEnter, MouseLeave }) => {
   return (
     <section style={style} className={styles.selected_works}>
-      <div onClick={() => setActive(!active)} className={styles.breadcrumb}>
+      <div
+        onMouseEnter={MouseEnter}
+        onMouseLeave={MouseLeave}
+        onClick={() => setActive(!active)}
+        className={styles.breadcrumb}
+      >
         <p className={styles.inactive}>
           Home/
           <span className={styles.active}>Selected Projects</span>
@@ -33,7 +38,12 @@ const Project = ({ active, setActive, style }) => {
             />
             <h3 className={styles.project_name}>{project.name}</h3>
             <p className={styles.project_desc}>{project.description}</p>
-            <a className={styles.project_link} href={project.link}>
+            <a
+              className={styles.project_link}
+              onMouseEnter={MouseEnter}
+              onMouseLeave={MouseLeave}
+              href={project.link}
+            >
               View Project <Chevron />
             </a>
           </div>

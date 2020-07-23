@@ -57,7 +57,7 @@ ul {
   font-size: 6rem;
   color: white;
   margin: 4rem 0;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .menubar_link:active,

@@ -10,7 +10,7 @@ const AnimatedProject = animated(Project);
 
 console.log(AnimatedIntro);
 
-const Main = () => {
+const Main = ({mouseEnter, mouseLeave}) => {
   const [active, setActive] = useState(true);
 
   return (
@@ -40,6 +40,7 @@ const Main = () => {
                   active={active}
                   setActive={setActive}
                   style={props}
+                  MouseEnter={mouseEnter} MouseLeave={mouseLeave}
                 />
               )
             : props => (
@@ -47,6 +48,7 @@ const Main = () => {
                   active={active}
                   setActive={setActive}
                   style={props}
+                  MouseEnter={mouseEnter} MouseLeave={mouseLeave}
                 />
               )
         }

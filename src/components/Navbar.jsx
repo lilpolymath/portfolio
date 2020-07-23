@@ -5,7 +5,7 @@ import { ReactComponent as Night } from '../assets/night.svg';
 
 import styles from './Navbar.module.css';
 
-const Navbar = ({ toggleMenubar }) => {
+const Navbar = ({ toggleMenubar, mouseEnter, mouseLeave }) => {
   const [day, setDay] = useState(true);
 
   const switchBG = useCallback(() => {
@@ -55,12 +55,21 @@ const Navbar = ({ toggleMenubar }) => {
 
   return (
     <nav className={styles.nav}>
-      <div className={styles.logo}>
+      <div
+        onMouseEnter={mouseEnter}
+        onMouseLeave={mouseLeave}
+        className={styles.logo}
+      >
         <Day onClick={dayMode} className={styles.first} />
         <h1 className={styles.logo_text}>Ayobami Adedapo</h1>
         <Night onClick={nightMode} className={styles.second} />
       </div>
-      <button onClick={toggleMenubar} className={styles.menu_button}>
+      <button
+        onMouseEnter={mouseEnter}
+        onMouseLeave={mouseLeave}
+        onClick={toggleMenubar}
+        className={styles.menu_button}
+      >
         Menu
       </button>
     </nav>
