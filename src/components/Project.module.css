@@ -15,7 +15,7 @@
   font-size: 2rem;
   line-height: 3rem;
   font-weight: bold;
-  color: #7A7A7A;
+  color: #7a7a7a;
 }
 
 .active {
@@ -37,14 +37,13 @@
 }
 
 .main {
-  font-size: 5.5rem;
+  font-size: 4rem;
   font-weight: bold;
   margin: 0.25em 0;
 }
 
 .carousel {
-  display: flex;
-  align-items: center;
+  display: none;
 }
 
 .arrow_front {
@@ -93,11 +92,10 @@
 }
 
 .projects {
-  width: 110%;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: flex-start;
 }
 
@@ -105,11 +103,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 3rem;
+  margin: 2rem 0rem;
 }
 
 .project_screenshot {
-  width: 400px;
+  min-width: 350px;
+  max-width: 400px;
   height: 300px;
 }
 
@@ -156,4 +155,32 @@
   border-width: 0 6px 6px 0;
   padding: 3px;
   margin-left: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    font-size: 5.5rem;
+    font-weight: bold;
+    margin: 0.25em 0;
+  }
+  
+  .carousel {
+    display: flex;
+    align-items: center;
+  }
+  
+  .projects {
+    width: 110%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: flex-start;
+  }
+
+  .project {
+    margin: 0 3rem 0 0;
+  }
+
+
 }

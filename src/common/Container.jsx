@@ -2,13 +2,11 @@ import * as React from 'react';
 
 import styles from './style.module.css';
 
-export default function Container({ children, as = 'div', ...props }) {
+export default function Container({ children, as = 'div', }) {
   const Component = as;
 
-  const style = styles.container + ' ' + props.styles;
-
   return (
-    <Component className={style} {...props}>
+    <Component className={styles.container}>
       <div className={styles.wrapper}>{children}</div>
     </Component>
   );
