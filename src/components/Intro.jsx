@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './Intro.module.css';
 import { ReactComponent as Chevron } from '../assets/chevron_right.svg';
 
-const Intro = ({ active, setActive, style }) => {
+const Intro = ({ active, setActive, style, MouseEnter, MouseLeave }) => {
   return (
     <section style={style} className={styles.intro}>
       <div className={styles.image}>
@@ -24,7 +24,12 @@ const Intro = ({ active, setActive, style }) => {
           where we're trying to make people's digital experiences better by
           making it easier to test usability.
         </p>
-        <button onClick={() => setActive(!active)} className={styles.next}>
+        <button
+          onMouseEnter={MouseEnter}
+          onMouseLeave={MouseLeave}
+          onClick={() => setActive(!active)}
+          className={styles.next}
+        >
           View Select Projects <Chevron />
         </button>
       </div>
