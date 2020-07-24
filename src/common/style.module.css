@@ -4,13 +4,11 @@
 }
 
 .container {
-  position: relative;
   min-height: 100vh;
   width: 100%;
   padding: 0px 12px;
   background: var(--main);
   color: var(--text);
-  overflow: hidden;
 }
 
 @media screen and (min-width: 769px) {

@@ -5,10 +5,10 @@ import styles from './style.module.css';
 export default function Container({ children, as = 'div', ...props }) {
   const Component = as;
 
-  const style = styles.container + ' ' + props.styles;
+  const style = styles.container;
 
   return (
-    <Component className={style} {...props}>
+    <Component style={props.style} className={style}>
       <div className={styles.wrapper}>{children}</div>
     </Component>
   );

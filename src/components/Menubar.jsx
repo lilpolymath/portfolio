@@ -6,6 +6,7 @@ import { useSpring, animated, config } from 'react-spring';
 const Menubar = ({ open, toggleMenubar }) => {
   const sidebar = useSpring({
     transform: open ? `translateX(0)` : `translateX(100%)`,
+    display: open ? 'block' : 'none',
     config: { ...config.molasses, duration: 500 },
   });
 

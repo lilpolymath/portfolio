@@ -10,7 +10,7 @@ const AnimatedProject = animated(Project);
 
 console.log(AnimatedIntro);
 
-const Main = ({mouseEnter, mouseLeave}) => {
+const Main = ({ mouseEnter, mouseLeave }) => {
   const [active, setActive] = useState(true);
 
   return (
@@ -22,16 +22,21 @@ const Main = ({mouseEnter, mouseLeave}) => {
             ? 'translate3d(-50%,100%,0)'
             : 'translate3d(75%,0,0)',
           opacity: 0,
-          position: "absolute"
+          position: 'absolute',
         }}
-        enter={{ transform: 'translate3d(0,0,0)', opacity: 1 }}
+        enter={{
+          transform: 'translate3d(0,0,0)',
+          opacity: 1,
+          position: 'relative',
+        }}
         leave={{
           transform: active
             ? 'translate3d(50%,0,0)'
             : 'translate3d(-75%,100%,0)',
           opacity: 0,
+          position: 'absolute',
         }}
-        config={{ ...config.stiff, duration: 250 }}
+        config={{ ...config.stiff, duration: 500 }}
       >
         {active =>
           active
@@ -40,7 +45,8 @@ const Main = ({mouseEnter, mouseLeave}) => {
                   active={active}
                   setActive={setActive}
                   style={props}
-                  MouseEnter={mouseEnter} MouseLeave={mouseLeave}
+                  MouseEnter={mouseEnter}
+                  MouseLeave={mouseLeave}
                 />
               )
             : props => (
@@ -48,7 +54,8 @@ const Main = ({mouseEnter, mouseLeave}) => {
                   active={active}
                   setActive={setActive}
                   style={props}
-                  MouseEnter={mouseEnter} MouseLeave={mouseLeave}
+                  MouseEnter={mouseEnter}
+                  MouseLeave={mouseLeave}
                 />
               )
         }

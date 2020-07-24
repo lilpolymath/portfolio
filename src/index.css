@@ -27,6 +27,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   cursor: none !important;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 code {
@@ -34,9 +36,14 @@ code {
     monospace;
 }
 
+main {
+  margin-top: 40px;
+  position: relative;
+  width: auto;
+}
+
 svg {
   cursor: pointer;
-  
 }
 
 ul {
