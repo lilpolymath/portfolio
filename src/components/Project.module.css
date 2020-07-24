@@ -70,14 +70,14 @@
 
 .project {
   display: flex;
+  flex: 0.3;
   flex-direction: column;
   justify-content: center;
   margin: 2rem 0rem;
 }
 
 .project_screenshot {
-  min-width: 350px;
-  max-width: 400px;
+  width: 360px;
   height: 300px;
 }
 
@@ -132,14 +132,13 @@
     font-weight: bold;
     margin: 0.25em 0;
   }
-  
+
   .carousel {
     display: flex;
     align-items: center;
   }
-  
+
   .projects {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     overflow: hidden;
@@ -148,6 +147,4 @@
   .project {
     margin: 0 3rem 0 0;
   }
-
-
 }

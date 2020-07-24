@@ -1,10 +1,10 @@
 .nav {
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 .logo {
@@ -84,7 +84,7 @@ ul {
     min-height: 100vh;
     max-height: 100vh;
     background: #1a181b;
-    z-index: 20;
+    z-index: 5;
     box-shadow: -40px 0px 80px rgba(0, 0, 0, 0.25);
   }
 

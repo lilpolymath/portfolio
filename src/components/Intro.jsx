@@ -1,5 +1,5 @@
 import React from 'react';
-// import {animated} from 'react-spring'''
+// import {animated} from 'react-spring'
 import styles from './Intro.module.css';
 import { ReactComponent as Chevron } from '../assets/chevron_right.svg';
 
