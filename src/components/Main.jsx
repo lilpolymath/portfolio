@@ -22,7 +22,6 @@ const Main = ({mouseEnter, mouseLeave}) => {
             ? 'translate3d(-50%,100%,0)'
             : 'translate3d(75%,0,0)',
           opacity: 0,
-          position: "absolute"
         }}
         enter={{ transform: 'translate3d(0,0,0)', opacity: 1 }}
         leave={{

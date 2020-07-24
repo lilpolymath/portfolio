@@ -46,25 +46,6 @@
   display: none;
 }
 
-.arrow_front {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  position: relative;
-  border: 2px solid;
-  border-color: var(--text);
-}
-
-.arrow_back {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 4rem;
-  position: relative;
-  border: 2px solid;
-  border-color: var(--text);
-}
-
 .left {
   border-color: var(--text);
   transform: rotate(180deg);
@@ -77,18 +58,6 @@
 
 .carousel circle {
   stroke: var(--text);
-}
-
-.arrow_right {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: inline-block;
-  border: solid;
-  border-color: var(--text);
-  transform: translate(-50%, -50%) rotate(-45deg);
-  border-width: 0 6px 6px 0;
-  padding: 4px;
 }
 
 .projects {
@@ -170,12 +139,10 @@
   }
   
   .projects {
-    width: 110%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     overflow: hidden;
-    align-items: flex-start;
   }
 
   .project {

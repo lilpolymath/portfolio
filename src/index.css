@@ -35,9 +35,14 @@ code {
     monospace;
 }
 
+main {
+  margin-top: 40px;
+  position: relative;
+  width: auto;
+}
+
 svg {
   cursor: pointer;
-  
 }
 
 ul {
