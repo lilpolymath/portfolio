@@ -1,12 +1,13 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useEffect, useCallback } from 'react';
+
+import useLocalStorage from '../hooks/use-localstorage';
 
 import { ReactComponent as Day } from '../assets/day.svg';
 import { ReactComponent as Night } from '../assets/night.svg';
-
 import styles from './Navbar.module.css';
 
 const Navbar = ({ toggleMenubar, mouseEnter, mouseLeave }) => {
-  const [day, setDay] = useState(true);
+  const [day, setDay] = useLocalStorage('dark');
 
   const switchBG = useCallback(() => {
     document.documentElement.style.setProperty(
@@ -39,14 +40,17 @@ const Navbar = ({ toggleMenubar, mouseEnter, mouseLeave }) => {
     );
   }, [day]);
 
+  if (!day) {
+    switchBG();
+    console.log('gets here');
+  }
+
   const nightMode = () => {
     setDay(false);
-    switchBG();
   };
 
   const dayMode = () => {
     setDay(true);
-    switchBG();
   };
 
   useEffect(() => {

@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from 'react';
-// import { animated, useSpring } from 'react-spring';
 
 import Container from './common/Container';
 import Main from './components/Main';
@@ -11,8 +10,6 @@ const App = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [coords, setCoords] = useState({ x: 0, y: 0 });
   const [hovered, setHovered] = useState(false);
-
-  // const transition =  useSpring()
 
   const toggleMenubar = () => {
     setOpenMenu(!openMenu);
