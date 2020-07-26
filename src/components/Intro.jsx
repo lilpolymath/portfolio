@@ -19,10 +19,11 @@ const Intro = ({ active, setActive, style, MouseEnter, MouseLeave }) => {
         <p className={styles.specialization}>Mobile and Web</p>
         <h2 className={styles.title}>Frontend Developer</h2>
         <p className={styles.desc}>
-          Hello! I'm Simon Dagfinrud, a digital designer from a tiny town on the
-          Norwegian west coast. Right now I'm living in Oslo, working at Teston,
-          where we're trying to make people's digital experiences better by
-          making it easier to test usability.
+          Hello! I'm Ayobami Favour Adedapo, a Frontend Developer for Web and
+          Mobile, and UI/UX Enthusiast. I love creating beautiful and intuitive
+          interfaces for users. I have an eye for design with a User-Driven
+          Approach to Development. In my spare time, I work on ThreeJs, WebGL
+          and various CSS Animations.
         </p>
         <button
           onMouseEnter={MouseEnter}
