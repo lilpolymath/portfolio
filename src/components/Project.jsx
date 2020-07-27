@@ -2,7 +2,6 @@ import React from 'react';
 
 import styles from './Project.module.css';
 import projects from './projects.json';
-import { ReactComponent as Arrow } from '../assets/arrow.svg';
 import { ReactComponent as Chevron } from '../assets/chevron_right.svg';
 
 const Project = ({ active, setActive, style, MouseEnter, MouseLeave }) => {
@@ -23,10 +22,7 @@ const Project = ({ active, setActive, style, MouseEnter, MouseLeave }) => {
         <div className={styles.main_container}>
           <h2 className={styles.main}>Selected Projects</h2>
         </div>
-        <div className={styles.carousel}>
-          <Arrow className={styles.left} />
-          <Arrow />
-        </div>
+        
       </div>
       <div className={styles.projects}>
         {projects.map(project => (
