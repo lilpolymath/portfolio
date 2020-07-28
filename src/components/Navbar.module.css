@@ -1,15 +1,13 @@
 .nav {
-  /* position: relative; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 80px;
-  /* z-index: 3; */
 }
 
 .logo {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -18,6 +16,11 @@
   color: var(--text);
   font-weight: bold;
   margin: 0 2rem;
+}
+
+.button_wrapper {
+  display: flex;
+  align-items: flex-end;
 }
 
 .menubar {
@@ -69,10 +72,11 @@ ul {
   fill: var(--second);
 }
 
-@media screen and (max-width: 500px) {
-}
-
 @media screen and (min-width: 768px) {
+  .nav {
+    justify-content: space-between;
+  }
+
   .menubar {
     display: none;
     position: absolute;

@@ -60,18 +60,26 @@ const Navbar = ({ toggleMenubar, mouseEnter, mouseLeave }) => {
         onMouseLeave={mouseLeave}
         className={styles.logo}
       >
-        <Day onClick={dayMode} className={styles.first} />
-        <h1 className={styles.logo_text}>Ayobami Adedapo</h1>
-        <Night onClick={nightMode} className={styles.second} />
+        <div>
+          <Day onClick={dayMode} className={styles.first} />
+        </div>
+        <div>
+          <h1 className={styles.logo_text}>Ayobami Adedapo</h1>
+        </div>
+        <div>
+          <Night onClick={nightMode} className={styles.second} />
+        </div>
       </div>
-      <button
-        onMouseEnter={mouseEnter}
-        onMouseLeave={mouseLeave}
-        onClick={toggleMenubar}
-        className={styles.menu_button}
-      >
-        Menu
-      </button>
+      <div className={styles.button_wrapper}>
+        <button
+          onMouseEnter={mouseEnter}
+          onMouseLeave={mouseLeave}
+          onClick={toggleMenubar}
+          className={styles.menu_button}
+        >
+          Menu
+        </button>
+      </div>
     </nav>
   );
 };

@@ -66,9 +66,15 @@ a:focus {
   outline: 2px solid orange;
 }
 
+@media screen and (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
+}
+
 .cursor {
   position: absolute;
-  background-color: blue;
+  background-color: #f2994a;
   width: 30px;
   height: 30px;
   border-radius: 100%;
