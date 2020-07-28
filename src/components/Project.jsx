@@ -22,7 +22,6 @@ const Project = ({ active, setActive, style, MouseEnter, MouseLeave }) => {
         <div className={styles.main_container}>
           <h2 className={styles.main}>Selected Projects</h2>
         </div>
-        
       </div>
       <div className={styles.projects}>
         {projects.map(project => (
@@ -39,6 +38,8 @@ const Project = ({ active, setActive, style, MouseEnter, MouseLeave }) => {
               onMouseEnter={MouseEnter}
               onMouseLeave={MouseLeave}
               href={project.link}
+              target='_blank'
+              rel='noopener noreferrer'
             >
               View Project <Chevron />
             </a>
