@@ -9,7 +9,7 @@ const Intro = ({ active, setActive, style, MouseEnter, MouseLeave }) => {
       <div className={styles.image}>
         <figure>
           <img
-            src='https://res.cloudinary.com/favourcodes/image/upload/v1580333920/IMG_20191015_142955_qkhkhe.jpg'
+            src='https://res.cloudinary.com/favourcodes/image/upload/v1596491910/IMG_20191015_142955-min_ipkauv.jpg'
             alt='ayobami favour adedapo'
           />
         </figure>
