@@ -26,23 +26,27 @@ const Project = ({ active, setActive, style, MouseEnter, MouseLeave }) => {
       <div className={styles.projects}>
         {projects.map(project => (
           <div key={project.key} className={styles.project}>
-            <img
-              src={project.image}
-              alt=''
-              className={styles.project_screenshot}
-            />
-            <h3 className={styles.project_name}>{project.name}</h3>
-            <p className={styles.project_desc}>{project.description}</p>
-            <a
-              className={styles.project_link}
-              onMouseEnter={MouseEnter}
-              onMouseLeave={MouseLeave}
-              href={project.link}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              View Project <Chevron />
-            </a>
+            <div className={styles.project_image}>
+              <img
+                src={project.image}
+                alt=''
+                className={styles.project_screenshot}
+              />
+            </div>
+            <div className={styles.project_content}>
+              <h3 className={styles.project_name}>{project.name}</h3>
+              <p className={styles.project_desc}>{project.description}</p>
+              <a
+                className={styles.project_link}
+                onMouseEnter={MouseEnter}
+                onMouseLeave={MouseLeave}
+                href={project.link}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                View Project <Chevron />
+              </a>
+            </div>
           </div>
         ))}
       </div>
