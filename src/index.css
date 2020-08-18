@@ -36,16 +36,10 @@ code {
 }
 
 main {
-  margin-top: 5rem;
+  margin-top: 4rem;  
   padding-bottom: 5rem;
   position: relative;
   width: auto;
-}
-
-@media only screen and (min-width: 768px) {
-  main {
-    margin-top: 13rem;
-  }
 }
 
 svg {

@@ -3,6 +3,7 @@
   flex: 1;
   align-items: center;
   flex-direction: column;
+  margin-top: 5rem;
 }
 
 .image {
@@ -21,7 +22,7 @@ img {
   flex: 1;
   flex-direction: column;
   justify-content: space-around;
-  max-width: 450px;
+  max-width: 520px;
 }
 
 .skills {
@@ -59,7 +60,6 @@ img {
   padding: 12px 0;
   background: none;
   border: none;
-  /* cursor: pointer; */
   display: flex;
   align-items: center;
 }
@@ -77,6 +77,7 @@ img {
 @media screen and (min-width: 768px) {
   .intro {
     flex-direction: row;
+    margin-top: 13rem;
   }
 
   .image {
