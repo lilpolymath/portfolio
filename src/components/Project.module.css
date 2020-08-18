@@ -60,12 +60,9 @@
   height: auto;
 }
 
-
 .project_content{
   display: flex;
-  /* flex: 0.5; */
   flex-direction: column;
-  /* justify-content: flex-end; */
 }
 
 .project_name {

@@ -1,51 +1,52 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useEffect, useCallback } from 'react';
 
 import { ReactComponent as Day } from '../assets/day.svg';
 import { ReactComponent as Night } from '../assets/night.svg';
 
 import styles from './Navbar.module.css';
+import useStickyState from '../hooks/use-sticky';
 
 const Navbar = ({ toggleMenubar, mouseEnter, mouseLeave }) => {
-  const [day, setDay] = useState(true);
+  const [mode, setMode] = useStickyState('day', 'night');
 
   const switchBG = useCallback(() => {
     document.documentElement.style.setProperty(
       '--first',
-      day ? '#f2994a' : '#bdbdbd'
+      mode === 'day' ? '#f2994a' : '#bdbdbd'
     );
     document.documentElement.style.setProperty(
       '--second',
-      day ? '#bdbdbd' : '#f2994a'
+      mode === 'day' ? '#bdbdbd' : '#f2994a'
     );
     document.documentElement.style.setProperty(
       '--main',
-      day ? '#ffffff' : '#1a181b'
+      mode === 'day' ? '#ffffff' : '#1a181b'
     );
     document.documentElement.style.setProperty(
       '--text',
-      day ? '#1a181b' : '#ffffff'
+      mode === 'day' ? '#1a181b' : '#ffffff'
     );
     document.documentElement.style.setProperty(
       '--content',
-      day ? '#3e3d3d' : '#d8d8d8'
+      mode === 'day' ? '#3e3d3d' : '#d8d8d8'
     );
     document.documentElement.style.setProperty(
       '--project_link',
-      day ? '#1a181b' : '#f2994a'
+      mode === 'day' ? '#1a181b' : '#f2994a'
     );
     document.documentElement.style.setProperty(
       '--nav',
-      day ? '#f2994a' : '#ffffff'
+      mode === 'day' ? '#f2994a' : '#ffffff'
     );
-  }, [day]);
+  }, [mode]);
 
   const nightMode = () => {
-    setDay(false);
+    setMode('night');
     switchBG();
   };
 
   const dayMode = () => {
-    setDay(true);
+    setMode('day');
     switchBG();
   };
 
