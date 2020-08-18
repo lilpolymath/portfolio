@@ -80,7 +80,7 @@
   font-size: 1.75rem;
   color: var(--project_link);
   font-weight: bold;
-  width: 150px;
+  width: 175px;
   text-decoration: none;
   padding: 12px 0;
   background: none;
@@ -91,9 +91,11 @@
 }
 
 .project_link svg {
-  width: 30px;
-  height: 30px;
+  width: 46px;
+  height: 50px;
+  padding: 6px 0;
   margin-left: 1.5rem;
+  margin-top: 0;
 }
 
 .project_link path {

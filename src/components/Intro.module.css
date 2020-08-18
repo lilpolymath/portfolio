@@ -55,7 +55,7 @@ img {
   font-size: 1.75rem;
   color: var(--text);
   font-weight: bold;
-  width: 220px;
+  width: 250px;
   margin-top: 2rem;
   padding: 12px 0;
   background: none;
@@ -65,9 +65,11 @@ img {
 }
 
 .next svg {
-  width: 30px;
-  height: 30px;
+  width: 46px;
+  height: 50px;
+  padding: 6px 0;
   margin-left: 1.5rem;
+  margin-top: 0;
 }
 
 .next path {
