@@ -60,7 +60,7 @@
   height: auto;
 }
 
-.project_content{
+.project_content {
   display: flex;
   flex-direction: column;
 }

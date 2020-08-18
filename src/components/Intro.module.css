@@ -1,4 +1,3 @@
-
 .intro {
   display: flex;
   flex: 1;
@@ -22,6 +21,7 @@ img {
   flex: 1;
   flex-direction: column;
   justify-content: space-around;
+  max-width: 450px;
 }
 
 .skills {

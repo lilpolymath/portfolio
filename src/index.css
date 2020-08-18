@@ -26,7 +26,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
@@ -36,9 +36,16 @@ code {
 }
 
 main {
-  margin-top: 40px;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
   position: relative;
   width: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    margin-top: 13rem;
+  }
 }
 
 svg {
