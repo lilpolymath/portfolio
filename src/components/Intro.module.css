@@ -44,7 +44,6 @@ img {
   font-size: 4rem;
   font-weight: bold;
   position: relative;
-  /* color: yellow; */
 }
 
 .title::before,
@@ -59,7 +58,7 @@ img {
 }
 
 .title::before {
-  clip: rect(44px, 450px, 56px, 10px);
+  clip: rect(44px, 450px, 56px, 0);
   left: 2px;
   text-shadow: -1px 0 red;
   background: yellow;
@@ -96,6 +95,7 @@ img {
   font-size: 1.875rem;
   color: var(--content);
   margin: 0.5em 0;
+  line-height: 30px;
 }
 
 .next {
