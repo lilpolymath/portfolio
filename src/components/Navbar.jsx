@@ -61,14 +61,14 @@ const Navbar = ({ toggleMenubar, mouseEnter, mouseLeave }) => {
         onMouseLeave={mouseLeave}
         className={styles.logo}
       >
-        <div>
-          <Day onClick={dayMode} className={styles.first} />
+        <div tabIndex='0' onClick={dayMode} className={styles.mode}>
+          <Day className={styles.first} />
         </div>
         <div>
           <h1 className={styles.logo_text}>Ayobami Adedapo</h1>
         </div>
-        <div>
-          <Night onClick={nightMode} className={styles.second} />
+        <div tabIndex='0' onClick={nightMode} className={styles.mode}>
+          <Night className={styles.second} />
         </div>
       </div>
       <div className={styles.button_wrapper}>

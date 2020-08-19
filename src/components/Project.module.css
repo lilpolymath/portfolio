@@ -81,7 +81,6 @@
   font-weight: bold;
   width: 175px;
   text-decoration: none;
-  padding: 12px 0;
   background: none;
   border: none;
   cursor: pointer;
@@ -111,7 +110,7 @@
   margin-left: 8px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 801px) {
   .main {
     font-size: 5.5rem;
     font-weight: bold;

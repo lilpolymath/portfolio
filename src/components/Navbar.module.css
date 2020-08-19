@@ -12,10 +12,10 @@
 }
 
 .logo_text {
-  font-size: 2.375rem;
+  font-size: 2.25rem;
   color: var(--text);
   font-weight: bold;
-  margin: 0 2rem;
+  margin: 0 1rem;
 }
 
 .button_wrapper {
@@ -24,7 +24,7 @@
 }
 
 .menubar {
-  padding: 12px 2rem 0;
+  padding: 12px 3rem 0;
 }
 
 .menu_button {
@@ -39,10 +39,13 @@ ul {
   padding: 16px;
 }
 
+ul > li {
+  margin: 4rem 0;
+}
+
 .menubar_link {
   font-size: 6rem;
   color: white;
-  margin: 4rem 0;
 }
 
 .menubar_link:active,
@@ -72,24 +75,31 @@ ul {
   fill: var(--second);
 }
 
-@media screen and (min-width: 768px) {
+.mode:focus {
+  outline: 2px solid orange;
+}
+
+.menubar {
+  display: none;
+}
+
+@media screen and (min-width: 350px) {
   .nav {
     justify-content: space-between;
   }
 
   .menubar {
-    display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: -100px;
-    width: 35%;
-    min-width: 300px;
-    padding: 52px 100px 0 3rem;
+    right: 0;
+    width: 30%;
+    min-width: 400px;
     min-height: 100vh;
     max-height: 100vh;
     background: #1a181b;
     z-index: 5;
     box-shadow: -40px 0px 80px rgba(0, 0, 0, 0.25);
+    display: block;
   }
 
   .menu_button {
