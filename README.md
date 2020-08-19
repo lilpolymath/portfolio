@@ -1,3 +1,3 @@
-### https://favourcodes.netlify.app/
+### Details.
 
 This is my personal portfolio page built with React.
