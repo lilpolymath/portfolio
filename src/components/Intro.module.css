@@ -58,7 +58,6 @@ img {
   font-weight: bold;
   width: 250px;
   margin-top: 2rem;
-  padding: 12px 0;
   background: none;
   border: none;
   display: flex;
@@ -77,7 +76,7 @@ img {
   fill: var(--text);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 801px) {
   .intro {
     flex-direction: row;
     margin-top: 13rem;

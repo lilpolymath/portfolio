@@ -5,8 +5,8 @@ import { useSpring, animated, config } from 'react-spring';
 
 const Menubar = ({ open, toggleMenubar }) => {
   const sidebar = useSpring({
-    transform: open ? `translateX(0)` : `translateX(100%)`,
-    display: open ? 'block' : 'none',
+    transform: open ? `translateX(0)` : `translateX(120%)`,
+    maxWidth: open ? '500px' : '0px',
     config: { ...config.molasses, duration: 500 },
   });
 
@@ -16,10 +16,26 @@ const Menubar = ({ open, toggleMenubar }) => {
         Close
       </button>
       <ul>
-        <li className={styles.menubar_link}>Home</li>
-        <li className={styles.menubar_link}>About</li>
-        <li className={styles.menubar_link}>Projects</li>
-        <li className={styles.menubar_link}>Contact</li>
+        <li>
+          <a className={styles.menubar_link} href='/home'>
+            Home
+          </a>
+        </li>
+        <li>
+          <a className={styles.menubar_link} href='/projects'>
+            Projects
+          </a>
+        </li>
+        <li>
+          <a className={styles.menubar_link} href='/blog'>
+            Blog
+          </a>
+        </li>
+        <li>
+          <a className={styles.menubar_link} href='/contact'>
+            Contact
+          </a>
+        </li>
       </ul>
     </animated.div>
   );

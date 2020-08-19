@@ -27,14 +27,13 @@ const Intro = ({ style, mouseEnter, mouseLeave }) => {
           Approach to Development. In my spare time, I work on ThreeJs, WebGL
           and various CSS Animations.
         </p>
-        <Link to='/projects'>
-          <button
-            onMouseEnter={mouseEnter}
-            onMouseLeave={mouseLeave}
-            className={styles.next}
-          >
-            View Select Projects <Chevron />
-          </button>
+        <Link
+          onMouseEnter={mouseEnter}
+          onMouseLeave={mouseLeave}
+          className={styles.next}
+          to='/projects'
+        >
+          View Select Projects <Chevron />
         </Link>
       </div>
     </animated.section>

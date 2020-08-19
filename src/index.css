@@ -46,7 +46,7 @@ svg {
   width: 46px;
   height: 50px;
   padding: 6px 0;
-  margin-top: -12px;
+  margin-top: -10px;
   cursor: pointer;
 }
 
@@ -55,7 +55,7 @@ ul {
 }
 
 .wrap {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: block;
@@ -71,7 +71,15 @@ a:focus {
   outline: 2px solid orange;
 }
 
-@media screen and (max-width: 768px) {
+a {
+  text-decoration: none;
+}
+
+a:active {
+  outline: none;
+}
+
+@media screen and (max-width: 801px) {
   .cursor {
     display: none;
   }
