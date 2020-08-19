@@ -27,14 +27,17 @@ const Main = ({ mouseEnter, mouseLeave }) => {
                   from={{
                     transform: 'translateY(200px)',
                     opacity: 0,
+                    position: 'absolute'
                   }}
                   enter={{
                     transform: 'translateY(0px)',
                     opacity: 1,
+                    position: 'relative'
                   }}
                   leave={{
                     transform: 'translateY(-200px)',
                     opacity: 0,
+                    position: 'absolute'
                   }}
                   config={{ ...config.molasses, duration: 500 }}
                 >
