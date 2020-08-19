@@ -75,10 +75,6 @@ ul > li {
   fill: var(--second);
 }
 
-.mode:focus {
-  outline: 2px solid orange;
-}
-
 .menubar {
   display: none;
 }
