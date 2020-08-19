@@ -1,7 +1,7 @@
 .nav {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 80px;
 }
 
@@ -67,12 +67,18 @@ ul > li {
   text-decoration: underline;
 }
 
-.first > path {
-  fill: var(--first);
+.first path {
+  animation: redeye 2s infinite alternate;
+}
+
+@keyframes redeye {
+  to {
+    fill: #f9d100;
+  }
 }
 
 .second path {
-  fill: var(--second);
+  animation: redeye 2s infinite alternate;
 }
 
 .menubar {
