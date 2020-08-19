@@ -1,22 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { animated } from 'react-spring/renderprops';
 
 import styles from './Project.module.css';
 import projects from './projects.json';
 import { ReactComponent as Chevron } from '../assets/chevron_right.svg';
 
-const Project = ({ active, setActive, style, MouseEnter, MouseLeave }) => {
+const Project = ({ style, mouseEnter, mouseLeave }) => {
   return (
-    <section style={style} className={styles.selected_works}>
+    <animated.section style={style} className={styles.selected_works}>
       <div
-        onMouseEnter={MouseEnter}
-        onMouseLeave={MouseLeave}
-        onClick={() => setActive(!active)}
+        onMouseEnter={mouseEnter}
+        onMouseLeave={mouseLeave}
         className={styles.breadcrumb}
       >
-        <p className={styles.inactive}>
-          Home/
-          <span className={styles.active}>Selected Projects</span>
-        </p>
+        <Link to='/home'>
+          <span className={styles.inactive}>Home</span>
+        </Link>
+        <span className={styles.active}>/Selected Projects</span>
       </div>
       <div className={styles.section_heading}>
         <div className={styles.main_container}>
@@ -38,8 +39,8 @@ const Project = ({ active, setActive, style, MouseEnter, MouseLeave }) => {
               <p className={styles.project_desc}>{project.description}</p>
               <a
                 className={styles.project_link}
-                onMouseEnter={MouseEnter}
-                onMouseLeave={MouseLeave}
+                onMouseEnter={mouseEnter}
+                onMouseLeave={mouseLeave}
                 href={project.link}
                 target='_blank'
                 rel='noopener noreferrer'
@@ -50,7 +51,7 @@ const Project = ({ active, setActive, style, MouseEnter, MouseLeave }) => {
           </div>
         ))}
       </div>
-    </section>
+    </animated.section>
   );
 };
 

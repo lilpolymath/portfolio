@@ -79,7 +79,7 @@ a:focus {
 
 .cursor {
   position: absolute;
-  background-color: #f2994a;
+  background-color: green;
   width: 30px;
   height: 30px;
   border-radius: 100%;

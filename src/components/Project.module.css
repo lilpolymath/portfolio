@@ -1,9 +1,8 @@
 .selected_works {
   display: flex;
-  flex: 1;
   flex-direction: column;
-  will-change: opacity;
   width: 100%;
+  position: absolute;
 }
 
 .breadcrumb {
