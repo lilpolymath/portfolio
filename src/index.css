@@ -79,7 +79,7 @@ a:focus {
 
 .cursor {
   position: absolute;
-  background-color: #f2994a;
+  background-color: green;
   width: 30px;
   height: 30px;
   border-radius: 100%;
@@ -95,4 +95,13 @@ a:focus {
 .active {
   transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform;
   transform: scale(2.5);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

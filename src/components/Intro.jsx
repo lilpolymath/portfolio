@@ -1,11 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { animated } from 'react-spring/renderprops';
 
 import styles from './Intro.module.css';
 import { ReactComponent as Chevron } from '../assets/chevron_right.svg';
 
-const Intro = ({ active, setActive, style, MouseEnter, MouseLeave }) => {
+const Intro = ({ style, mouseEnter, mouseLeave }) => {
   return (
-    <section style={style} className={styles.intro}>
+    <animated.section style={style} className={styles.intro}>
       <div className={styles.image}>
         <figure>
           <img
@@ -25,16 +27,17 @@ const Intro = ({ active, setActive, style, MouseEnter, MouseLeave }) => {
           Approach to Development. In my spare time, I work on ThreeJs, WebGL
           and various CSS Animations.
         </p>
-        <button
-          onMouseEnter={MouseEnter}
-          onMouseLeave={MouseLeave}
-          onClick={() => setActive(!active)}
-          className={styles.next}
-        >
-          View Select Projects <Chevron />
-        </button>
+        <Link to='/projects'>
+          <button
+            onMouseEnter={mouseEnter}
+            onMouseLeave={mouseLeave}
+            className={styles.next}
+          >
+            View Select Projects <Chevron />
+          </button>
+        </Link>
       </div>
-    </section>
+    </animated.section>
   );
 };
 
