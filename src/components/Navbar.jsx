@@ -38,6 +38,10 @@ const Navbar = ({ toggleMenubar, mouseEnter, mouseLeave }) => {
       '--nav',
       mode === 'day' ? '#f2994a' : '#ffffff'
     );
+    document.documentElement.style.setProperty(
+      '--shadow',
+      mode === 'day' ? '#dfe6e9' : '#000509'
+    );
   }, [mode]);
 
   const nightMode = () => {
