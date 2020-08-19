@@ -1,12 +1,18 @@
 [
   {
     "key": 1,
-    "name": "Gravity ",
+    "name": "My Portfolio ",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1597871828/Ayobami_Adedapo_vsiwup.png",
+    "description": "Erhmm you are here 👀.",
+    "link": "/"
+  },
+  {
+    "key": 2,
+    "name": "Gravity",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1596495616/Gravity__Digital_Agency_k8fp7p.jpg",
     "description": "Concept Landing Page for a Digital Agency.",
     "link": "http://gravity-home.netlify.app/"
   },
-
   {
     "key": 3,
     "name": "Landing Pages",
@@ -14,7 +20,6 @@
     "description": "Collection of Landing Pages designed by Gravity",
     "link": "https://lilpolymath.github.io/landing-pages/"
   },
-
   {
     "key": 4,
     "name": "Path To Img",
@@ -25,23 +30,23 @@
   {
     "key": 5,
     "name": "Error Pages",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1596496155/Group_2_ij9iph.jpg",
-    "description": "A collection of implemented error page designs. Contributor.",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1597870529/Rectangle_9_lvipzs.png",
+    "description": "A collection of implemented error page designs.",
     "link": "https://errorpages.netlify.app/"
   },
   {
     "key": 6,
-    "name": "Nigeria Police Emergency Contact",
+    "name": "Emergency Police Contact",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1596495324/Emergency_Police_NG_Phone_Numbers_udv7iv.jpg",
-    "description": "A bunch of VCF files, containing the emergency contact for the Nigerian Police in the 36 states, and FCT. Contributor.",
+    "description": "VCF files, containing the emergency contact for the Nigerian Police in the 36 states, and FCT.",
     "link": "https://mykeels.github.io/police-ng-emergency/"
   },
   {
     "key": 7,
     "name": "farm-invest-cli",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1594830785/Placeholder_6_ukdlcp.png",
-    "description": "A CLI tool built to detect updates to the products on eFarms, FarmCrowdy, ThriveAgric and AgroPartnerships. Contributor.",
-    "link": "https://errorpages.netlify.app/"
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1597870531/Rectangle_10_polp86.png",
+    "description": "A CLI tool built to detect updates to the products on eFarms, FarmCrowdy, ThriveAgric and AgroPartnerships.",
+    "link": "https://github.com/mykeels/farm-invest-cli"
   },
   {
     "key": 8,
