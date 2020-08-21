@@ -42,7 +42,7 @@
 
 .projects {
   display: grid;
-  gap: 4rem;
+  gap: 5rem;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   margin: 16px 0px;
   height: auto;
@@ -53,6 +53,11 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  transition: all 0.25s cubic-bezier(.49,.11,.6,1) 0s;
+}
+
+.project:hover {
+  transform: scale(1.05);
 }
 
 .project::after {
