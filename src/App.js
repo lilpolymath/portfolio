@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+import { animated, useSpring, config } from 'react-spring';
 
 import Container from './common/Container';
 import Main from './components/Main';
@@ -15,9 +16,18 @@ const App = () => {
     setOpenMenu(!openMenu);
   };
 
+  const props = useSpring({
+    transform: hovered
+      ? `translateY(${coords.y - 15}px) translateX(${coords.x -
+          15}px) scale(2.5)`
+      : `translateY(${coords.y - 15}px) translateX(${coords.x -
+          15}px) scale(1)`,
+    config: config.gentle,
+  });
+
   const handler = useCallback(
-    ({ pageX, pageY }) => {
-      setCoords({ x: pageX, y: pageY });
+    ({ clientX, clientY }) => {
+      setCoords({ x: clientX, y: clientY });
     },
     [setCoords]
   );
@@ -30,7 +40,7 @@ const App = () => {
     setHovered(false);
   };
 
-  useEventListener('mousemove', handler, window);
+  useEventListener('mousemove', handler);
 
   return (
     <>
@@ -55,10 +65,10 @@ const App = () => {
           }}
         ></div>
       </Container>
-      <div
-        style={{ top: coords.y - 15, left: coords.x - 15 }}
+      <animated.div
+        style={props}
         className={hovered ? 'cursor active' : 'cursor'}
-      ></div>
+      ></animated.div>
     </>
   );
 };
