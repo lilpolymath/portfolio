@@ -2,9 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { animated } from 'react-spring/renderprops';
 
-// - TODO
-// - Add social icons : Twitter, GitHub, LinkedIn, Dribbble, Codepen
-
 import styles from './Contact.module.css';
 import Social from './Social';
 
