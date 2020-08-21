@@ -10,6 +10,7 @@ import {
 
 import Intro from './Intro';
 import Project from './Project';
+import Contact from './Contact';
 
 const Main = ({ mouseEnter, mouseLeave }) => {
   return (
@@ -53,6 +54,12 @@ const Main = ({ mouseEnter, mouseLeave }) => {
                         path='/projects'
                         render={props =>
                           Project({ ...props, style, mouseEnter, mouseLeave })
+                        }
+                      />
+                      <Route
+                        path='/contact'
+                        render={props =>
+                          Contact({ ...props, style, mouseEnter, mouseLeave })
                         }
                       />
                       <Route render={() => <div>Not Found</div>} />

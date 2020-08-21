@@ -100,7 +100,7 @@ img {
 
 .next {
   font-size: 1.75rem;
-  color: var(--text);
+  color: var(--project_link);
   font-weight: bold;
   width: 250px;
   margin-top: 2rem;
@@ -119,7 +119,7 @@ img {
 }
 
 .next path {
-  fill: var(--text);
+  fill: var(--project_link);
 }
 
 @media screen and (min-width: 801px) {

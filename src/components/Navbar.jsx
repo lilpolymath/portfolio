@@ -84,9 +84,9 @@ const Navbar = ({ toggleMenubar, mouseEnter, mouseLeave }) => {
             <Night className={styles.second} />
           </div>
         )}
-        <div>
+        <a href='/'>
           <h1 className={styles.logo_text}>Ayobami Adedapo</h1>
-        </div>
+        </a>
       </div>
       <div className={styles.button_wrapper}>
         <button
