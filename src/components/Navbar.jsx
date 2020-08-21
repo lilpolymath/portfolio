@@ -7,7 +7,7 @@ import styles from './Navbar.module.css';
 import useStickyState from '../hooks/use-sticky';
 
 const Navbar = ({ toggleMenubar, mouseEnter, mouseLeave }) => {
-  const [mode, setMode] = useStickyState('day', 'night');
+  const [mode, setMode] = useStickyState(null, 'night');
 
   const switchBG = useCallback(() => {
     document.documentElement.style.setProperty(
@@ -55,11 +55,18 @@ const Navbar = ({ toggleMenubar, mouseEnter, mouseLeave }) => {
   };
 
   useEffect(() => {
-    if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
+    if (
+      window.matchMedia('(prefers-color-scheme)').media !== 'not all' &&
+      mode === null
+    ) {
       setMode('night');
+      switchBG();
     }
+  }, [mode, setMode, switchBG]);
+
+  useEffect(() => {
     switchBG();
-  }, [setMode, switchBG]);
+  }, [switchBG]);
 
   return (
     <nav className={styles.nav}>
