@@ -55,8 +55,11 @@ const Navbar = ({ toggleMenubar, mouseEnter, mouseLeave }) => {
   };
 
   useEffect(() => {
+    if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
+      setMode('night');
+    }
     switchBG();
-  }, [switchBG]);
+  }, [setMode, switchBG]);
 
   return (
     <nav className={styles.nav}>
