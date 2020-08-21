@@ -30,7 +30,7 @@ const App = () => {
     setHovered(false);
   };
 
-  useEventListener('mousemove', handler);
+  useEventListener('mousemove', handler, window);
 
   return (
     <>

@@ -15,6 +15,15 @@
   --shadow: #dfe6e9;
 }
 
+::selection {
+  background-color: #f2994a;
+  color: var(--main);
+}
+
+::-moz-selection {
+  background-color: #f2994a;
+  color: var(--main);
+}
 
 * {
   margin: 0;
