@@ -6,6 +6,7 @@ import { animated } from 'react-spring/renderprops';
 // - Add social icons : Twitter, GitHub, LinkedIn, Dribbble, Codepen
 
 import styles from './Contact.module.css';
+import Social from './Social';
 
 const Intro = ({ style, mouseEnter, mouseLeave }) => {
   return (
@@ -62,6 +63,7 @@ const Intro = ({ style, mouseEnter, mouseLeave }) => {
               </a>
             </div>
           </div>
+          <Social mouseEnter={mouseEnter} mouseLeave={mouseLeave} />
         </div>
       </section>
     </animated.section>

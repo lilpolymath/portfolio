@@ -20,6 +20,11 @@
   color: var(--main);
 }
 
+::-moz-selection {
+  background-color: #f2994a;
+  color: var(--main);
+}
+
 * {
   margin: 0;
   font: 62.5% 'Futura', sans-serif;

@@ -1,0 +1,11 @@
+.social_links {
+  margin: 1rem 0;
+}
+
+.social_links svg {
+  width: 24px;
+  height: 24px;
+  margin: 0 1.5rem 0 0;
+  stroke-width: 1.5px;
+  stroke: var(--text);
+}
