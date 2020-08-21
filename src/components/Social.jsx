@@ -18,7 +18,7 @@ const Social = ({ mouseEnter, mouseLeave }) => {
       <a
         onMouseEnter={mouseEnter}
         onMouseLeave={mouseLeave}
-        href='http://github.com/lilpolymat'
+        href='http://github.com/lilpolymath'
         target='_blank'
         rel='noopener noreferrer'
       >
