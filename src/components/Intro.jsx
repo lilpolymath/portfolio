@@ -18,7 +18,7 @@ const Intro = ({ style, mouseEnter, mouseLeave }) => {
         </figure>
       </div>
       <div className={styles.about}>
-        <p className={styles.skills}>html, js, css, react.</p>
+        <p className={styles.skills}>html, js, css, react, graphql, firebase.</p>
         <p className={styles.specialization}>Mobile and Web</p>
         <h2 data-text='Frontend Developer' className={styles.title}>
           Frontend Developer
