@@ -12,13 +12,15 @@ const Intro = ({ style, mouseEnter, mouseLeave }) => {
       <div className={styles.image}>
         <figure>
           <img
-            src='https://res.cloudinary.com/favourcodes/image/upload/v1597784911/profile.png'
+            src='https://res.cloudinary.com/favourcodes/image/upload/v1598125526/profile-min.png'
             alt='ayobami favour adedapo'
           />
         </figure>
       </div>
       <div className={styles.about}>
-        <p className={styles.skills}>html, js, css, react, graphql, firebase.</p>
+        <p className={styles.skills}>
+          html, js, css, react, graphql, firebase.
+        </p>
         <p className={styles.specialization}>Mobile and Web</p>
         <h2 data-text='Frontend Developer' className={styles.title}>
           Frontend Developer
