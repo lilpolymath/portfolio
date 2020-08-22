@@ -22,7 +22,7 @@ const App = () => {
           15}px) scale(2.5)`
       : `translateY(${coords.y - 15}px) translateX(${coords.x -
           15}px) scale(1)`,
-    config: config.gentle,
+    config: config.molasses,
   });
 
   const handler = useCallback(

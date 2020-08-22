@@ -67,6 +67,10 @@ ul > li {
   text-decoration: underline;
 }
 
+.mode {
+  outline: none;
+}
+
 .first path {
   animation: down 1.5s ease;
 }
