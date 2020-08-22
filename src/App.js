@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { animated, useSpring, config } from 'react-spring';
+import { animated, useSpring } from 'react-spring';
 
 import Container from './common/Container';
 import Main from './components/Main';
