@@ -2,22 +2,22 @@
   {
     "key": 1,
     "name": "My Portfolio ",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1597871828/Ayobami_Adedapo_vsiwup.png",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126824/portfolio.png",
     "description": "Erhmm you are here 👀.",
     "link": "/"
   },
   {
     "key": 2,
     "name": "Gravity",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1596495616/Gravity__Digital_Agency_k8fp7p.jpg",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126876/gravity-digital.jpg",
     "description": "Concept Landing Page for a Digital Agency.",
     "link": "http://gravity-home.netlify.app/"
   },
   {
     "key": 3,
     "name": "Landing Pages",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1596495202/Gravity_Headers_ilisty.jpg",
-    "description": "Collection of Landing Pages designed by Gravity",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126957/gravity-headers.jpg",
+    "description": "Collection of Hero Landing Pages designed by Gravity.",
     "link": "https://lilpolymath.github.io/landing-pages/"
   },
   {
@@ -37,7 +37,7 @@
   {
     "key": 6,
     "name": "Emergency Police Contact",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1596495324/Emergency_Police_NG_Phone_Numbers_udv7iv.jpg",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126878/police-ng.jpg",
     "description": "VCF files, containing the emergency contact for the Nigerian Police in the 36 states, and FCT.",
     "link": "https://mykeels.github.io/police-ng-emergency/"
   },
@@ -45,13 +45,13 @@
     "key": 7,
     "name": "farm-invest-cli",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1597870531/Rectangle_10_polp86.png",
-    "description": "A CLI tool built to detect updates to the products on eFarms, FarmCrowdy, ThriveAgric and AgroPartnerships.",
+    "description": "CLI tool to detect updates to the products on eFarms, FarmCrowdy, ThriveAgric and AgroPartnerships.",
     "link": "https://github.com/mykeels/farm-invest-cli"
   },
   {
     "key": 8,
     "name": "COVID-19 Awareness.",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1596493166/COVID-19_gbtspy.jpg",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126883/covid-19.jpg",
     "description": "A website that displays basic information about the current pandemic.",
     "link": "https://lilpolymath.github.io/covid19/"
   }
