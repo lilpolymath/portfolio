@@ -44,9 +44,11 @@ const Menubar = ({ open, toggleMenubar, mouseEnter, mouseLeave }) => {
         <li>
           <a
             className={styles.menubar_link}
-            href='/blog'
+            href='https://favourcodes.hashnode.dev/'
             onMouseEnter={mouseEnter}
             onMouseLeave={mouseLeave}
+            target='_blank'
+            rel='noopener noreferrer'
           >
             Blog
           </a>
@@ -59,6 +61,18 @@ const Menubar = ({ open, toggleMenubar, mouseEnter, mouseLeave }) => {
             onMouseLeave={mouseLeave}
           >
             Contact
+          </a>
+        </li>
+        <li>
+          <a
+            className={styles.menubar_link}
+            href='https://docs.google.com/document/d/11MZVyldGFcMEbaNKppo24DAvOJeXQ6JUfAjHKT3mCuo/edit?usp=sharing'
+            onMouseEnter={mouseEnter}
+            onMouseLeave={mouseLeave}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Résumé
           </a>
         </li>
       </ul>
