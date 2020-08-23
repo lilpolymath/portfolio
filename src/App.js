@@ -2,7 +2,7 @@ import React, { useState, useCallback } from 'react';
 import { animated, useSpring } from 'react-spring';
 
 import Container from './common/Container';
-import Main from './components/Main';
+import Main from './pages/Main';
 import Navbar from './components/Navbar';
 import Menubar from './components/Menubar';
 import useEventListener from './hooks/use-event-listener';

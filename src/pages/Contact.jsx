@@ -16,7 +16,7 @@ const Intro = ({ style, mouseEnter, mouseLeave }) => {
         <Link to='/home'>
           <span className={styles.inactive}>Home</span>
         </Link>
-        <span className={styles.active}>/Contact</span>
+        <span className={styles.active}> / Contact</span>
       </div>
       <section className={styles.main}>
         <div className={styles.image}>
