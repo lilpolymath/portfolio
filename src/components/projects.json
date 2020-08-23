@@ -1,5 +1,13 @@
 [
   {
+    "key": 0,
+    "name": "Software Engineering Intern",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1597870531/Rectangle_10_polp86.png",
+    "description": "Worked on Festivesave and Payflow for 8 months. More Details in my Resume.",
+    "link": "http://mkobo.com.ng/",
+    "type": "Mkobo Microfinance Bank"
+  },
+  {
     "key": 1,
     "name": "My Portfolio ",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126824/portfolio.png",

@@ -35,6 +35,9 @@ const Project = ({ style, mouseEnter, mouseLeave }) => {
               />
             </div>
             <div className={styles.project_content}>
+              {project.type && (
+                <p className={styles.project_type}>{project.type}</p>
+              )}
               <h3 className={styles.project_name}>{project.name}</h3>
               <p className={styles.project_desc}>{project.description}</p>
               <a
