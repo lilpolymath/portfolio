@@ -36,11 +36,23 @@
   margin-bottom: 4rem;
   position: relative;
   background: linear-gradient(247.15deg, #ff5c00 0%, #ff9950 103.74%);
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.post:hover {
+.post::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 18px;
+  background: linear-gradient(247.15deg, #ff5c00 0%, #ff9950 103.74%);
+  -webkit-transition: transform 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.post:hover::after {
   transform: scale(1.1);
 }
 

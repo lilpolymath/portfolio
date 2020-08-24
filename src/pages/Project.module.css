@@ -53,11 +53,6 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  transition: all 0.25s cubic-bezier(0.49, 0.11, 0.6, 1) 0s;
-}
-
-.project:hover {
-  transform: scale(1.05);
 }
 
 .project::after {
@@ -77,6 +72,7 @@
 
 .project:hover::after {
   opacity: 1;
+  transform: scale(1.05);
 }
 
 .project_screenshot {
