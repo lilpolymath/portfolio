@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom';
 import { animated } from 'react-spring/renderprops';
 import Markdown from 'react-markdown';
 
-import postlist from '../posts.json';
+import postlist from '../data/posts.json';
 import styles from './Post.module.css';
 
 const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Markdown from 'react-markdown';
 import { animated } from 'react-spring/renderprops';
-import postlist from '../posts.json';
+import postlist from '../data/posts.json';
 import styles from './Blog.module.css';
 
 const PostList = ({ style, mouseEnter, mouseLeave }) => {
@@ -27,6 +27,11 @@ const PostList = ({ style, mouseEnter, mouseLeave }) => {
                 </div>
                 <div className={styles.post_excerpt}>
                   <Markdown source={excerptList[i]} escapeHtml={false} />
+                </div>
+                <div className={styles.post_tags}>
+                  {post.tags.map(tag => {
+                    return <p className={styles.post_tag}>{tag}</p>;
+                  })}
                 </div>
                 <div className={styles.post_details}>
                   <div>

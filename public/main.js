@@ -68,7 +68,7 @@ const getPosts = () => {
             return obj;
           }
         };
-        console.log(parseMetadata);
+
         const parseContent = ({ lines, metadataIndices }) => {
           if (metadataIndices.length > 0) {
             lines = lines.slice(metadataIndices[1] + 1, lines.length);
@@ -78,6 +78,7 @@ const getPosts = () => {
         const lines = contents.split('\n');
         const metadataIndices = lines.reduce(getMetadataIndices, []);
         const metadata = parseMetadata({ lines, metadataIndices });
+
         const content = parseContent({ lines, metadataIndices });
         const parsedDate = metadata.date
           ? formatDate(metadata.date)
@@ -95,6 +96,7 @@ const getPosts = () => {
           thumbnail: metadata.thumbnail,
           content: content ? content : 'No content given',
           slug: metadata.slug ? metadata.slug : '404',
+          tags: metadata.tags ? metadata.tags.split(',') : null,
         };
         postlist.push(post);
         ilist.push(i);
@@ -103,7 +105,7 @@ const getPosts = () => {
             return a.id < b.id ? 1 : -1;
           });
           let data = JSON.stringify(sortedList);
-          fs.writeFileSync('src/posts.json', data);
+          fs.writeFileSync('src/data/posts.json', data);
         }
       });
     });
