@@ -19,6 +19,12 @@ const PostList = ({ style, mouseEnter, mouseLeave }) => {
   return (
     <animated.section style={style} className={styles.posts_wrapper}>
       <div className={styles.posts}>
+        <div className={styles.breadcrumb}>
+          <Link onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} to='/home'>
+            <span className={styles.inactive}>Home</span>
+          </Link>
+          <span className={styles.active}> / Blog</span>
+        </div>
         {postlist.length &&
           postlist.map((post, i) => {
             let time = Math.floor(readingTime(post.content).minutes);
@@ -51,7 +57,7 @@ const PostList = ({ style, mouseEnter, mouseLeave }) => {
                       onMouseEnter={mouseEnter}
                       onMouseLeave={mouseLeave}
                     >
-                      Start Reading
+                      Start Reading &#8594;
                     </Link>
                   </div>
                 </div>

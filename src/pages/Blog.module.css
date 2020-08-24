@@ -8,6 +8,26 @@
   max-width: 500px;
 }
 
+.breadcrumb {
+  width: 250px;
+  margin-bottom: 3.5rem;
+}
+
+.inactive {
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: bold;
+  color: #7a7a7a;
+}
+
+.active {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: bold;
+  color: var(--text);
+}
+
 .post {
   border-radius: 18px;
   width: 100%;
@@ -93,6 +113,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .post_link {

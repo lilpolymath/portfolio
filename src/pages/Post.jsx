@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import { animated } from 'react-spring/renderprops';
 import Markdown from 'react-markdown';
 
@@ -35,12 +35,21 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
   return (
     <animated.div style={style} className={styles.post_wrapper}>
       <div className={styles.post}>
+        <div className={styles.breadcrumb}>
+          <Link onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} to='/home'>
+            <span className={styles.inactive}>Home</span>
+          </Link>
+          <Link onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} to='/blog'>
+            <span className={styles.inactive}> / Blog</span>
+          </Link>
+          <span className={styles.active}> / {fetchedPost.title}</span>
+        </div>
         <img
           src={fetchedPost.thumbnail}
           className={styles.featured_image}
           alt='thumbnail'
         />
-        <h2 className={styles.title}>{fetchedPost.title}</h2>
+        {/* <h2 className={styles.title}>{fetchedPost.title}</h2> */}
         <div className={styles.post_content}>
           <Markdown source={fetchedPost.content} escapeHtml={false} />
         </div>
