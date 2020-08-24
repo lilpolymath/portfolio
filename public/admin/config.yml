@@ -1,6 +1,9 @@
 backend:
   name: git-gateway
+  repo: portfolio
   branch: master
+
+publish_mode: editorial_workflow
 
 media_folder: 'public/image'
 public_folder: '/image'
