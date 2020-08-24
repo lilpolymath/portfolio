@@ -36,7 +36,7 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
     <animated.div style={style} className={styles.post_wrapper}>
       <div className={styles.post}>
         <div className={styles.breadcrumb}>
-          <Link onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} to='/home'>
+          <Link onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} to='/'>
             <span className={styles.inactive}>Home</span>
           </Link>
           <Link onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} to='/blog'>

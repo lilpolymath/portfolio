@@ -24,7 +24,7 @@ const Menubar = ({ open, toggleMenubar, mouseEnter, mouseLeave }) => {
         <li>
           <a
             className={styles.menubar_link}
-            href='/home'
+            href='/'
             onMouseEnter={mouseEnter}
             onMouseLeave={mouseLeave}
           >

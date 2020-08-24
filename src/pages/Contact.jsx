@@ -13,7 +13,7 @@ const Intro = ({ style, mouseEnter, mouseLeave }) => {
         onMouseLeave={mouseLeave}
         className={styles.breadcrumb}
       >
-        <Link to='/home'>
+        <Link to='/'>
           <span className={styles.inactive}>Home</span>
         </Link>
         <span className={styles.active}> / Contact</span>

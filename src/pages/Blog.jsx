@@ -20,7 +20,7 @@ const PostList = ({ style, mouseEnter, mouseLeave }) => {
     <animated.section style={style} className={styles.posts_wrapper}>
       <div className={styles.posts}>
         <div className={styles.breadcrumb}>
-          <Link onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} to='/home'>
+          <Link onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} to='/'>
             <span className={styles.inactive}>Home</span>
           </Link>
           <span className={styles.active}> / Blog</span>
