@@ -3,7 +3,7 @@ layout: blog
 title: About Startups and Ideas
 date: 2020-08-24T10:44:56.679Z
 thumbnail: /image/death-note-L.jpg
-tag: life, lessons, thoughts
+tags: life, lessons, thoughts
 ---
 ### Inception
 
