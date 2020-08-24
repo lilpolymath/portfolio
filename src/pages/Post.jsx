@@ -49,7 +49,6 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
           className={styles.featured_image}
           alt='thumbnail'
         />
-        {/* <h2 className={styles.title}>{fetchedPost.title}</h2> */}
         <div className={styles.post_content}>
           <Markdown source={fetchedPost.content} escapeHtml={false} />
         </div>

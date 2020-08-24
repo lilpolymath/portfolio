@@ -67,6 +67,10 @@
   opacity: 1;
 }
 
+.post h1 {
+  font-size: 2.125rem;
+}
+
 .post h2 {
   font-size: 2rem;
 }
@@ -114,6 +118,9 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
+}
+.post_details > div {
+  margin: 1rem 0;
 }
 
 .post_link {
