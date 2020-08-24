@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { animated } from 'react-spring/renderprops';
 
 import styles from './Project.module.css';
-import projects from './projects.json';
+import projects from '../data/projects.json';
 import { ReactComponent as Chevron } from '../assets/chevron_right.svg';
 
 const Project = ({ style, mouseEnter, mouseLeave }) => {
