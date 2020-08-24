@@ -44,11 +44,9 @@ const Menubar = ({ open, toggleMenubar, mouseEnter, mouseLeave }) => {
         <li>
           <a
             className={styles.menubar_link}
-            href='https://favourcodes.hashnode.dev/'
+            href='/blog'
             onMouseEnter={mouseEnter}
             onMouseLeave={mouseLeave}
-            target='_blank'
-            rel='noopener noreferrer'
           >
             Blog
           </a>

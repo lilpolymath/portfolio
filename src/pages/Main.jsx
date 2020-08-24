@@ -11,8 +11,8 @@ import {
 import Intro from './Intro';
 import Project from './Project';
 import Contact from './Contact';
+import Post from './Post';
 import Blog from './Blog';
-import PostList from './Post';
 
 const Main = ({ mouseEnter, mouseLeave }) => {
   return (
@@ -73,7 +73,9 @@ const Main = ({ mouseEnter, mouseLeave }) => {
                       <Route
                         exact
                         path='/post/:id'
-                        render={props => <Blog {...props} />}
+                        render={props =>
+                          Post({ ...props, style, mouseEnter, mouseLeave })
+                        }
                       />
                       <Route render={() => <div>Not Found</div>} />
                     </Switch>
@@ -83,9 +85,6 @@ const Main = ({ mouseEnter, mouseLeave }) => {
             );
           }}
         />
-        <div>
-          <PostList />
-        </div>
       </Router>
     </main>
   );

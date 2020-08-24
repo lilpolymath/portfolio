@@ -1,38 +1,57 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Markdown from 'react-markdown';
+import { animated } from 'react-spring/renderprops';
 import postlist from '../posts.json';
-import './pages.css';
 
-const Post = props => {
-  const validId = parseInt(props.match.params.id);
-  if (!validId) {
-    return <Redirect to='/404' />;
-  }
-  const fetchedPost = {};
-  let postExists = false;
-  postlist.forEach((post, i) => {
-    if (validId === post.id) {
-      fetchedPost.title = post.title ? post.title : 'No title given';
-      fetchedPost.date = post.date ? post.date : 'No date given';
-      fetchedPost.author = post.author ? post.author : 'No author given';
-      fetchedPost.content = post.content ? post.content : 'No content given';
-      postExists = true;
-    }
+import './components.css';
+
+const PostList = ({ style, mouseEnter, mouseLeave }) => {
+  const excerptList = postlist.map(post => {
+    return (
+      post.content
+        .split(' ')
+        .slice(0, 20)
+        .join(' ') + '...'
+    );
   });
-  if (postExists === false) {
-    return <Redirect to='/404' />;
-  }
   return (
-    <div className='post'>
-      <h2>{fetchedPost.title}</h2>
-      <small>
-        Published on {fetchedPost.date} by {fetchedPost.author}
-      </small>
-      <hr />
-      <Markdown source={fetchedPost.content} escapeHtml={false} />
-    </div>
+    <animated.div style={style} className='postlist'>
+      <h1 className='title'>All Posts</h1>
+      {postlist.length &&
+        postlist.map((post, i) => {
+          return (
+            <div key={i} className='post-card'>
+              <div className='img-container'>
+                {post.thumbnail && (
+                  <img
+                    className='thumbnail'
+                    width={80}
+                    src={post.thumbnail}
+                    alt=''
+                  />
+                )}
+                <h2 className='post-title'>
+                  <Link className='links' to={`/post/${post.id}`}>
+                    {post.title}
+                  </Link>
+                </h2>
+              </div>
+              <small>
+                Published on {post.date} by {post.author}
+              </small>
+              <hr />
+              <Markdown source={excerptList[i]} escapeHtml={false} />
+              <small>
+                <Link className='links' to={`/post/${post.slug}`}>
+                  Read more
+                </Link>
+              </small>
+            </div>
+          );
+        })}
+    </animated.div>
   );
 };
 
-export default Post;
+export default PostList;
