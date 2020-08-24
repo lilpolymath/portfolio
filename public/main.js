@@ -68,6 +68,7 @@ const getPosts = () => {
             return obj;
           }
         };
+        console.log(parseMetadata);
         const parseContent = ({ lines, metadataIndices }) => {
           if (metadataIndices.length > 0) {
             lines = lines.slice(metadataIndices[1] + 1, lines.length);

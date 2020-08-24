@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import Markdown from 'react-markdown';
 import { animated } from 'react-spring/renderprops';
 import postlist from '../posts.json';
-
-import './components.css';
+import styles from './Blog.module.css';
 
 const PostList = ({ style, mouseEnter, mouseLeave }) => {
   const excerptList = postlist.map(post => {
@@ -16,41 +15,40 @@ const PostList = ({ style, mouseEnter, mouseLeave }) => {
     );
   });
   return (
-    <animated.div style={style} className='postlist'>
-      <h1 className='title'>All Posts</h1>
-      {postlist.length &&
-        postlist.map((post, i) => {
-          return (
-            <div key={i} className='post-card'>
-              <div className='img-container'>
-                {post.thumbnail && (
-                  <img
-                    className='thumbnail'
-                    width={80}
-                    src={post.thumbnail}
-                    alt=''
-                  />
-                )}
-                <h2 className='post-title'>
-                  <Link className='links' to={`/post/${post.id}`}>
-                    {post.title}
-                  </Link>
-                </h2>
+    <animated.section style={style} className={styles.posts_wrapper}>
+      <div className={styles.posts}>
+        {postlist.length &&
+          postlist.map((post, i) => {
+            return (
+              <div key={i} className={styles.post}>
+                <div>
+                  <h2 className={styles.post_title}>{post.title}.</h2>
+                  <p>{post.date}</p>
+                </div>
+                <div className={styles.post_excerpt}>
+                  <Markdown source={excerptList[i]} escapeHtml={false} />
+                </div>
+                <div className={styles.post_details}>
+                  <div>
+                    <p className={styles.post_reading_time}>12 mins read.</p>
+                  </div>
+
+                  <div>
+                    <Link
+                      className={styles.post_link}
+                      to={`/post/${post.slug}`}
+                      onMouseEnter={mouseEnter}
+                      onMouseLeave={mouseLeave}
+                    >
+                      Start Reading
+                    </Link>
+                  </div>
+                </div>
               </div>
-              <small>
-                Published on {post.date} by {post.author}
-              </small>
-              <hr />
-              <Markdown source={excerptList[i]} escapeHtml={false} />
-              <small>
-                <Link className='links' to={`/post/${post.slug}`}>
-                  Read more
-                </Link>
-              </small>
-            </div>
-          );
-        })}
-    </animated.div>
+            );
+          })}
+      </div>
+    </animated.section>
   );
 };
 

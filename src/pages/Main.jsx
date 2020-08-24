@@ -42,7 +42,7 @@ const Main = ({ mouseEnter, mouseLeave }) => {
                     opacity: 0,
                     position: 'absolute',
                   }}
-                  config={{ ...config.molasses, duration: 500 }}
+                  config={{ ...config.molasses, duration: 750 }}
                 >
                   {(loc, state) => style => (
                     <Switch location={state === 'update' ? location : loc}>
