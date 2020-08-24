@@ -59,6 +59,10 @@
   font-size: 2rem;
 }
 
+.post h3 {
+  font-size: 1.875rem;
+}
+
 .post_title {
   font-size: 3rem !important;
   margin-bottom: 3rem;
@@ -82,7 +86,7 @@
 .post_tag {
   padding: 8px 16px;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
   background-color: #1a141a;
   margin: 0.5rem 0;
   width: max-content;

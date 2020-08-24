@@ -33,16 +33,17 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
     return <Redirect to='/404' />;
   }
   return (
-    <animated.div style={style} className={styles.post}>
-      <img
-        src={fetchedPost.thumbnail}
-        className={styles.featured_image}
-        alt='thumbnail'
-      />
-      <h2 className={styles.title}>{fetchedPost.title}</h2>
-      {/* <small>Published on {fetchedPost.date} by Ayobami Favour</small> */}
-      <div className={styles.post_content}>
-        <Markdown source={fetchedPost.content} escapeHtml={false} />
+    <animated.div style={style} className={styles.post_wrapper}>
+      <div className={styles.post}>
+        <img
+          src={fetchedPost.thumbnail}
+          className={styles.featured_image}
+          alt='thumbnail'
+        />
+        <h2 className={styles.title}>{fetchedPost.title}</h2>
+        <div className={styles.post_content}>
+          <Markdown source={fetchedPost.content} escapeHtml={false} />
+        </div>
       </div>
     </animated.div>
   );
