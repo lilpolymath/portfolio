@@ -64,6 +64,7 @@
 .post_content p {
   font-size: 1.875rem;
   margin: 1em 0;
+  line-height: 2.5rem;
 }
 
 .post_content a {
