@@ -4,6 +4,7 @@ import Markdown from 'react-markdown';
 import { animated } from 'react-spring/renderprops';
 import postlist from '../data/posts.json';
 import styles from './Blog.module.css';
+const readingTime = require('reading-time');
 
 const PostList = ({ style, mouseEnter, mouseLeave }) => {
   const excerptList = postlist.map(post => {
@@ -14,11 +15,13 @@ const PostList = ({ style, mouseEnter, mouseLeave }) => {
         .join(' ') + '...'
     );
   });
+
   return (
     <animated.section style={style} className={styles.posts_wrapper}>
       <div className={styles.posts}>
         {postlist.length &&
           postlist.map((post, i) => {
+            let time = Math.floor(readingTime(post.content).minutes);
             return (
               <div key={i} className={styles.post}>
                 <div>
@@ -35,7 +38,10 @@ const PostList = ({ style, mouseEnter, mouseLeave }) => {
                 </div>
                 <div className={styles.post_details}>
                   <div>
-                    <p className={styles.post_reading_time}>12 mins read.</p>
+                    <p className={styles.post_reading_time}>
+                      Reading Time ~{' '}
+                      {time === 1 ? `${time} min` : `${time} mins`}.
+                    </p>
                   </div>
 
                   <div>
