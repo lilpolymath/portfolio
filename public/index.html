@@ -13,24 +13,13 @@
     href="https://res.cloudinary.com/favourcodes/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1595900373/Gravity/Placeholder_7_my0krc.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <link rel="preconnect" href="https://res.cloudinary.com">
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <title>Ayobami Adedapo</title>
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
+
 </body>
 
 </html>
