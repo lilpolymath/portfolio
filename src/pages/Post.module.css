@@ -1,14 +1,10 @@
 .post_wrapper {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   width: 100%;
   position: absolute;
 }
 
 .post {
+  margin: auto;
   max-width: 650px;
 }
 
@@ -50,13 +46,13 @@
 }
 
 pre {
-  color: black;
-  border-radius: 8px;
-  margin: 2rem 0;
-  font-size: 1.875rem;
   padding: 2rem;
-  white-space: pre-wrap;
-  background: hsl(30, 80%, 90%);
+  font-size: 1.875rem;
+  background-color: #f1ecec;
+  margin: 2rem 0;
+  color: #000;
+  border-radius: 8px;
+  overflow: auto;
 }
 
 small {

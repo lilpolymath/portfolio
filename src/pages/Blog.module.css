@@ -1,18 +1,10 @@
 .posts_wrapper {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   width: 100%;
   position: absolute;
 }
 
 .posts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin: 6rem auto;
   max-width: 500px;
 }
 
@@ -21,7 +13,7 @@
   width: 100%;
   padding: 4.5rem;
   color: white;
-  margin: 3rem 0;
+  margin-bottom: 4rem;
   position: relative;
   background: linear-gradient(247.15deg, #ff5c00 0%, #ff9950 103.74%);
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
