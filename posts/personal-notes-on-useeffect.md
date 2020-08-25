@@ -60,8 +60,8 @@ function useEffect = (func, dependency) => {
 
   else if (dependency.length === 0 && !renderedOnMount) {
     let renderedOnMount = true;
-	func();
-	return;
+    func();
+    return;
   }
 
   else {

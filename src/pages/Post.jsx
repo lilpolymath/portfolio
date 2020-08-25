@@ -28,7 +28,6 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
       currentIndex = i;
       fetchedPost.title = post.title ? post.title : 'No title given';
       fetchedPost.date = post.date ? post.date : 'No date given';
-      fetchedPost.author = post.author ? post.author : 'No author given';
       fetchedPost.content = post.content ? post.content : 'No content given';
       fetchedPost.thumbnail = post.thumbnail
         ? post.thumbnail
