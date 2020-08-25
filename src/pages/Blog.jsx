@@ -43,8 +43,12 @@ const PostList = ({ style, mouseEnter, mouseLeave }) => {
                   <Markdown source={excerptList[i]} escapeHtml={false} />
                 </div>
                 <div className={styles.post_tags}>
-                  {post.tags.map(tag => {
-                    return <p className={styles.post_tag}>{tag}</p>;
+                  {post.tags.map((tag, i) => {
+                    return (
+                      <p key={i} className={styles.post_tag}>
+                        {tag}
+                      </p>
+                    );
                   })}
                 </div>
                 <div className={styles.post_details}>

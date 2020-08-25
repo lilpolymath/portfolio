@@ -84,6 +84,7 @@ When you are listening to a change in the state of a particular variable, we ref
 
 ```js
 import React, { useState, useEffect } from 'react';
+
 export default function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const resizeHandler = () => {
