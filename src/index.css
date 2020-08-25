@@ -124,11 +124,17 @@ a:active {
 pre {
   padding: 2rem !important;
   font-size: 1.875rem;
-  background-color: #f1ecec;
+  background-color: #f1ecec !important;
   margin: 2rem 0;
   color: #000;
   border-radius: 8px;
   overflow: auto;
+}
+
+pre span {
+  font-size: 1.5rem;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 small {
@@ -139,10 +145,4 @@ small {
 li {
   font-size: 1.875rem;
   margin: 2rem 0;
-}
-
-pre span {
-  font-size: 1.5rem;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
