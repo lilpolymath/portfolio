@@ -71,11 +71,29 @@
   font-size: 1.875rem;
 }
 
+.share_post {
+  margin: 4rem 0 3rem;
+}
+
+.share_post_text {
+  font-size: 2.125rem;
+  font-weight: bold;
+  color: var(--project_link);
+}
+
+.share_post svg {
+  width: 24px;
+  height: 24px;
+  margin: 0 0 -4px 8px;
+  stroke-width: 1.5px;
+  stroke: var(--project_link);
+}
+
 .next_post {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  margin: 3rem 0;
+  margin-bottom: 4rem;
 }
 
 .next_post_title {

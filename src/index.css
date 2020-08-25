@@ -124,15 +124,15 @@ a:active {
 pre {
   padding: 2rem !important;
   font-size: 1.875rem;
-  background-color: #f1ecec !important;
+  /* background-color: #232323 !important; */
   margin: 2rem 0;
-  color: #000;
+  /* color: white; */
   border-radius: 8px;
   overflow: auto;
 }
 
 pre span {
-  font-size: 1.5rem;
+  font-size: inherit;
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
