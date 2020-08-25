@@ -39,41 +39,41 @@ const Main = ({ mouseEnter, mouseLeave }) => {
               >
                 {(loc, state) => style => (
                   <Switch location={state === 'update' ? location : loc}>
-                    <Route
-                      exact
-                      path='/'
-                      render={props =>
-                        Intro({ ...props, style, mouseEnter, mouseLeave })
-                      }
-                    />
-                    <Route
-                      exact
-                      path='/projects'
-                      render={props =>
-                        Project({ ...props, style, mouseEnter, mouseLeave })
-                      }
-                    />
-                    <Route
-                      exact
-                      path='/contact'
-                      render={props =>
-                        Contact({ ...props, style, mouseEnter, mouseLeave })
-                      }
-                    />
-                    <Route
-                      exact
-                      path='/blog'
-                      render={props =>
-                        Blog({ ...props, style, mouseEnter, mouseLeave })
-                      }
-                    />
-                    <Route
-                      exact
-                      path='/post/:id'
-                      render={props =>
-                        Post({ ...props, style, mouseEnter, mouseLeave })
-                      }
-                    />
+                    <Route exact path='/'>
+                      <Intro
+                        style={style}
+                        mouseEnter={mouseEnter}
+                        mouseLeave={mouseLeave}
+                      />
+                    </Route>
+                    <Route exact path='/projects'>
+                      <Project
+                        style={style}
+                        mouseEnter={mouseEnter}
+                        mouseLeave={mouseLeave}
+                      />
+                    </Route>
+                    <Route exact path='/contact'>
+                      <Contact
+                        style={style}
+                        mouseEnter={mouseEnter}
+                        mouseLeave={mouseLeave}
+                      />
+                    </Route>
+                    <Route exact path='/blog'>
+                      <Blog
+                        style={style}
+                        mouseEnter={mouseEnter}
+                        mouseLeave={mouseLeave}
+                      />
+                    </Route>
+                    <Route exact path='/post/:id'>
+                      <Post
+                        style={style}
+                        mouseEnter={mouseEnter}
+                        mouseLeave={mouseLeave}
+                      />
+                    </Route>
                     <Route render={() => <div style={style}>Not Found</div>} />
                   </Switch>
                 )}

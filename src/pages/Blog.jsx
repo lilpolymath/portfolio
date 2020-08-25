@@ -30,6 +30,11 @@ const PostList = ({ style, mouseEnter, mouseLeave }) => {
             let time = Math.floor(readingTime(post.content).minutes);
             return (
               <div key={i} className={styles.post}>
+                <Link
+                  tabIndex='-1'
+                  className={styles.card_link}
+                  to={`/post/${post.slug}`}
+                />
                 <div>
                   <h2 className={styles.post_title}>{post.title}.</h2>
                   <p>{post.date}</p>

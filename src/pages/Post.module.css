@@ -71,26 +71,38 @@
   font-size: 1.875rem;
 }
 
-pre {
-  padding: 2rem;
-  font-size: 1.875rem;
-  background-color: #f1ecec;
-  margin: 2rem 0;
-  color: #000;
-  border-radius: 8px;
-  overflow: auto;
-}
-
-small {
-  font-size: 1.5rem;
+.next_post {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
   margin: 3rem 0;
 }
 
-li {
-  font-size: 1.875rem;
-  margin: 2rem 0;
+.next_post_title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5em 0;
+  color: var(--project_link);
 }
 
-code {
-  font-size: 1.5rem;
+.next {
+  font-size: 1.75rem;
+  color: var(--project_link);
+  font-weight: bold;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.next svg {
+  width: 46px;
+  height: 50px;
+  padding: 6px 0;
+  margin-left: 1.5rem;
+  margin-top: 0;
+}
+
+.next path {
+  fill: var(--project_link);
 }

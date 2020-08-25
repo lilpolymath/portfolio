@@ -42,9 +42,19 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  font-size: 1.5rem;
 }
 
 main {
@@ -111,11 +121,22 @@ a:active {
   mix-blend-mode: difference;
 }
 
-body::-webkit-scrollbar {
-  display: none;
+pre {
+  padding: 2rem;
+  font-size: 1.875rem;
+  background-color: #f1ecec;
+  margin: 2rem 0;
+  color: #000;
+  border-radius: 8px;
+  overflow: auto;
 }
 
-body {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+small {
+  font-size: 1.5rem;
+  margin: 3rem 0;
+}
+
+li {
+  font-size: 1.875rem;
+  margin: 2rem 0;
 }
