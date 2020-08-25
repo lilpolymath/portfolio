@@ -40,6 +40,10 @@ img {
   color: var(--content);
 }
 
+.title_wrapper{
+  width: max-content;
+}
+
 .title {
   font-size: 4rem;
   font-weight: bold;

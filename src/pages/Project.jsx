@@ -17,11 +17,11 @@ const Project = ({ style, mouseEnter, mouseLeave }) => {
         <Link to='/'>
           <span className={styles.inactive}>Home</span>
         </Link>
-        <span className={styles.active}> / Selected Projects</span>
+        <span className={styles.active}> / Select Projects</span>
       </div>
       <div className={styles.section_heading}>
         <div className={styles.main_container}>
-          <h2 className={styles.main}>Selected Projects</h2>
+          <h2 className={styles.main}>Select Projects</h2>
         </div>
       </div>
       <div className={styles.projects}>

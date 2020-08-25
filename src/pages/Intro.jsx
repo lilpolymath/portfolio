@@ -22,9 +22,11 @@ const Intro = ({ style, mouseEnter, mouseLeave }) => {
           html, js, css, react, graphql, firebase.
         </p>
         <p className={styles.specialization}>Mobile and Web</p>
-        <h2 data-text='Frontend Developer' className={styles.title}>
-          Frontend Developer
-        </h2>
+        <div className={styles.title_wrapper}>
+          <h2 data-text='Frontend Developer' className={styles.title}>
+            Frontend Developer
+          </h2>
+        </div>
         <p className={styles.desc}>
           Hello! I'm Ayobami Favour Adedapo, a Frontend Developer for Web and
           Mobile, and UI/UX Enthusiast. I love creating beautiful and intuitive
