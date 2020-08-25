@@ -1,15 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Redirect, Link, useParams } from 'react-router-dom';
 import { animated } from 'react-spring/renderprops';
 import Markdown from 'react-markdown';
+import hljs from 'highlight.js/lib/core';
+import javascript from 'highlight.js/lib/languages/javascript';
+import 'highlight.js/styles/github.css';
 
 import postlist from '../data/posts.json';
 import styles from './Post.module.css';
 import { ReactComponent as Chevron } from '../assets/chevron_right.svg';
 
 const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
+  const codeRef = useRef();
   const { id: slug } = useParams();
   const [current, setCurrent] = useState(0);
+
+  hljs.registerLanguage('javascript', javascript);
 
   let currentIndex;
   const fetchedPost = {};
@@ -17,6 +23,13 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
   useEffect(() => {
     setCurrent(3);
   }, [current, fetchedPost]);
+
+  useEffect(() => {
+    const nodes = codeRef.current.querySelectorAll('pre');
+    nodes.forEach(node => {
+      hljs.highlightBlock(node);
+    });
+  }, [codeRef]);
 
   if (!slug) {
     return <Redirect to='/404' />;
@@ -39,6 +52,7 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
   if (postExists === false) {
     return <Redirect to='/404' />;
   }
+
   return (
     <animated.div style={style} className={styles.post_wrapper}>
       <div className={styles.post}>
@@ -56,7 +70,7 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
           className={styles.featured_image}
           alt='thumbnail'
         />
-        <div className={styles.post_content}>
+        <div ref={codeRef} className={styles.post_content}>
           <Markdown source={fetchedPost.content} escapeHtml={false} />
         </div>
         {currentIndex !== postlist.length - 1 && (
