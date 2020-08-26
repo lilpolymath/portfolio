@@ -1,6 +1,6 @@
 .intro {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: column;
   margin-top: 5rem;
   position: absolute;
