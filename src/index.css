@@ -123,10 +123,8 @@ a:active {
 
 pre {
   padding: 2rem !important;
-  font-size: 1.875rem;
-  /* background-color: #232323 !important; */
+  /* font-size: 1.875rem; */
   margin: 2rem 0;
-  /* color: white; */
   border-radius: 8px;
   overflow: auto;
 }

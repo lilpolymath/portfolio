@@ -29,15 +29,14 @@ const Intro = ({ style, mouseEnter, mouseLeave }) => {
         </div>
         <div className={styles.contact_content}>
           <header>
-            <h2 className={styles.heading}>Contact Information</h2>
+            <h2 className={styles.heading}>Have a question?</h2>
           </header>
           <p className={styles.contact_bait}>
-            Socrates set the agenda for the tradition of critical thinking,
-            namely, to reflectively question common beliefs and explanations,
-            carefully distinguishing those beliefs that are reasonable and
-            logical from those which — however appealing they may be to our
-            native egocentrism.
+            I'm currently available for work/collaborations, but will treat
+            messages based on how interesting they sound. Send me a mail and
+            I'll respond in 24 hours!
           </p>
+
           <div className={styles.contact_options}>
             <div className={styles.contact_option}>
               <p>Email</p>
