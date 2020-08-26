@@ -32,7 +32,7 @@ const Intro = ({ style, mouseEnter, mouseLeave }) => {
           Mobile, and UI/UX Enthusiast. I love creating beautiful and intuitive
           interfaces for users. I have an eye for design with a User-Driven
           Approach to Development. In my spare time, I work on ThreeJs, WebGL
-          and various CSS Animations. I am currently learning writing test with
+          and various CSS Animations. I am currently learning how to write better tests with
           Cypress and Mocha.
         </p>
         <Social mouseEnter={mouseEnter} mouseLeave={mouseLeave} />

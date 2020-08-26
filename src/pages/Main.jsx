@@ -2,6 +2,8 @@ import React from 'react';
 import { Transition } from 'react-spring/renderprops';
 import { config } from 'react-spring';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+import ReactGA from 'react-ga';
 
 import Intro from './Intro';
 import Project from './Project';
@@ -9,10 +11,20 @@ import Contact from './Contact';
 import Post from './Post';
 import Blog from './Blog';
 
+const trackingId = process.env.CREACT_REAC;
+ReactGA.initialize(trackingId);
+
+const history = createBrowserHistory();
+
+history.listen(location => {
+  ReactGA.set({ page: location.pathname });
+  ReactGA.pageview(location.pathname);
+});
+
 const Main = ({ mouseEnter, mouseLeave }) => {
   return (
     <main>
-      <Router>
+      <Router history={history}>
         <Route
           render={({ location, ...rest }) => {
             return (
