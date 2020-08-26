@@ -1,6 +1,6 @@
 .intro {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   flex-direction: column;
   margin-top: 5rem;
   position: absolute;
@@ -40,7 +40,7 @@ img {
   color: var(--content);
 }
 
-.title_wrapper{
+.title_wrapper {
   width: max-content;
 }
 
@@ -129,6 +129,10 @@ img {
   .intro {
     flex-direction: row;
     margin-top: 13rem;
+  }
+
+  .about {
+    margin-top: 0;
   }
 
   .image {
