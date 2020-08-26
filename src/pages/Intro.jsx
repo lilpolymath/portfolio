@@ -19,7 +19,7 @@ const Intro = ({ style, mouseEnter, mouseLeave }) => {
       </div>
       <div className={styles.about}>
         <p className={styles.skills}>
-          html, js, css, react, graphql, firebase.
+          html, js, css, react, react native, graphql, firebase.
         </p>
         <p className={styles.specialization}>Mobile and Web</p>
         <div className={styles.title_wrapper}>
@@ -32,7 +32,8 @@ const Intro = ({ style, mouseEnter, mouseLeave }) => {
           Mobile, and UI/UX Enthusiast. I love creating beautiful and intuitive
           interfaces for users. I have an eye for design with a User-Driven
           Approach to Development. In my spare time, I work on ThreeJs, WebGL
-          and various CSS Animations.
+          and various CSS Animations. I am currently learning writing test with
+          Cypress and Mocha.
         </p>
         <Social mouseEnter={mouseEnter} mouseLeave={mouseLeave} />
         <Link
