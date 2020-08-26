@@ -38,7 +38,7 @@ const Menubar = ({ open, toggleMenubar, mouseEnter, mouseLeave }) => {
             onMouseEnter={mouseEnter}
             onMouseLeave={mouseLeave}
           >
-            Projects
+            Work & Projects
           </a>
         </li>
         <li>

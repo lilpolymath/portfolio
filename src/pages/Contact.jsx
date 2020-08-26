@@ -29,7 +29,7 @@ const Intro = ({ style, mouseEnter, mouseLeave }) => {
         </div>
         <div className={styles.contact_content}>
           <header>
-            <h3 className={styles.heading}>Contact Information</h3>
+            <h2 className={styles.heading}>Contact Information</h2>
           </header>
           <p className={styles.contact_bait}>
             Socrates set the agenda for the tradition of critical thinking,
