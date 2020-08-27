@@ -6,6 +6,7 @@ import Main from './pages/Main';
 import Navbar from './components/Navbar';
 import Menubar from './components/Menubar';
 import useEventListener from './hooks/use-event-listener';
+import 'highlight.js/styles/night-owl.css';
 
 const App = () => {
   const [openMenu, setOpenMenu] = useState(false);

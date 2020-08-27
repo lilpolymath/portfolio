@@ -5,7 +5,6 @@ import Markdown from 'react-markdown';
 import { Twitter } from 'react-feather';
 import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
-import 'highlight.js/styles/night-owl.css';
 
 import postlist from '../data/posts.json';
 import styles from './Post.module.css';
