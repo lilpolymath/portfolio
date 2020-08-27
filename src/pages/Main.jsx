@@ -2,17 +2,13 @@ import React from 'react';
 import { Transition } from 'react-spring/renderprops';
 import { config } from 'react-spring';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import ReactGA from 'react-ga';
 
 import Intro from './Intro';
 import Project from './Project';
 import Contact from './Contact';
 import Post from './Post';
 import Blog from './Blog';
-
-const trackingId = 'UA-176519733-1';
-ReactGA.initialize(trackingId);
-ReactGA.pageview(window.location.pathname + window.location.search);
+import GoogleAnalytics from '../utils/analytics';
 
 const Main = ({ mouseEnter, mouseLeave }) => {
   return (
@@ -86,6 +82,7 @@ const Main = ({ mouseEnter, mouseLeave }) => {
             );
           }}
         />
+        <GoogleAnalytics />
       </Router>
     </main>
   );
