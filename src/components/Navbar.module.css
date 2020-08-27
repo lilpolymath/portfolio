@@ -25,6 +25,7 @@
 
 .menubar {
   padding: 12px 3rem 0;
+  overflow: auto;
 }
 
 .menu_button {
