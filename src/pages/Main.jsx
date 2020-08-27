@@ -10,7 +10,7 @@ import Contact from './Contact';
 import Post from './Post';
 import Blog from './Blog';
 
-const trackingId = process.env.CREACT_REACT_APP_TRACKING_ID;
+const trackingId = process.env.REACT_APP_TRACKING_ID;
 ReactGA.initialize(trackingId);
 ReactGA.pageview(window.location.pathname + window.location.search);
 
