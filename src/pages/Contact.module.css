@@ -77,6 +77,10 @@ img {
   margin-bottom: 2rem;
 }
 
+.contact_option:first-child {
+  margin-right: 2rem;
+}
+
 .contact_option > a {
   font-family: 'Inter';
   font-size: 1.875rem;

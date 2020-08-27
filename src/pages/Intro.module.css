@@ -103,6 +103,7 @@ img {
 }
 
 .next {
+  font-family: 'Inter';
   font-size: 1.75rem;
   color: var(--project_link);
   font-weight: bold;
