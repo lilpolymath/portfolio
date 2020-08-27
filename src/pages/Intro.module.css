@@ -40,58 +40,9 @@ img {
   color: var(--content);
 }
 
-.title_wrapper {
-  width: max-content;
-}
-
 .title {
   font-size: 4rem;
   font-weight: bold;
-  position: relative;
-}
-
-.title::before,
-.title::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  animation: noise-anim 2.5s infinite linear alternate-reverse;
-}
-
-.title::before {
-  clip: rect(44px, 470px, 50px, 0);
-  left: 2px;
-  text-shadow: -1px 0 red;
-  background: yellow;
-}
-.title::after {
-  left: -2px;
-  text-shadow: -1px 0 blue;
-  background: yellow;
-}
-
-@keyframes noise-anim {
-  0% {
-    clip-path: inset(40% 0 61% 0);
-  }
-  20% {
-    clip-path: inset(92% 0 1% 0);
-  }
-  40% {
-    clip-path: inset(43% 0 1% 0);
-  }
-  60% {
-    clip-path: inset(25% 0 58% 0);
-  }
-  80% {
-    clip-path: inset(54% 0 7% 0);
-  }
-  100% {
-    clip-path: inset(58% 0 43% 0);
-  }
 }
 
 .desc {

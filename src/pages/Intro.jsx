@@ -22,18 +22,14 @@ const Intro = ({ style, mouseEnter, mouseLeave }) => {
           html, js, css, react, react native, graphql, firebase.
         </p>
         <p className={styles.specialization}>Mobile and Web</p>
-        <div className={styles.title_wrapper}>
-          <h2 data-text='Frontend Developer' className={styles.title}>
-            Frontend Developer
-          </h2>
-        </div>
+        <h2 className={styles.title}>Frontend Developer</h2>
         <p className={styles.desc}>
           Hello! I'm Ayobami Favour Adedapo, a Frontend Developer for Web and
           Mobile, and UI/UX Enthusiast. I love creating beautiful and intuitive
           interfaces for users. I have an eye for design with a User-Driven
           Approach to Development. In my spare time, I work on ThreeJs, WebGL
-          and various CSS Animations. I am currently learning how to write better tests with
-          Cypress and Mocha.
+          and various CSS Animations. I am currently learning how to write
+          better tests with Cypress and Mocha.
         </p>
         <Social mouseEnter={mouseEnter} mouseLeave={mouseLeave} />
         <Link
