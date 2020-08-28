@@ -39,21 +39,21 @@
     "key": 5,
     "name": "Error Pages",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1597870529/Rectangle_9_lvipzs.png",
-    "description": "A collection of implemented error page designs.",
+    "description": "A collection of implemented error page designs. Contributor.",
     "link": "https://errorpages.netlify.app/"
   },
   {
     "key": 6,
     "name": "Emergency Police Contact",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126878/police-ng.jpg",
-    "description": "VCF files, containing the emergency contact for the Nigerian Police in the 36 states, and FCT.",
+    "description": "VCF files, containing the emergency contact for the Nigerian Police in the 36 states, and FCT. Contributor.",
     "link": "https://mykeels.github.io/police-ng-emergency/"
   },
   {
     "key": 7,
     "name": "farm-invest-cli",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1597870531/Rectangle_10_polp86.png",
-    "description": "CLI tool to detect updates to the products on eFarms, FarmCrowdy, ThriveAgric and AgroPartnerships.",
+    "description": "CLI tool to detect updates to the products on eFarms, FarmCrowdy, ThriveAgric and AgroPartnerships. Contributor.",
     "link": "https://github.com/mykeels/farm-invest-cli"
   },
   {
