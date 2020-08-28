@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { animated } from 'react-spring/renderprops';
 
@@ -7,6 +7,10 @@ import { ReactComponent as Chevron } from '../assets/chevron_right.svg';
 import Social from './Social';
 
 const Intro = ({ style, mouseEnter, mouseLeave }) => {
+  useEffect(() => {
+    document.title = 'Adedapo Ayobami';
+  }, []);
+
   return (
     <animated.section style={style} className={styles.intro}>
       <div className={styles.image}>
