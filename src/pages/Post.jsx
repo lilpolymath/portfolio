@@ -25,7 +25,8 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
       left: 0,
       behavior: 'smooth',
     });
-  }, [slug]);
+    document.title = fetchedPost.title;
+  }, [fetchedPost.title, slug]);
 
   useEffect(() => {
     const nodes = codeRef.current.querySelectorAll('pre');

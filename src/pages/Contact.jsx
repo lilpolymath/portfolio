@@ -4,8 +4,13 @@ import { animated } from 'react-spring/renderprops';
 
 import styles from './Contact.module.css';
 import Social from './Social';
+import { useEffect } from 'react';
 
 const Intro = ({ style, mouseEnter, mouseLeave }) => {
+  useEffect(() => {
+    document.title = 'Contact Me';
+  }, []);
+
   return (
     <animated.section style={style} className={styles.contact}>
       <div

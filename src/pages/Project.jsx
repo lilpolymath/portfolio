@@ -5,8 +5,13 @@ import { animated } from 'react-spring/renderprops';
 import styles from './Project.module.css';
 import projects from '../data/projects.json';
 import { ReactComponent as Chevron } from '../assets/chevron_right.svg';
+import { useEffect } from 'react';
 
 const Project = ({ style, mouseEnter, mouseLeave }) => {
+  useEffect(() => {
+    document.title = 'Projects';
+  }, []);
+
   return (
     <animated.section style={style} className={styles.selected_works}>
       <div

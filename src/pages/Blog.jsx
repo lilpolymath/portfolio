@@ -4,6 +4,7 @@ import Markdown from 'react-markdown';
 import { animated } from 'react-spring/renderprops';
 import postlist from '../data/posts.json';
 import styles from './Blog.module.css';
+import { useEffect } from 'react';
 const readingTime = require('reading-time');
 
 const PostList = ({ style, mouseEnter, mouseLeave }) => {
@@ -15,6 +16,10 @@ const PostList = ({ style, mouseEnter, mouseLeave }) => {
         .join(' ') + '...'
     );
   });
+
+  useEffect(() => {
+    document.title = 'Blog';
+  }, []);
 
   return (
     <animated.section style={style} className={styles.posts_wrapper}>
