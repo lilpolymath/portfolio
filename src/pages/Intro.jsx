@@ -8,7 +8,7 @@ import Social from './Social';
 
 const Intro = ({ style, mouseEnter, mouseLeave }) => {
   useEffect(() => {
-    document.title = 'Adedapo Ayobami';
+    document.title = 'Ayobami Adedapo';
   }, []);
 
   return (
