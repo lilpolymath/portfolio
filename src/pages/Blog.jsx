@@ -68,8 +68,6 @@ const PostList = ({ style, mouseEnter, mouseLeave }) => {
                     <Link
                       className={styles.post_link}
                       to={`/post/${post.slug}`}
-                      onMouseEnter={mouseEnter}
-                      onMouseLeave={mouseLeave}
                     >
                       Start Reading &#8594;
                     </Link>

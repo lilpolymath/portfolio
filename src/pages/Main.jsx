@@ -82,7 +82,7 @@ const Main = ({ mouseEnter, mouseLeave }) => {
             );
           }}
         />
-        <GoogleAnalytics />
+        {process.env.NODE_ENV === 'development' ? null : <GoogleAnalytics />}
       </Router>
     </main>
   );
