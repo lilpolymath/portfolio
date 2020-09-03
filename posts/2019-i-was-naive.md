@@ -6,8 +6,6 @@ thumbnail: /image/twitter_post_-_1_egk6ok.png
 tags: life
 slug: 2019-i-was-naive
 ---
-- Hmmm - Geralt of Rivia
-- Plays "Toss A Coin to Your Witcher" in the background.
 
 ### Prelude
 
