@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "2019: I was Naive"
+title: I was Naive
 date: 2020-09-03T22:14:29.600Z
 thumbnail: /image/twitter_post_-_1_egk6ok.png
 tags: life
