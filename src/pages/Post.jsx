@@ -49,6 +49,7 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
       fetchedPost.thumbnail = post.thumbnail
         ? post.thumbnail
         : 'No thumbnail set';
+      fetchedPost.credits = post.credit ? post.credit : '';
       postExists = true;
     }
   });
@@ -71,11 +72,16 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
           </Link>
           <span className={styles.active}> / {fetchedPost.title}</span>
         </div>
-        <img
-          src={fetchedPost.thumbnail}
-          className={styles.featured_image}
-          alt='thumbnail'
-        />
+        <figure>
+          <img
+            src={fetchedPost.thumbnail}
+            className={styles.featured_image}
+            alt='thumbnail'
+          />
+        </figure>
+        <figcaption className={styles.featured_image_credit}>
+          {fetchedPost.credit}
+        </figcaption>
         <div ref={codeRef} className={styles.post_content}>
           <Markdown source={fetchedPost.content} escapeHtml={false} />
         </div>

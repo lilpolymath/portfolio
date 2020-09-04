@@ -32,6 +32,19 @@
   object-fit: contain;
 }
 
+.featured_image_credit {
+  font-size: 1.5rem;
+  margin: 0.5em 0 2.5em;
+  text-align: center;
+}
+
+figcaption a {
+  font-size: 1.5rem;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .post_content {
   margin: 2rem 0;
 }
