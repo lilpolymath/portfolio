@@ -1,8 +1,9 @@
 ---
 layout: blog
 title: I was Naive
-date: 2020-09-03T22:14:29.600Z
+date: 2020-01-02T22:14:29.600Z
 thumbnail: /image/twitter_post_-_1_egk6ok.png
+credit: " "
 tags: life
 slug: 2019-i-was-naive
 ---
