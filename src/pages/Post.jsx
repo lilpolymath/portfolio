@@ -5,6 +5,7 @@ import Markdown from 'react-markdown';
 import { Twitter } from 'react-feather';
 import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
+import css from 'highlight.js/lib/languages/css';
 
 import postlist from '../data/posts.json';
 import styles from './Post.module.css';
@@ -15,6 +16,7 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
   const { id: slug } = useParams();
 
   hljs.registerLanguage('javascript', javascript);
+  hljs.registerLanguage('css', css);
 
   let currentIndex;
   const fetchedPost = {};
