@@ -46,9 +46,7 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
       fetchedPost.title = post.title ? post.title : 'No title given';
       fetchedPost.date = post.date ? post.date : 'No date given';
       fetchedPost.content = post.content ? post.content : 'No content given';
-      fetchedPost.thumbnail = post.thumbnail
-        ? post.thumbnail
-        : 'No thumbnail set';
+      fetchedPost.thumbnail = post.thumbnail ? post.thumbnail : '';
       fetchedPost.credits = post.credit ? post.credit : '';
       postExists = true;
     }
@@ -72,13 +70,15 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
           </Link>
           <span className={styles.active}> / {fetchedPost.title}</span>
         </div>
-        <figure>
-          <img
-            src={fetchedPost.thumbnail}
-            className={styles.featured_image}
-            alt='thumbnail'
-          />
-        </figure>
+        {fetchedPost.thumbnail && (
+          <figure>
+            <img
+              src={fetchedPost.thumbnail}
+              className={styles.featured_image}
+              alt='thumbnail'
+            />
+          </figure>
+        )}
         <figcaption className={styles.featured_image_credit}>
           {fetchedPost.credit}
         </figcaption>
