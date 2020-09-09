@@ -7,14 +7,16 @@ credit: https://www.svgrepo.com/svg/70994/moon
 tags: frontend, static websites
 slug: how-to-add-dark-mode-to-your-static-websites
 ---
+
 ### Introduction
+
 Dark mode is a trend that is fast becoming common among websites. It involves using low light to present content while still meeting the minimum colour contrast ratios for accessibility and usability. It helps to reduce eye strain, suitable for night time use and also saves battery power.
 
 In this article, you will learn how to switch between a dark and light theme for your website, persist the selection and how to switch when the visitor has a preferred colour scheme.
 
 ### Data-theme.
 
-The data-theme attribute is part of the custom data-* attributes that you can use with HTML5 elements to store extra information. It is quite useful when you are working on hacks that don't need to be visible to the user. Here is an [MDN resource](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) detailing more about them. 
+The data-theme attribute is part of the custom data-\* attributes that you can use with HTML5 elements to store extra information. It is quite useful when you are working on hacks that don't need to be visible to the user. Here is an [MDN resource](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) detailing more about them.
 
 The `data-theme` attribute would be used to house the value of our theme.
 
@@ -48,7 +50,7 @@ CSS allows you to store variables adding `--` suffix to the variable name for ex
 * {
   --primary: #eee; /* To set a variable. */
   --secondary: #333;
-	--display: none;
+  --display: none;
 }
 
 body {
@@ -56,8 +58,8 @@ body {
   color: var(--secondary);
 }
 
-.hero_text{
-	display: var(--display);
+.hero_text {
+  display: var(--display);
 }
 ```
 
@@ -71,39 +73,57 @@ document.documentElement.style.setProperty('--primary', '#333');
 
 The HTML file will have some default text as our hero and SVGs that you use to tell the visitor what theme they are currently using.
 
-```html
+```xml
+<h2 class="hero_main">
+  Just vibes.
+</h2>
 
-	<h2 class="hero_main">
-		Just vibes.
-	</h2>
-	
-	<p class="hero_sub">
-		Something something next billion creators.
-	</p>
-	
-	<label class="switch">
-	  <input type="checkbox" id="theme_toggle" />
-	  <section class="theme_switch">
-	
-		  <!-- moon svg -->
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon">
-			  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-		  </svg>
-		
-			<!-- sun svg -->
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun">
-				<circle cx="12" cy="12" r="5"></circle>
-				<line x1="12" y1="1" x2="12" y2="3"></line>
-				<line x1="12" y1="21" x2="12" y2="23"></line>
-				<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-				<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-				<line x1="1" y1="12" x2="3" y2="12"></line>
-				<line x1="21" y1="12" x2="23" y2="12"></line>
-				<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-				<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-			</svg>
-		</section>
-	</label>
+<p class="hero_sub">
+  Something something next billion creators.
+</p>
+
+<label class="switch">
+  <input type="checkbox" id="theme_toggle" />
+  <section class="theme_switch">
+    <!-- moon svg -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="moon"
+    >
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+
+    <!-- sun svg -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="sun"
+    >
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </section>
+</label>
 ```
 
 You can also see that SVGS are wrapped inside a checkbox that way you can track the visitor's choice with the state of the checkbox and map that to each theme.
@@ -197,7 +217,7 @@ body {
 }
 
 #theme_toggle {
-  display: none
+  display: none;
 }
 ```
 
@@ -216,79 +236,74 @@ So far, the webpage can't switch between themes.
 
 First, you attach an event listener to the DOM to trigger just before the content is rendered so that you don't have a flash of the default theme then you need to attach an event listener to the checkbox on change so we can track the state of the checkbox.
 
-**Note:** We can still interact with the checkbox because `display: none` only removes an element from the document flow, it doesn't prevent it from existing and content inside the ```<label>``` tag can modify the checkbox
-
- 
+**Note:** We can still interact with the checkbox because `display: none` only removes an element from the document flow, it doesn't prevent it from existing and content inside the `<label>` tag can modify the checkbox
 
 ```js
 <script>
-	window.addEventListener('DOMContentLoaded', () => {
-		const darkModeToggle = document.getElementById('theme_toggle');
+window.addEventListener('DOMContentLoaded', () => {
+  const darkModeToggle = document.getElementById('theme_toggle');
 
-		const switchTheme = (e) => {
-			if (e.target.checked) {
-				document.documentElement.setAttribute('data-theme', 'dark');
-			}
-			else {
-				document.documentElement.setAttribute('data-theme', 'light');
-			}
-		}
-		
-		darkModeToggle.addEventListener('change', switchTheme, false);
-	});
+  const switchTheme = (e) => {
+    if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+	
+    else {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  }
+
+  darkModeToggle.addEventListener('change', switchTheme, false);
+});
 </script>
 ```
 
 Now, you control the active theme using the SVG and all that is left now is to be able to store the value of our data attribute and also detect the visitor's prefered colour scheme on the first load.
 
 ```js
-	window.addEventListener('DOMContentLoaded', () => {
-		...
+window.addEventListener('DOMContentLoaded', () => {
+  ...
 
-		const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
-		if (currentTheme) {
-			document.documentElement.setAttribute('data-theme', currentTheme);
+  if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
 
-			if (currentTheme === 'dark') {
-				darkModeToggle.checked = true;
-			}
-		}
+    if (currentTheme === 'dark') {
+      darkModeToggle.checked = true;
+    }
+  }
 
-		const switchTheme = (e) => {
-		....
+  const switchTheme = (e) => {
+  ....
 ```
 
-The currentTheme variable checks the localStorage to see there is a saved theme and returns null if there isn't. 
+The currentTheme variable checks the localStorage to see there is a saved theme and returns null if there isn't.
 
 The next step is to save the value of the theme when the state of the checkbox changes.
 
 ```js
-	...
-		const switchTheme = (e) => {
-			if (e.target.checked) {
-				document.documentElement.setAttribute('data-theme', 'dark');
-				localStorage.setItem('theme', 'dark');
-			}
-			else {
-				document.documentElement.setAttribute('data-theme', 'light');
-				localStorage.setItem('theme', 'light');
-			}
-		}
-	...
+  ...
+
+  const switchTheme = (e) => {
+    if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    }
+   
+    else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+    }
+  }
+  ...
 ```
 
-To animate the transition between the themes, you can add this;
+To animate the transition between the themes, you can add this to the body tag;
 
 ```css
 body {
-<<<<<<< HEAD
-	...
-	transition: background cubic-bezier(0.49, 0.11, 0.6, 1) 1.5s;
-=======
-  ...
   transition: background cubic-bezier(0.49, 0.11, 0.6, 1) 1.5s;
->>>>>>> f3bde6cb8019ee59b81d96d7545ed7cd26d65597
 }
 ```
 

@@ -6,6 +6,7 @@ import { Twitter } from 'react-feather';
 import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
 import css from 'highlight.js/lib/languages/css';
+import xml from 'highlight.js/lib/languages/xml';
 
 import postlist from '../data/posts.json';
 import styles from './Post.module.css';
@@ -17,6 +18,7 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
 
   hljs.registerLanguage('javascript', javascript);
   hljs.registerLanguage('css', css);
+  hljs.registerLanguage('xml', xml);
 
   let currentIndex;
   const fetchedPost = {};
