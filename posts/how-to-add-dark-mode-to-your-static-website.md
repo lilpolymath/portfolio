@@ -282,8 +282,8 @@ To animate the transition between the themes, you can add this;
 
 ```css
 body {
-	...
-	transition: background cubic-bezier(0.49, 0.11, 0.6, 1) 1.5s;
+  ...
+  transition: background cubic-bezier(0.49, 0.11, 0.6, 1) 1.5s;
 }
 ```
 
