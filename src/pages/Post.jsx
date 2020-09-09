@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Redirect, Link, useParams } from 'react-router-dom';
 import { animated } from 'react-spring/renderprops';
 import Markdown from 'react-markdown';
@@ -11,6 +11,8 @@ import styles from './Post.module.css';
 import { ReactComponent as Chevron } from '../assets/chevron_right.svg';
 
 const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
+  const [likes, setLikes] = useState(null);
+  const [userLike, setUserLike] = useState(0);
   const codeRef = useRef();
   const { id: slug } = useParams();
 
@@ -26,6 +28,27 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
       behavior: 'smooth',
     });
     document.title = fetchedPost.title;
+
+    const fetchLikes = async () => {
+      let response = await fetch(
+        'https://cors-anywhere.herokuapp.com/https://favourcodes-backend.herokuapp.com/post/sample-post-one',
+        {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json;charset=utf-8',
+          },
+        }
+      )
+        .then(response => response.json())
+        .then(res => {
+          setLikes(res.likes);
+        })
+        .catch(err => console.log('error', err));
+
+      return response;
+    };
+
+    fetchLikes();
   }, [fetchedPost.title, slug]);
 
   useEffect(() => {
@@ -56,6 +79,27 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
     return <Redirect to='/404' />;
   }
 
+  const likePost = async () => {
+    const data = { slug: 'sample-post-one' };
+    console.log('string', JSON.stringify(slug));
+    await fetch(
+      'https://cors-anywhere.herokuapp.com/https://favourcodes-backend.herokuapp.com/user/1/like',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json;charset=utf-8',
+        },
+        body: JSON.stringify(data),
+      }
+    )
+      .then(response => response.json())
+      .then(res => {
+        console.log('like response', res);
+        setUserLike(prevState => prevState + 1);
+      })
+      .catch(err => console.log('error', err));
+  };
+
   const share = `https://twitter.com/share?url=${window.location.href}&text=I just read ${fetchedPost.title} and I think you should too.`;
 
   return (
@@ -84,6 +128,14 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
         </figcaption>
         <div ref={codeRef} className={styles.post_content}>
           <Markdown source={fetchedPost.content} escapeHtml={false} />
+        </div>
+        <div className={styles.like}>
+          <p className={styles.like_counter}>
+            Number of likes: {likes + userLike}
+          </p>
+          <button onClick={() => likePost()} className={styles.like_button}>
+            Like
+          </button>
         </div>
         <div className={styles.share_post}>
           <a
