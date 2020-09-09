@@ -159,3 +159,14 @@ figcaption a {
 .next path {
   fill: var(--project_link);
 }
+
+.like_counter {
+  font-size: 2rem;
+  margin: 1em 0;
+}
+
+.like_button{
+  width: auto;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+}
