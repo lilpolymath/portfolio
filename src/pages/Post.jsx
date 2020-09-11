@@ -11,12 +11,14 @@ import styles from './Post.module.css';
 import { ReactComponent as Chevron } from '../assets/chevron_right.svg';
 
 const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
-  const [likes, setLikes] = useState(null);
-  const [userLike, setUserLike] = useState(0);
   const codeRef = useRef();
   const { id: slug } = useParams();
 
   hljs.registerLanguage('javascript', javascript);
+
+  const [likes, setLikes] = useState(null);
+  const [userLike, setUserLike] = useState(0);
+  const [click, setClick] = useState(false);
 
   let currentIndex;
   const fetchedPost = {};
@@ -81,9 +83,16 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
     return <Redirect to='/404' />;
   }
 
+  const like = () => {
+    if (!click) {
+      likePost();
+      setClick(true);
+    }
+  };
+
   const likePost = async () => {
     const data = { slug: 'sample-post-one' };
-    console.log('string', JSON.stringify(slug));
+
     await fetch(
       'https://cors-anywhere.herokuapp.com/https://favourcodes-backend.herokuapp.com/user/1/like',
       {
@@ -133,9 +142,21 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
           <p className={styles.like_counter}>
             Number of likes: {likes + userLike}
           </p>
-          <button onClick={() => likePost()} className={styles.like_button}>
-            Like
-          </button>
+          <svg
+            onClick={() => like()}
+            className={styles.love}
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'
+            width='24'
+            height='24'
+            viewBox='0 0 24 24'
+            stroke='red'
+            stroke-width='2'
+            stroke-linecap='round'
+            stroke-linejoin='round'
+          >
+            <path d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'></path>
+          </svg>
         </div>
         <div className={styles.share_post}>
           <a
