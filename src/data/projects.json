@@ -36,13 +36,6 @@
     "link": "https://pathtoimg.netlify.app"
   },
   {
-    "key": 5,
-    "name": "Error Pages",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1597870529/Rectangle_9_lvipzs.png",
-    "description": "A collection of implemented error page designs. Contributor.",
-    "link": "https://errorpages.netlify.app/"
-  },
-  {
     "key": 6,
     "name": "Emergency Police Contact",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126878/police-ng.jpg",
