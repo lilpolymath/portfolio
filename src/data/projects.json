@@ -8,13 +8,6 @@
     "type": "Mkobo Microfinance Bank"
   },
   {
-    "key": 1,
-    "name": "My Portfolio ",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126824/portfolio.png",
-    "description": "Erhmm you are here 👀.",
-    "link": "/"
-  },
-  {
     "key": 2,
     "name": "Gravity",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126876/gravity-digital.jpg",
@@ -30,6 +23,13 @@
   },
   {
     "key": 4,
+    "name": "Error Pages",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1597870529/Rectangle_9_lvipzs.png",
+    "description": "A collection of implemented error page designs. Contributor.",
+    "link": "https://errorpages.netlify.app/"
+  },
+  {
+    "key": 5,
     "name": "Path To Img",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1595317130/path-to-img.png",
     "description": "Bit.ly but for images. Converts your images into Imgur links.",
