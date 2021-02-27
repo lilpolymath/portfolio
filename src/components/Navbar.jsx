@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback } from 'react';
-
+import { Link } from 'react-router-dom';
 import { ReactComponent as Day } from '../assets/day.svg';
 import { ReactComponent as Night } from '../assets/night.svg';
 
@@ -84,9 +84,9 @@ const Navbar = ({ toggleMenubar, mouseEnter, mouseLeave }) => {
             <Night className={styles.second} />
           </div>
         )}
-        <a href='/'>
+        <Link to='/'>
           <h1 className={styles.logo_text}>Ayobami Adedapo</h1>
-        </a>
+        </Link>
       </div>
       <div className={styles.button_wrapper}>
         <button
