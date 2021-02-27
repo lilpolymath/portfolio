@@ -49,9 +49,9 @@
 
 .project {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   position: relative;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .project::after {
@@ -74,15 +74,23 @@
   transform: scale(1.05);
 }
 
+.project_image {
+  height: 250px;
+  margin-bottom: 1rem;
+}
+
 .project_screenshot {
   width: 100%;
-  height: auto;
+  max-height: 100%;
+  object-fit: scale-down;
 }
 
 .project_content {
   display: flex;
-  flex-direction: column;
   padding: 1.5rem;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 
 .project_type {

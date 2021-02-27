@@ -1,9 +1,17 @@
 [
   {
+    "key": 9,
+    "name": "Frontend Engineer",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1614421886/conectar.png",
+    "description": "Worked on Conectar. More Details in my Resume. Nov. 2020 - Present",
+    "link": "http://conectar.io/",
+    "type": "Conectar LLC"
+  },
+  {
     "key": 0,
     "name": "Software Engineering Intern",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1597870531/Rectangle_10_polp86.png",
-    "description": "Worked on Festivesave and Payflow for 8 months. More Details in my Resume.",
+    "description": "Worked on Festivesave and Payflow mobile apps. More Details in my Resume. Nov. 2019 - June 2020",
     "link": "http://mkobo.com.ng/",
     "type": "Mkobo Microfinance Bank"
   },
@@ -24,7 +32,7 @@
   {
     "key": 4,
     "name": "Error Pages",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1597870529/Rectangle_9_lvipzs.png",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1614408761/Error_pages.jpg",
     "description": "A collection of implemented error page designs. Contributor.",
     "link": "https://errorpages.netlify.app/"
   },
@@ -44,7 +52,7 @@
   },
   {
     "key": 7,
-    "name": "farm-invest-cli",
+    "name": "Farm-invest-cli",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1597870531/Rectangle_10_polp86.png",
     "description": "CLI tool to detect updates to the products on eFarms, FarmCrowdy, ThriveAgric and AgroPartnerships. Contributor.",
     "link": "https://github.com/mykeels/farm-invest-cli"
