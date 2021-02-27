@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './Navbar.module.css';
 import { useSpring, animated, config } from 'react-spring';
@@ -22,44 +23,49 @@ const Menubar = ({ open, toggleMenubar, mouseEnter, mouseLeave }) => {
       </button>
       <ul>
         <li>
-          <a
+          <Link
             className={styles.menubar_link}
-            href='/'
+            to='/'
             onMouseEnter={mouseEnter}
             onMouseLeave={mouseLeave}
+            onClick={toggleMenubar}
           >
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             className={styles.menubar_link}
-            href='/projects'
+            to='/projects'
             onMouseEnter={mouseEnter}
             onMouseLeave={mouseLeave}
+            onClick={toggleMenubar}
           >
             Work & Projects
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+         
+          <Link
             className={styles.menubar_link}
-            href='/blog'
+            to='/blog'
             onMouseEnter={mouseEnter}
             onMouseLeave={mouseLeave}
+            onClick={toggleMenubar}
           >
             Blog
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             className={styles.menubar_link}
-            href='/contact'
+            to='/contact'
             onMouseEnter={mouseEnter}
             onMouseLeave={mouseLeave}
+            onClick={toggleMenubar}
           >
             Contact
-          </a>
+          </Link>
         </li>
         <li>
           <a

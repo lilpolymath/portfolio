@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Menubar from './components/Menubar';
 import useEventListener from './hooks/use-event-listener';
 import 'highlight.js/styles/night-owl.css';
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -43,7 +44,7 @@ const App = () => {
   useEventListener('mousemove', handler);
 
   return (
-    <>
+    <BrowserRouter>
       <Container>
         <Navbar
           mouseEnter={onMouseEnter}
@@ -69,7 +70,7 @@ const App = () => {
         style={props}
         className={hovered ? 'cursor active' : 'cursor'}
       ></animated.div>
-    </>
+    </BrowserRouter>
   );
 };
 

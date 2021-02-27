@@ -1,10 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
 import Markdown from 'react-markdown';
+import { Link } from 'react-router-dom';
 import { animated } from 'react-spring/renderprops';
-import postlist from '../data/posts.json';
 import styles from './Blog.module.css';
-import { useEffect } from 'react';
+import postlist from '../data/posts.json';
 const readingTime = require('reading-time');
 
 const PostList = ({ style, mouseEnter, mouseLeave }) => {

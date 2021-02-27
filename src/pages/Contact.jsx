@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { animated } from 'react-spring/renderprops';
 
-import styles from './Contact.module.css';
 import Social from './Social';
-import { useEffect } from 'react';
+import styles from './Contact.module.css';
 
 const Intro = ({ style, mouseEnter, mouseLeave }) => {
   useEffect(() => {
