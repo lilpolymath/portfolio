@@ -1,61 +1,55 @@
 [
   {
-    "key": 9,
-    "name": "Frontend Engineer",
+    "key": 1,
+    "name": "User Interface Developer",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1614421886/conectar.png",
-    "description": "Worked on Conectar. More Details in my Resume. Nov. 2020 - Present",
-    "link": "http://conectar.io/",
+    "description": "Worked on converting UI designs to code. More Details in my Resume. Nov. 2020 - Feb. 2021",
+    "link": "https://conectar.io/",
     "type": "Conectar LLC"
   },
   {
-    "key": 0,
-    "name": "Software Engineering Intern",
+    "key": 2,
+    "name": "Software Engineer",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1597870531/Rectangle_10_polp86.png",
     "description": "Worked on Festivesave and Payflow mobile apps. More Details in my Resume. Nov. 2019 - June 2020",
-    "link": "http://mkobo.com.ng/",
+    "link": "https://mkobo.com.ng/",
     "type": "Mkobo Microfinance Bank"
   },
+
   {
-    "key": 2,
+    "key": 3,
+    "name": "Kikxle.com",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/q_auto/v1614957692/kikxle.com.jpg",
+    "description": "Portfolio for Kennedy Iyeh. Built with Gatsby, Framer-motion and Netlify CMS.",
+    "link": "https://kikxle.com/"
+  },
+  {
+    "key": 4,
     "name": "Gravity",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126876/gravity-digital.jpg",
     "description": "Concept Landing Page for a Digital Agency.",
-    "link": "http://gravity-home.netlify.app/"
+    "link": "https://gravity-home.netlify.app/"
   },
   {
-    "key": 3,
+    "key": 5,
     "name": "Landing Pages",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126957/gravity-headers.jpg",
     "description": "Collection of Hero Landing Pages designed by Gravity.",
     "link": "https://lilpolymath.github.io/landing-pages/"
   },
   {
-    "key": 4,
+    "key": 6,
     "name": "Error Pages",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1614408761/Error_pages.jpg",
     "description": "A collection of implemented error page designs. Contributor.",
     "link": "https://errorpages.netlify.app/"
   },
   {
-    "key": 5,
-    "name": "Path To Img",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1595317130/path-to-img.png",
-    "description": "Bit.ly but for images. Converts your images into Imgur links.",
-    "link": "https://pathtoimg.netlify.app"
-  },
-  {
-    "key": 6,
+    "key": 7,
     "name": "Emergency Police Contact",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126878/police-ng.jpg",
     "description": "VCF files, containing the emergency contact for the Nigerian Police in the 36 states, and FCT. Contributor.",
     "link": "https://mykeels.github.io/police-ng-emergency/"
-  },
-  {
-    "key": 7,
-    "name": "Farm-invest-cli",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1597870531/Rectangle_10_polp86.png",
-    "description": "CLI tool to detect updates to the products on eFarms, FarmCrowdy, ThriveAgric and AgroPartnerships. Contributor.",
-    "link": "https://github.com/mykeels/farm-invest-cli"
   },
   {
     "key": 8,
