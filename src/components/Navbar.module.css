@@ -36,8 +36,9 @@
   display: flex;
 }
 
-ul {
+.menubar ul {
   padding: 16px;
+  list-style-type: none;
 }
 
 ul > li {
