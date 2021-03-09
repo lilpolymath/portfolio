@@ -71,10 +71,6 @@ svg {
   cursor: pointer;
 }
 
-ul {
-  list-style-type: none;
-}
-
 .wrap {
   position: fixed;
   top: 0;

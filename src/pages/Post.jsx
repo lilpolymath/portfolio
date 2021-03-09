@@ -51,7 +51,7 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
       fetchedPost.date = post.date ? post.date : 'No date given';
       fetchedPost.content = post.content ? post.content : 'No content given';
       fetchedPost.thumbnail = post.thumbnail ? post.thumbnail : '';
-      fetchedPost.credits = post.credit ? post.credit : '';
+      fetchedPost.credit = post.credit ? post.credit : '';
       postExists = true;
     }
   });
@@ -60,7 +60,7 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
     return <Redirect to='/404' />;
   }
 
-  const share = `https://twitter.com/share?url=${window.location.href}&text=I just read ${fetchedPost.title} and I think you should too.`;
+  const share = `https://twitter.com/share?url=${window.location.href}&text=I just read ${fetchedPost.title} by @favourcodes`;
 
   return (
     <animated.div style={style} className={styles.post_wrapper}>

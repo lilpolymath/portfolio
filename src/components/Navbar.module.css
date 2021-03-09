@@ -36,11 +36,12 @@
   display: flex;
 }
 
-ul {
+.menubar ul {
   padding: 16px;
+  list-style-type: none;
 }
 
-ul > li {
+.menubar ul > li {
   margin: 4rem 0;
 }
 

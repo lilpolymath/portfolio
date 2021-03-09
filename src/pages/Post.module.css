@@ -52,25 +52,25 @@ figcaption a {
 .post_content h1 {
   font-size: 2.875rem;
   font-weight: bold;
-  margin: 0.875em 0;
+  margin: 1.75em 0;
 }
 
 .post_content h2 {
   font-size: 2.75rem;
   font-weight: bold;
-  margin: 0.75em 0;
+  margin: 1.5em 0;
 }
 
 .post_content h3 {
   font-size: 2.5rem;
   font-weight: bold;
-  margin: 0.5em 0;
+  margin: 1.25em 0;
 }
 
 .post_content h4 {
   font-size: 2.125rem;
   font-weight: bold;
-  margin: 0.5em 0;
+  margin: 1em 0;
 }
 
 .post_content img {
