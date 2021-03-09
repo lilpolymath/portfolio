@@ -51,7 +51,7 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
       fetchedPost.date = post.date ? post.date : 'No date given';
       fetchedPost.content = post.content ? post.content : 'No content given';
       fetchedPost.thumbnail = post.thumbnail ? post.thumbnail : '';
-      fetchedPost.credits = post.credit ? post.credit : '';
+      fetchedPost.credit = post.credit ? post.credit : '';
       postExists = true;
     }
   });
