@@ -1,20 +1,21 @@
 ---
 layout: blog
-title: "Compiler Construction: Part One"
+title: Compiler Construction - Part One
 date: 2021-03-09T20:51:23.636Z
 thumbnail: http://www.dcsubit.com/wp-content/uploads/2015/11/CompilerConstruction-550x400.png
 credit: Department of Computer Science UBIT.
 tags: Compiler Construction
 slug: compiler-construction-part-one
 ---
+
 ## Foreword(?)
 
 Hi there, this is meant to be a personal note of what I am learning in a course I am taking this semester on Compiler Construction and I hope that they would be of use to you.
 
 #### Notes
 
-* I would assume that you have some sort of background in Computer Science but I will try as much as possible to carry you along.
-* I might make some mistakes along the way so feel free to [DM me on Twitter](https://twitter.com/messages/compose?recipient_id=1249996578154328066) when you spot any.
+- I would assume that you have some sort of background in Computer Science but I will try as much as possible to carry you along.
+- I might make some mistakes along the way so feel free to [DM me on Twitter](https://twitter.com/messages/compose?recipient_id=1249996578154328066) when you spot any.
 
 ## In the Beginning...
 
@@ -35,6 +36,7 @@ The associated rule of formation is what we call grammar.
 We will get back to grammar later on.
 
 ### Programs and Computer Languages
+
 A program is a set of instructions that are written in a special type of language, that a computer understands, for execution. This special type of language is referred to as a programming language.
 
 There are three types of programming languages, and they are high-level language, low-level language and assembly language.
@@ -52,7 +54,6 @@ Depending on the type of processing that a high-level language needs before the 
 When a high-level language is said to be compiled, it means that the source code is scanned and processed at once and then converted to an object program that the computer can execute directly. Examples of languages like this are C and C++.
 
 When a high-level language is said to be interpreted, it means that the source code is scanned and processed into a machine-executable form that runs line by line. This line by line execution continues running until the interpreter encounters an error that halts the execution (this type of errors are referred to as runtime errors). Examples of languages like this are Ruby and Python.
-
 
 ### Linkers and Loaders
 
