@@ -15,13 +15,19 @@
     "link": "https://mkobo.com.ng/",
     "type": "Mkobo Microfinance Bank"
   },
-
   {
     "key": 3,
-    "name": "Kikxle.com",
+    "name": "Kikxle",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/q_auto/v1614957692/kikxle.com.jpg",
     "description": "Portfolio for Kennedy Iyeh. Built with Gatsby, Framer-motion and Netlify CMS.",
     "link": "https://kikxle.com/"
+  },
+  {
+    "key": 4,
+    "name": "Philemo-nn",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126883/Philemo-nn.com.jpeg",
+    "description": "(un)released portfolio concept for Philemo-nn's V1. Built with Gatsby and NetlifyCMS. Available for Sale",
+    "link": "https://philemo-nn.netlify.app/"
   },
   {
     "key": 4,
@@ -50,12 +56,5 @@
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126878/police-ng.jpg",
     "description": "VCF files, containing the emergency contact for the Nigerian Police in the 36 states, and FCT. Contributor.",
     "link": "https://mykeels.github.io/police-ng-emergency/"
-  },
-  {
-    "key": 8,
-    "name": "COVID-19 Awareness.",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126883/covid-19.jpg",
-    "description": "A website that displays basic information about the current pandemic.",
-    "link": "https://lilpolymath.github.io/covid19/"
   }
 ]
