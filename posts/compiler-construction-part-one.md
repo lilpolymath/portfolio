@@ -62,3 +62,12 @@ Apart from Compilers and Interpreters, we have two other programs that are impor
 When you import or reference external modules in your source code, linkers do the job of running around and making sure that these modules are available before the object code is created. The job of the loader is to load this executable file into the memory and execute it, while doing this it also allocates some parts of the memory for use during the execution.
 
 The next part would talk more in-depth about Compilers and the stages involved during compilation.
+
+#### More Reading
+
+- [Alphabet](https://en.wikipedia.org/wiki/Alphabet)
+- [Grammar](https://en.wikipedia.org/wiki/Grammar)
+- [Computer Languages](https://www.computerscience.gcse.guru/theory/high-low-level-languages)
+- [Compilers and Interpreters](https://lambda.uta.edu/cse5317/notes/node3.html)
+- [Linkers](<https://en.wikipedia.org/wiki/Linker_(computing)>)
+- [Loaders](<https://en.wikipedia.org/wiki/Loader_(computing)>)

@@ -92,6 +92,7 @@ const getPosts = () => {
           date: publishedDate ? publishedDate : 'No date given',
           time: parsedDate['time'],
           thumbnail: metadata.thumbnail,
+          credit: metadata.credit,
           content: content ? content : 'No content given',
           slug: metadata.slug ? metadata.slug : '404',
           tags: metadata.tags ? metadata.tags.split(',') : null,

@@ -159,3 +159,11 @@ figcaption a {
 .next path {
   fill: var(--project_link);
 }
+
+.last_update {
+  font-size: 1.75rem;
+  margin: 1em 0;
+  line-height: 2.5rem;
+  font-family: 'Inter';
+  font-weight: 600;
+}
