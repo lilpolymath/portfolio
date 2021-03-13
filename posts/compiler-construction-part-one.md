@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Compiler Construction - Part One
-date: 2021-03-09T20:51:23.636Z
+date: 2021-03-13T20:10:23.636Z
 thumbnail: http://www.dcsubit.com/wp-content/uploads/2015/11/CompilerConstruction-550x400.png
 credit: Department of Computer Science UBIT.
 tags: Compiler Construction
