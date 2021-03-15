@@ -11,6 +11,7 @@ import xml from 'highlight.js/lib/languages/xml';
 import postlist from '../data/posts.json';
 import styles from './Post.module.css';
 import { ReactComponent as Chevron } from '../assets/chevron_right.svg';
+import Meta from '../components/Meta';
 
 const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
   const codeRef = useRef();
@@ -29,7 +30,6 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
       left: 0,
       behavior: 'smooth',
     });
-    document.title = fetchedPost.title;
   }, [fetchedPost.title, slug]);
 
   useEffect(() => {
@@ -60,6 +60,12 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
 
   return (
     <animated.div style={style} className={styles.post_wrapper}>
+      <Meta
+        title={fetchedPost.title}
+        description={fetchedPost.description}
+        url={`https://favourcodes.com/post/${fetchedPost.slug}`}
+        absoluteImageUrl={`https://favourcodes.com${fetchedPost.thumbnail}`}
+      />
       <div className={styles.post}>
         <div className={styles.breadcrumb}>
           <Link onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} to='/'>
