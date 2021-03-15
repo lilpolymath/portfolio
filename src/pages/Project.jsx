@@ -4,8 +4,8 @@ import { animated } from 'react-spring/renderprops';
 
 import styles from './Project.module.css';
 import projects from '../data/projects.json';
-import { ReactComponent as Chevron } from '../assets/chevron_right.svg';
 import { useEffect } from 'react';
+import { ChevronRight } from 'react-feather';
 
 const Project = ({ style, mouseEnter, mouseLeave }) => {
   useEffect(() => {
@@ -55,7 +55,7 @@ const Project = ({ style, mouseEnter, mouseLeave }) => {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                View Project <Chevron />
+                View Project <ChevronRight />
               </a>
             </div>
           </div>

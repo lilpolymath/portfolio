@@ -1,17 +1,16 @@
 import React, { useEffect, useRef } from 'react';
 import { Redirect, Link, useParams } from 'react-router-dom';
-import { animated } from 'react-spring/renderprops';
 import Markdown from 'react-markdown';
-import { Twitter } from 'react-feather';
 import hljs from 'highlight.js/lib/core';
-import javascript from 'highlight.js/lib/languages/javascript';
 import css from 'highlight.js/lib/languages/css';
 import xml from 'highlight.js/lib/languages/xml';
+import { animated } from 'react-spring/renderprops';
+import { Twitter, ChevronRight } from 'react-feather';
+import javascript from 'highlight.js/lib/languages/javascript';
 
-import postlist from '../data/posts.json';
-import styles from './Post.module.css';
-import { ReactComponent as Chevron } from '../assets/chevron_right.svg';
 import Meta from '../components/Meta';
+import styles from './Post.module.css';
+import postlist from '../data/posts.json';
 
 const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
   const codeRef = useRef();
@@ -115,7 +114,7 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
               className={styles.next}
               to={`/post/${postlist[currentIndex + 1].slug}`}
             >
-              Read Next <Chevron />
+              Read Next <ChevronRight />
             </Link>
           </div>
         )}

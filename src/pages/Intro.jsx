@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { animated } from 'react-spring/renderprops';
+import { ChevronRight } from 'react-feather';
 
-import styles from './Intro.module.css';
-import { ReactComponent as Chevron } from '../assets/chevron_right.svg';
 import Social from './Social';
+import styles from './Intro.module.css';
 
 const Intro = ({ style, mouseEnter, mouseLeave }) => {
   useEffect(() => {
@@ -42,7 +42,7 @@ const Intro = ({ style, mouseEnter, mouseLeave }) => {
           className={styles.next}
           to='/projects'
         >
-          View Select Projects <Chevron />
+          View Select Projects <ChevronRight />
         </Link>
       </div>
     </animated.section>
