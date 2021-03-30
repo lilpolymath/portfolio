@@ -15,7 +15,7 @@ meta:
 
 ### Introduction
 
-Over time we have known that the performance of the system depends on the main memory1, how much is available and how it optimizes when jobs are being processed. Therefore the management of the main memory must be as efficient as possible.
+Over time we have known that the performance of the system depends on the [main memory][1], how much is available and how it optimizes when jobs are being processed. Therefore the management of the main memory must be as efficient as possible.
 
 The design on the main memory has grown and we have evolved from the main memory being a unit that we can physically see to something that is abstracted far away inside the internals of a CPU.
 
@@ -62,21 +62,21 @@ This algorithm is flexible because it allows multiple jobs to run at the same ti
 Some of the problems are that
 
 1. If the sizes of the partitions are too small, larger jobs don't get processed or wait until there is a partition large enough to contain them.
-2. If the sizes are too large, it increases the rate of internal fragmentation and total turnaround time 1 for a job.
+2. If the sizes are too large, it increases the rate of internal fragmentation and total [turnaround time][2] for a job.
 3. Jobs that are larger than the sizes of the partitions but less than the size of the memory never get processed.
 
 #### Algorithm
 
 ```
 1. Get size of the job.
-2. If size > size of the largest partition, reject job <br />
+2. If size of job > size of the largest partition, reject job
    else go to step 3
-3. Set i = 1. // i is the program counter.
+3. Set i = 1. // i is the counter.
 4. While i <= number of partitions in memory
     if job size > memory partition size(i)
-      then i = i +1
+      then i = i + 1
     else
-      if memory partition status(i)=’FREE’
+      if memory partition status(i) = ’FREE’
           then load job into memory partition(i)
             change memory partition status(i)  to ’BUSY’
             go to step 1
@@ -85,5 +85,7 @@ Some of the problems are that
 6. Go to step 1 to handle next job.
 ```
 
-[1]: (https://en.wikipedia.org/wiki/Computer_memory)
-[2]: (https://www.techopedia.com/definition/23798/turnaround-time-tat)
+### Footnotes
+
+[1]: https://en.wikipedia.org/wiki/Computer_memory 'Computer Memory'
+[2]: https://www.techopedia.com/definition/23798/turnaround-time-tat 'Turnaround Time'
