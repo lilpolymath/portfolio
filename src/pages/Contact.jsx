@@ -53,11 +53,11 @@ const Intro = ({ style, mouseEnter, mouseLeave }) => {
               </a>
             </div>
             <div className={styles.contact_option}>
-              <p>Phone Number</p>
+              <p>WhatsApp</p>
               <a
                 onMouseEnter={mouseEnter}
                 onMouseLeave={mouseLeave}
-                href='tel:+2348143567540'
+                href='https://api.whatsapp.com/send?phone=2348143567540'
               >
                 +234 814 356 7540
               </a>
