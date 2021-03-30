@@ -21,7 +21,7 @@ The design on the main memory has grown and we have evolved from the main memory
 
 We will take a look at some of the attempts made at solving this problem.
 
-### Single-User Contiguous Allocation
+### 1. Single-User Contiguous Allocation
 
 The very first attempt at solving this problem was in a non-multiprogramming environment i.e. only one job can be work on at a given time. When jobs are ready for processing, they are executed sequentially that is it was a First-Come-First-Serve algorithm.
 
@@ -49,7 +49,7 @@ A simplified (and abstracted) version of the algorithm.
 
 Step 6 handles the scenario whereby a program's size is more than the memory's size.
 
-### Fixed Partition
+### 2. Fixed Partition
 
 This attempt also took a stab at trying to allow for job processing in a multi-programming environment. Partitions are configured at the start-up and remain fixed until the system is rebooted. Partitions also helped to preserve a job's memory space.
 
@@ -85,7 +85,9 @@ Some of the problems are that
 6. Go to step 1 to handle next job.
 ```
 
-### Footnotes
+### 3. Dynamic Partitions
+
+This method didn't require partitions to be configured at startup but allowed jobs to take as much space as they need and this solved the issue with internal fragmentation. 
 
 [1]: https://en.wikipedia.org/wiki/Computer_memory 'Computer Memory'
 [2]: https://www.techopedia.com/definition/23798/turnaround-time-tat 'Turnaround Time'
