@@ -29,6 +29,7 @@
 
 .featured_image {
   width: 100%;
+  background: white;
   object-fit: contain;
 }
 
