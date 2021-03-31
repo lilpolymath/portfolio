@@ -88,9 +88,9 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
         <figcaption className={styles.featured_image_credit}>
           {fetchedPost.credit}
         </figcaption>
-        <div ref={codeRef} className={styles.post_content}>
+        <article ref={codeRef} className={styles.post_content}>
           <Markdown source={fetchedPost.content} escapeHtml={false} />
-        </div>
+        </article>
         <div className={styles.share_post}>
           <a
             onMouseEnter={mouseEnter}

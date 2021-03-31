@@ -2,8 +2,6 @@
 layout: blog
 title: Memory Management - Part One
 date: 2021-03-29T19:09:45.488Z
-thumbnail: /image/os_memory.png
-credit: [Memory Management (MEM) Coding: Analysis & Example | Study.com] (https://study.com/academy/lesson/memory-management-mem-coding-analysis-example.html)
 tags: Memory Management, Operating System
 slug: memory-management-part-one
 meta:
@@ -55,6 +53,8 @@ This attempt also took a stab at trying to allow for job processing in a multi-p
 
 Depending on the type, partitions can be sized equally or in varied. In a case where partition sizes are varied, it helps to reduce the occurrence of internal fragmentation.
 
+![Internal Fragmentation!](https://media.geeksforgeeks.org/wp-content/uploads/20190924115421/Untitled-Diagram-146.png 'Internal Fragmentation Geeks for Geeks')
+
 Internal fragmentation occurs when a job uses less than the space that is allocated to it.
 
 This algorithm is flexible because it allows multiple jobs to run at the same time.
@@ -87,7 +87,12 @@ Some of the problems are that
 
 ### 3. Dynamic Partitions
 
-This method didn't require partitions to be configured at startup but allowed jobs to take as much space as they need and this solved the issue with internal fragmentation. 
+This method didn't require partitions to be configured at startup but allowed jobs to take as much space as they need and this solved the issue with internal fragmentation.
 
+Jobs can be loaded into memory based on whether they fit into the first partition available i.e. first fit or whether they fit into the partition that leads to the least amount of memory wasted i.e. best fit.
+
+However this didn't complete solve the issue with memory wastage. External fragmentation started to occur. Some jobs began to come in and they couldn't fit into the partitions created by previous jobs 
+
+![External Fragmentation](https://media.geeksforgeeks.org/wp-content/uploads/20200729172413/2581.png)
 [1]: https://en.wikipedia.org/wiki/Computer_memory 'Computer Memory'
 [2]: https://www.techopedia.com/definition/23798/turnaround-time-tat 'Turnaround Time'

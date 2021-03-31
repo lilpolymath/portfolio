@@ -5,7 +5,7 @@
 
 .post {
   margin: auto;
-  max-width: 650px;
+  max-width: 700px;
 }
 
 .breadcrumb {
@@ -47,6 +47,7 @@ figcaption a {
 
 .post_content {
   margin: 2rem 0;
+  line-height: 1.8;
 }
 
 .post_content h1 {
