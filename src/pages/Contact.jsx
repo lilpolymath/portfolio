@@ -1,17 +1,19 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { animated } from 'react-spring/renderprops';
 
 import Social from './Social';
 import styles from './Contact.module.css';
+import Meta from '../components/Meta';
 
 const Intro = ({ style, mouseEnter, mouseLeave }) => {
-  useEffect(() => {
-    document.title = 'Contact Me';
-  }, []);
-
   return (
     <animated.section style={style} className={styles.contact}>
+      <Meta
+        title='Contact Me | Ayobami Adedapo'
+        url='https://favourcodes.com/contact'
+      />
+
       <div
         onMouseEnter={mouseEnter}
         onMouseLeave={mouseLeave}

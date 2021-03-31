@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Markdown from 'react-markdown';
 import { Link } from 'react-router-dom';
 import { animated } from 'react-spring/renderprops';
 import styles from './Blog.module.css';
 import postlist from '../data/posts.json';
+import Meta from '../components/Meta';
 const readingTime = require('reading-time');
 
 const PostList = ({ style, mouseEnter, mouseLeave }) => {
@@ -16,12 +17,10 @@ const PostList = ({ style, mouseEnter, mouseLeave }) => {
     );
   });
 
-  useEffect(() => {
-    document.title = 'Blog';
-  }, []);
-
   return (
     <animated.section style={style} className={styles.posts_wrapper}>
+      <Meta title='Blog | Ayobami Adedapo' url='https://favourcodes.com/blog' />
+
       <div className={styles.posts}>
         <div className={styles.breadcrumb}>
           <Link onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} to='/'>

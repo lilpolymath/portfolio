@@ -61,6 +61,7 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
     <animated.div style={style} className={styles.post_wrapper}>
       <Meta
         title={fetchedPost.title}
+        article={true}
         description={fetchedPost.description}
         url={`https://favourcodes.com/post/${fetchedPost.slug}`}
         absoluteImageUrl={`https://favourcodes.com${fetchedPost.thumbnail}`}

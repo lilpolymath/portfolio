@@ -1,23 +1,21 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { animated } from 'react-spring/renderprops';
 import { ChevronRight } from 'react-feather';
 
 import Social from './Social';
 import styles from './Intro.module.css';
+import Meta from '../components/Meta';
 
 const Intro = ({ style, mouseEnter, mouseLeave }) => {
-  useEffect(() => {
-    document.title = 'Ayobami Adedapo';
-  }, []);
-
   return (
     <animated.section style={style} className={styles.intro}>
+      <Meta title='Ayobami Adedapo' url='https://favourcodes.com/' />
       <div className={styles.image}>
         <figure>
           <img
             src='https://res.cloudinary.com/favourcodes/image/upload/v1598125526/profile-min.png'
-            alt='ayobami favour adedapo'
+            alt=''
           />
         </figure>
       </div>

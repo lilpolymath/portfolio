@@ -1,19 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { animated } from 'react-spring/renderprops';
-
-import styles from './Project.module.css';
-import projects from '../data/projects.json';
-import { useEffect } from 'react';
 import { ChevronRight } from 'react-feather';
 
-const Project = ({ style, mouseEnter, mouseLeave }) => {
-  useEffect(() => {
-    document.title = 'Projects';
-  }, []);
+import Meta from '../components/Meta';
+import styles from './Project.module.css';
+import projects from '../data/projects.json';
 
+const Project = ({ style, mouseEnter, mouseLeave }) => {
   return (
     <animated.section style={style} className={styles.selected_works}>
+      <Meta title='Ayobami Adedapo' url='https://favourcodes.com/' />
       <div
         onMouseEnter={mouseEnter}
         onMouseLeave={mouseLeave}
