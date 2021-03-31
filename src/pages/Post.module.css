@@ -5,7 +5,7 @@
 
 .post {
   margin: auto;
-  max-width: 650px;
+  max-width: 700px;
 }
 
 .breadcrumb {
@@ -47,6 +47,7 @@ figcaption a {
 
 .post_content {
   margin: 2rem 0;
+  line-height: 1.8;
 }
 
 .post_content h1 {
@@ -74,10 +75,12 @@ figcaption a {
 }
 
 .post_content img {
-  max-width: 600px;
+  max-width: 500px;
   height: auto;
-  margin: 2.5rem 0;
+  margin: 2.5rem auto;
   display: block;
+  object-fit: contain;
+  background: white;
 }
 
 .post_content strong {
@@ -104,6 +107,7 @@ figcaption a {
 
 .post_content a {
   font-size: 1.875rem;
+  color: #f2994a;
 }
 
 .share_post {

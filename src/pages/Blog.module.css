@@ -101,11 +101,17 @@
 
 .post_title {
   font-size: 3rem !important;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
-.post p {
+.post p,
+.post a {
+  color: inherit;
   font-size: 1.75rem;
+}
+
+.post p{
+  line-height: 1.2;
 }
 
 .post_excerpt {

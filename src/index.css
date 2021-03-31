@@ -27,7 +27,7 @@
 
 * {
   margin: 0;
-  font: 62.5% 'Futura', sans-serif;
+  font: 62.5% 'Inter', sans-serif;
   transition: background cubic-bezier(0.49, 0.11, 0.6, 1) 1.5s;
 }
 
