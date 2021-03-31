@@ -75,10 +75,11 @@ figcaption a {
 }
 
 .post_content img {
-  max-width: 600px;
+  max-width: 500px;
   height: auto;
-  margin: 2.5rem 0;
+  margin: 2.5rem auto;
   display: block;
+  object-fit: contain;
 }
 
 .post_content strong {

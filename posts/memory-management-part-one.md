@@ -21,6 +21,8 @@ We will take a look at some of the attempts made at solving this problem.
 
 ### 1. Single-User Contiguous Allocation
 
+![Single-User Partition!](/image/single-user.png)
+
 The very first attempt at solving this problem was in a non-multiprogramming environment i.e. only one job can be work on at a given time. When jobs are ready for processing, they are executed sequentially that is it was a First-Come-First-Serve algorithm.
 
 One visible constraint to this that the size of memory was small so a job larger than the size of the memory never gets executed.
@@ -51,11 +53,13 @@ Step 6 handles the scenario whereby a program's size is more than the memory's s
 
 This attempt also took a stab at trying to allow for job processing in a multi-programming environment. Partitions are configured at the start-up and remain fixed until the system is rebooted. Partitions also helped to preserve a job's memory space.
 
-Depending on the type, partitions can be sized equally or in varied. In a case where partition sizes are varied, it helps to reduce the occurrence of internal fragmentation.
+Depending on the type, partitions can be sized equally or varied. In a case where partition sizes are varied, it helps to reduce the occurrence of internal fragmentation.
 
-![Internal Fragmentation!](https://media.geeksforgeeks.org/wp-content/uploads/20190924115421/Untitled-Diagram-146.png 'Internal Fragmentation Geeks for Geeks')
+![Types of Fixed partitions!](/image/fixed-partitions.png)
 
 Internal fragmentation occurs when a job uses less than the space that is allocated to it.
+
+![Internal Fragmentation!](/image/internal-fragmentation.png)
 
 This algorithm is flexible because it allows multiple jobs to run at the same time.
 
@@ -87,12 +91,21 @@ Some of the problems are that
 
 ### 3. Dynamic Partitions
 
+![Dynamic partitions!](/image/dynamic-partitions.png)
+
 This method didn't require partitions to be configured at startup but allowed jobs to take as much space as they need and this solved the issue with internal fragmentation.
 
 Jobs can be loaded into memory based on whether they fit into the first partition available i.e. first fit or whether they fit into the partition that leads to the least amount of memory wasted i.e. best fit.
 
-However this didn't complete solve the issue with memory wastage. External fragmentation started to occur. Some jobs began to come in and they couldn't fit into the partitions created by previous jobs 
+However this didn't complete solve the issue with memory wastage. External fragmentation started to occur because some jobs began to come in and they couldn't fit into the partitions created by previous jobs.
 
-![External Fragmentation](https://media.geeksforgeeks.org/wp-content/uploads/20200729172413/2581.png)
+This lead to the development of Relocatable Dynamic Partitions. The basic idea was that memory spaces that were in used would be grouped into one part of the memory while the free memory are collected into on huge block of memory. This method is referred to as [Garbage Collection][3] or [Memory Compaction][4].
+
+The only drawback to this method is that while the Operating system is compacting the memory no other tasks can be completed as they would need their memory address to be referenced correctly and prevent other subsystems from accessing the wrong process.
+
+![Compaction!](/image/compaction.png)
+
 [1]: https://en.wikipedia.org/wiki/Computer_memory 'Computer Memory'
 [2]: https://www.techopedia.com/definition/23798/turnaround-time-tat 'Turnaround Time'
+[3]: https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)
+[4]: https://en.wikibooks.org/wiki/Memory_Management/Memory_Compacting
