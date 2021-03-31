@@ -80,6 +80,7 @@ figcaption a {
   margin: 2.5rem auto;
   display: block;
   object-fit: contain;
+  background: white;
 }
 
 .post_content strong {
@@ -106,6 +107,7 @@ figcaption a {
 
 .post_content a {
   font-size: 1.875rem;
+  color: #f2994a;
 }
 
 .share_post {
