@@ -54,8 +54,6 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
   if (postExists === false) {
     return <Redirect to='/404' />;
   }
-
-  console.log(fetchedPost.meta)
   const share = `https://twitter.com/share?url=${window.location.href}&text=I just read ${fetchedPost.title} by @favourcodes`;
 
   return (
