@@ -9,13 +9,12 @@ const defaults = {
 
 const Meta = ({
   url,
-  title = defaults.title,
   noindex,
-  description,
   canonicalLink,
-  siteDescription = defaults.description,
   article = false,
   absoluteImageUrl = '',
+  title = defaults.title,
+  description = defaults.description,
   twitterCreatorAccount = 'https://twitter.com/favourcodes',
 }) => {
   return (
@@ -40,7 +39,7 @@ const Meta = ({
       <meta property='og:title' content={title} />
       <meta property='og:image' content={absoluteImageUrl} />
 
-      <meta name='twitter:description' content={siteDescription} />
+      <meta name='twitter:description' content={description} />
       <meta name='twitter:title' content={title} />
       <meta name='twitter:image' content={absoluteImageUrl} />
       <meta name='twitter:card' content='summary_large_image' />

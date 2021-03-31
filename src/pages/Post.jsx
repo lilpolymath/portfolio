@@ -55,13 +55,14 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
     return <Redirect to='/404' />;
   }
 
+  console.log(fetchedPost.meta)
   const share = `https://twitter.com/share?url=${window.location.href}&text=I just read ${fetchedPost.title} by @favourcodes`;
 
   return (
     <animated.div style={style} className={styles.post_wrapper}>
       <Meta
-        title={fetchedPost.title}
         article={true}
+        title={fetchedPost.title}
         description={fetchedPost.description}
         url={`https://favourcodes.com/post/${fetchedPost.slug}`}
         absoluteImageUrl={`https://favourcodes.com${fetchedPost.thumbnail}`}

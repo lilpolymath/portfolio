@@ -96,6 +96,7 @@ const getPosts = () => {
           content: content ? content : 'No content given',
           slug: metadata.slug ? metadata.slug : '404',
           tags: metadata.tags ? metadata.tags.split(',') : null,
+          meta: metadata.meta,
         };
         postlist.push(post);
         ilist.push(i);

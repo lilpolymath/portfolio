@@ -23,18 +23,13 @@ collections:
       - { label: 'Tags', name: 'tags', widget: 'string' }
       - { label: 'Slug', name: 'slug', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Description', name: description, widget: text, required: false }
       - label: 'Meta'
         required: false
         name: 'meta'
         widget: 'object'
         fields:
           - { label: Title, name: title, widget: string, required: false }
-          - {
-              label: Description,
-              name: description,
-              widget: text,
-              required: false,
-            }
           - {
               label: Canonical Link,
               name: canonicalLink,

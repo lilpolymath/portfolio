@@ -5,9 +5,7 @@ date: 2021-03-29T19:09:45.488Z
 thumbnail: /image/memory-management.png
 tags: Memory Management, Operating System
 slug: memory-management
-meta:
-  title: Memory Management
-  description: We talk about the Memory Manager and four types of memory allocation schemes - single-user systems, fixed partitions, dynamic partitions, and relocatable dynamic partitions.
+description: We talk about the Memory Manager and four types of memory allocation schemes - single-user systems, fixed partitions, dynamic partitions, and relocatable dynamic partitions.
 ---
 
 ### Introduction
