@@ -5,7 +5,9 @@ date: 2020-07-20T20:11:24.568Z
 tags: thoughts, swe
 thumbnail: /image/do-something.jpeg
 slug: about-startup-and-ideas
+description: A rant about people having ideas without a financial structure.
 ---
+
 ### Inception
 This is a self rant. I tried as much as possible, albeit lazily, to make the presentation of my thoughts cohesive but let's see how well that worked out. If it turns out bad, blame Dance Monkey.
 

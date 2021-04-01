@@ -5,6 +5,7 @@ date: 2020-08-24T17:49:38.913Z
 thumbnail: /image/react-hook.png
 tags: React, React Hooks
 slug: personal-notes-on-use-effect
+description: My personal notes on the useEffect Hook. I tried to model how the hook is implemented internally.
 ---
 
 # In the Beginning...

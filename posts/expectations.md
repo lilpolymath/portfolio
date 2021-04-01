@@ -5,7 +5,9 @@ date: 2020-01-03T21:13:31.718Z
 thumbnail: /image/expectations.jpeg
 tags: Life, Personal
 slug: expectations
+description: About Expectations and how to reduce the rate of getting disappointed.
 ---
+
 Expectation defined as a strong belief that something will happen or be the case. Sometimes our expectations can be realistic or not. As human beings, we all have expectations one way or the other, in our finances, our academics, our relationships, etc. It sums up why we do whatever we do. And what determines the frequency of our mood swings is how the graph of expectations fluctuates.
 
 ### Expectations and Depression
@@ -16,7 +18,7 @@ One of the things I learned last year is that having expectations is a gamble as
 
 ### Knowns and Unknowns
 
-You see in life, there are two important concepts, the things you know — *knowns*, and the things you don’t know — *unknowns*. There are things that you know you know, we call them *the known knowns* and there are things you know you don’t know, *the known unknowns*. There are things that you don’t know you know, *the unknown knowns* and there are things you don’t know you don’t know *the unknown unknowns*.
+You see in life, there are two important concepts, the things you know — _knowns_, and the things you don’t know — _unknowns_. There are things that you know you know, we call them _the known knowns_ and there are things you know you don’t know, _the known unknowns_. There are things that you don’t know you know, _the unknown knowns_ and there are things you don’t know you don’t know _the unknown unknowns_.
 
 Understanding this is very crucial with the way you relate with anybody even yourself and this would help model your expectations. For example, when I apply for a job, there is always a job description this helps me check my bank of “knowns” and map them to the JD that way I can predict to a good percentage what would happen and how I would react to it. **This doesn’t prevent an L or something but it makes life easier to live.** You can cut down on your unrealistic expectations and focus more on the realistic ones.
 

@@ -6,6 +6,7 @@ thumbnail: /image/twitter_post_-_1_egk6ok.png
 credit: " "
 tags: life
 slug: 2019-i-was-naive
+description: A Review of 2019.
 ---
 
 ### Prelude

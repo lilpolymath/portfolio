@@ -6,6 +6,7 @@ thumbnail: /image/dark-mode.png
 credit: https://www.svgrepo.com/svg/70994/moon
 tags: frontend, static websites
 slug: how-to-add-dark-mode-to-your-static-websites
+description: In this article, we talk about how to add Dark Mode to a Static website
 ---
 
 ### Introduction
@@ -247,7 +248,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (e.target.checked) {
       document.documentElement.setAttribute('data-theme', 'dark');
     }
-	
+
     else {
       document.documentElement.setAttribute('data-theme', 'light');
     }
@@ -290,7 +291,7 @@ The next step is to save the value of the theme when the state of the checkbox c
       document.documentElement.setAttribute('data-theme', 'dark');
       localStorage.setItem('theme', 'dark');
     }
-   
+
     else {
       document.documentElement.setAttribute('data-theme', 'light');
       localStorage.setItem('theme', 'light');

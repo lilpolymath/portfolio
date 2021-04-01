@@ -5,6 +5,7 @@ date: 2020-07-20T20:11:24.568Z
 tags: git,react,deployment
 thumbnail: /image/github-mark.png
 slug: how-to-add-tracked-files-to-gitignore
+description: In this article, we talk about how to add tracked files to your .gitignore.
 ---
 
 At one point or the other you might have committed some files or folders to your remote repo and after several commits you decide that you no longer want to track those files and you try to edit directly the .gitignore file but it doesn't work or sometimes I go as far as cutting the folder push a commit and paste the folder and add the folder to .gitignore then push as though it were a new one.

@@ -6,6 +6,7 @@ thumbnail: /image/compiler-construction.png
 credit: Department of Computer Science UBIT.
 tags: Compiler Construction
 slug: compiler-construction-part-one
+description: A Brief introduction into Compiler Construction.
 ---
 
 ### Foreword(?)

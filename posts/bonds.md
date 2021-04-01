@@ -5,6 +5,7 @@ date: 2020-04-09T23:00:54.226Z
 thumbnail: /image/0-bonds.jpeg
 tags: relationship
 slug: bonds
+description: Just me talking about what I understand about Bonds in relationships.
 ---
 ### Blueprint
 Disclaimer: This post contains a "little" bit of chemistry and physics to illustrate my point.
@@ -19,7 +20,7 @@ So we can agree that a bond refers to something of common interest between at le
 We tend to associate with people that have the same ideas, thought patterns and future aspirations as us. While we tend to be more hostile with our naming, we refer to those that are unlike us as "toxic" or" bad energy" and we urge people to stay far away from them.
 
 ### Plumbing and Painting
-I have never been a fan of having serious bonds with people, although, I tend to have one or two things that most people would like to have in their circle. I am what chemists call a loosely bound or free-electron because it can't be specifically tied to a position. I don't want to believe that I am the only one with this trait.
+I have never been intentional about having serious bonds with people, although, I tend to have one or two things that most people would like to have in their circle. I am what chemists call a loosely bound or free-electron because it can't be specifically tied to a position. I don't want to believe that I am the only one with this trait.
 Sometimes, we move with a group for about two weeks and we decide to jump on another group for about a month and it becomes slightly difficult to pin us to a particular group and you are like, "okay, what's up?"
 But the big picture, however, is that all these groups are subsets of the power set of groups with this person in the middle.
 
