@@ -23,6 +23,7 @@ const Meta = ({
       <link rel='alternate' href={url} hreflang='en-us' />
       <link rel='alternate' href={url} hreflang='en' />
       <link rel='alternate' href={url} hreflang='x-default' />
+      {title && <meta name='title' content={title} />}
       {description && <meta name='description' content={description} />}
       <meta name='image' content={absoluteImageUrl} />
       {twitterCreatorAccount && (
