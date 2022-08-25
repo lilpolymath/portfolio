@@ -19,15 +19,15 @@ const Project = ({ style, mouseEnter, mouseLeave }) => {
         <Link to='/'>
           <span className={styles.inactive}>Home</span>
         </Link>
-        <span className={styles.active}> / Select Projects</span>
+        <span className={styles.active}> / Work Experience</span>
       </div>
       <div className={styles.section_heading}>
         <div className={styles.main_container}>
-          <h2 className={styles.main}>Select Projects</h2>
+          <h2 className={styles.main}>Work Experience</h2>
         </div>
       </div>
       <div className={styles.projects}>
-        {projects.map(project => (
+        {projects.map((project) => (
           <div key={project.key} className={styles.project}>
             <div className={styles.project_image}>
               <img

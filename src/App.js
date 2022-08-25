@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { animated, useSpring } from 'react-spring';
 
 import Container from './common/Container';
@@ -20,10 +20,12 @@ const App = () => {
 
   const props = useSpring({
     transform: hovered
-      ? `translateY(${coords.y - 15}px) translateX(${coords.x -
-          15}px) scale(2.5)`
-      : `translateY(${coords.y - 15}px) translateX(${coords.x -
-          15}px) scale(1)`,
+      ? `translateY(${coords.y - 15}px) translateX(${
+          coords.x - 15
+        }px) scale(2.5)`
+      : `translateY(${coords.y - 15}px) translateX(${
+          coords.x - 15
+        }px) scale(1)`,
   });
 
   const handler = useCallback(
@@ -42,6 +44,30 @@ const App = () => {
   };
 
   useEventListener('mousemove', handler);
+
+  useEffect(() => {
+    console.log(document.querySelectorAll('a').childNodes);
+
+    document.querySelectorAll('a').forEach((item) => {
+      item.addEventListener('mouseenter', () => {
+        setHovered(true);
+      });
+      item.addEventListener('mouseleave', () => {
+        setHovered(false);
+      });
+    });
+
+    return () => {
+      document.querySelectorAll('a').forEach((item) => {
+        item.removeEventListener('mouseenter', () => {
+          setHovered(true);
+        });
+        item.removeEventListener('mouseleave', () => {
+          setHovered(false);
+        });
+      });
+    };
+  }, []);
 
   return (
     <BrowserRouter>

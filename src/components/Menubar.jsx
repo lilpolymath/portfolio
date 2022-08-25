@@ -23,13 +23,7 @@ const Menubar = ({ open, toggleMenubar, mouseEnter, mouseLeave }) => {
       </button>
       <ul>
         <li>
-          <Link
-            className={styles.menubar_link}
-            to='/'
-            onMouseEnter={mouseEnter}
-            onMouseLeave={mouseLeave}
-            onClick={toggleMenubar}
-          >
+          <Link className={styles.menubar_link} to='/' onClick={toggleMenubar}>
             Home
           </Link>
         </li>
@@ -37,20 +31,15 @@ const Menubar = ({ open, toggleMenubar, mouseEnter, mouseLeave }) => {
           <Link
             className={styles.menubar_link}
             to='/projects'
-            onMouseEnter={mouseEnter}
-            onMouseLeave={mouseLeave}
             onClick={toggleMenubar}
           >
             Work & Projects
           </Link>
         </li>
         <li>
-         
           <Link
             className={styles.menubar_link}
             to='/blog'
-            onMouseEnter={mouseEnter}
-            onMouseLeave={mouseLeave}
             onClick={toggleMenubar}
           >
             Blog
@@ -60,8 +49,6 @@ const Menubar = ({ open, toggleMenubar, mouseEnter, mouseLeave }) => {
           <Link
             className={styles.menubar_link}
             to='/contact'
-            onMouseEnter={mouseEnter}
-            onMouseLeave={mouseLeave}
             onClick={toggleMenubar}
           >
             Contact
@@ -71,8 +58,6 @@ const Menubar = ({ open, toggleMenubar, mouseEnter, mouseLeave }) => {
           <a
             className={styles.menubar_link}
             href='https://docs.google.com/document/d/11MZVyldGFcMEbaNKppo24DAvOJeXQ6JUfAjHKT3mCuo/edit?usp=sharing'
-            onMouseEnter={mouseEnter}
-            onMouseLeave={mouseLeave}
             target='_blank'
             rel='noopener noreferrer'
           >
