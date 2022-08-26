@@ -3,11 +3,6 @@
   position: absolute;
 }
 
-.post {
-  margin: auto;
-  max-width: 700px;
-}
-
 .breadcrumb {
   margin-bottom: 3.5rem;
 }
@@ -47,8 +42,9 @@ figcaption a {
 }
 
 .post_content {
-  margin: 2rem 0;
+  margin: 2rem auto;
   line-height: 1.8;
+  max-width: 700px;
 }
 
 .post_content h1 {

@@ -33,7 +33,7 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
 
   useEffect(() => {
     const nodes = codeRef.current.querySelectorAll('pre');
-    nodes.forEach(node => {
+    nodes.forEach((node) => {
       hljs.highlightBlock(node);
     });
   }, [codeRef]);
@@ -75,7 +75,7 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
           </Link>
           <span className={styles.active}> / {fetchedPost.title}</span>
         </div>
-        <p className={styles.last_update}>Last Updated: {fetchedPost.date}</p>
+
         {fetchedPost.thumbnail && (
           <figure>
             <img
@@ -88,7 +88,9 @@ const Post = ({ style, mouseEnter, mouseLeave, ...props }) => {
         <figcaption className={styles.featured_image_credit}>
           {fetchedPost.credit}
         </figcaption>
+
         <article ref={codeRef} className={styles.post_content}>
+          <p className={styles.last_update}>Last Updated: {fetchedPost.date}</p>
           <Markdown source={fetchedPost.content} escapeHtml={false} />
         </article>
         <div className={styles.share_post}>
