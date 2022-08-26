@@ -45,6 +45,14 @@
     "name": "Kikxle",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/q_auto/v1614957692/kikxle.com.jpg",
     "description": "Portfolio for Kennedy Iyeh. Built with Gatsby, Framer-motion and Netlify CMS.",
-    "link": "https://kikxle.com/"
+    "link": "https://kikxle.com/",
+    "company": "Freelance"
+  },
+  {
+    "name": "Youngest.dev",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1661515599/youngest_psptpc.png",
+    "description": "Portfolio for Abdulazeez Abdulazeez. Built with HTML and CSS",
+    "link": "https://youngest.dev/",
+    "company": "Freelance"
   }
 ]

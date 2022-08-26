@@ -51,7 +51,7 @@ const Project = ({ style, mouseEnter, mouseLeave }) => {
                 <h3 className={styles.project_name}>{project.name}</h3>
                 <p className={styles.project_desc}>{project.description}</p>
               </div>
-              {!project.company && (
+              {project.company === 'Freelance' && (
                 <a
                   target='_blank'
                   href={project.link}

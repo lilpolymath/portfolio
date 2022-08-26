@@ -34,6 +34,9 @@ const Meta = ({
 
       {(article ? true : null) && <meta property='og:type' content='article' />}
       {url && <meta property='og:url' content={url} />}
+      <meta http-equiv='cache-control' content='no-cache' />
+      <meta http-equiv='expires' content='0' />
+      <meta http-equiv='pragma' content='no-cache'></meta>
       <meta property='og:locale' content='en_US' />
       <meta property='og:site_name' content={title} />
       {description && <meta property='og:description' content={description} />}
