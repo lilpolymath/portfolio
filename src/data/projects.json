@@ -1,60 +1,50 @@
 [
   {
-    "key": 1,
-    "name": "User Interface Developer",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1614421886/conectar.png",
-    "description": "Worked on converting UI designs to code. More Details in my Resume. Nov. 2020 - Feb. 2021",
-    "link": "https://conectar.io/",
-    "type": "Conectar LLC"
+    "name": "Frontend Engineer",
+    "image": "https://images.momenthouse.com/moment-banner.png",
+    "description": "I was in charge of building and migrating the in-house design system named Momentum from version 1 to 2.",
+    "link": "https://moment.co/",
+    "company": "Moment"
   },
   {
-    "key": 2,
+    "name": "Frontend Engineer",
+    "image": "https://static.trybrass.com/assets/images/meta-card.png",
+    "description": "I was part of the Technical Product Team, working on Apps and Integration, support lines, updating our technical documentation and with the recent rebranding.",
+    "link": "https://trybrass.com/",
+    "company": "Brass"
+  },
+  {
+    "name": "Frontend Engineer",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1661470369/bloc_zaxwvp.png",
+    "description": "I helped with their rebranding from TechAdvance to Bloc and on various landing pages as required by their marketing team.",
+    "link": "https://blochq.io/",
+    "company": "Bloc"
+  },
+  {
+    "name": "Frontend Engineer",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1661508356/helicarrier_zre2ko.png",
+    "description": "I built useRamp, a fiat ramp for Nigerians and Sherlock, a platform for NFT verification.",
+    "link": "https://helicarrirer.studio/",
+    "company": "Helicarrier"
+  },
+  {
+    "name": "User Interface Engineer",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1614421886/conectar.png",
+    "description": "Worked on the design system and led the UI Engineering Team.",
+    "link": "https://www.linkedin.com/company/conectar-llc/about/",
+    "company": "Conectar"
+  },
+  {
     "name": "Software Engineer",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/v1597870531/Rectangle_10_polp86.png",
     "description": "Worked on Festivesave and Payflow mobile apps. More Details in my Resume. Nov. 2019 - June 2020",
     "link": "https://mkobo.com.ng/",
-    "type": "Mkobo Microfinance Bank"
+    "company": "Mkobo Microfinance Bank"
   },
   {
-    "key": 3,
     "name": "Kikxle",
     "image": "https://res.cloudinary.com/favourcodes/image/upload/q_auto/v1614957692/kikxle.com.jpg",
     "description": "Portfolio for Kennedy Iyeh. Built with Gatsby, Framer-motion and Netlify CMS.",
     "link": "https://kikxle.com/"
-  },
-  {
-    "key": 4,
-    "name": "Philemo-nn",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126883/Philemo-nn.com.jpeg",
-    "description": "(un)released portfolio concept for Philemo-nn's V1. Built with Gatsby and NetlifyCMS. Available for Sale",
-    "link": "https://philemo-nn.netlify.app/"
-  },
-  {
-    "key": 5,
-    "name": "Gravity",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126876/gravity-digital.jpg",
-    "description": "Concept Landing Page for a Digital Agency.",
-    "link": "https://gravity-home.netlify.app/"
-  },
-  {
-    "key": 6,
-    "name": "Landing Pages",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126957/gravity-headers.jpg",
-    "description": "Collection of Hero Landing Pages designed by Gravity.",
-    "link": "https://lilpolymath.github.io/landing-pages/"
-  },
-  {
-    "key": 7,
-    "name": "Error Pages",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1614408761/Error_pages.jpg",
-    "description": "A collection of implemented error page designs. Contributor.",
-    "link": "https://errorpages.netlify.app/"
-  },
-  {
-    "key": 8,
-    "name": "Emergency Police Contact",
-    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1598126878/police-ng.jpg",
-    "description": "VCF files, containing the emergency contact for the Nigerian Police in the 36 states, and FCT. Contributor.",
-    "link": "https://mykeels.github.io/police-ng-emergency/"
   }
 ]

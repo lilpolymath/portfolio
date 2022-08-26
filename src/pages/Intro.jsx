@@ -21,23 +21,22 @@ const Intro = ({ style, mouseEnter, mouseLeave }) => {
       </div>
       <div className={styles.about}>
         <p className={styles.skills}>
-          html, js, css, react, react native, graphql, firebase.
+          html, js, css, react, gatsby, typescript, nextjs, nodejs, graphql.
         </p>
-        <p className={styles.specialization}>Mobile and Web</p>
-        <h2 className={styles.title}>Frontend Developer</h2>
+        <h2 className={styles.title}>Frontend Engineer</h2>
         <p className={styles.desc}>
-          Hello! I'm Ayobami Favour Adedapo, a Frontend Developer for Web and
-          Mobile, and UI/UX Enthusiast. I love creating beautiful and intuitive
-          interfaces for users. I have an eye for design with a User-Driven
-          Approach to Development. In my spare time, I work on ThreeJs, WebGL
-          and various CSS Animations.
+          Hello! I'm Ayobami Favour Adedapo, a Frontend Engineer and UI/UX
+          Enthusiast. I love creating beautiful and intuitive interfaces for
+          users. I have an eye for design with a User-Driven Approach to
+          Development. In my spare time, I work on ThreeJs, WebGL and various
+          CSS Animations.
         </p>
         <Social mouseEnter={mouseEnter} mouseLeave={mouseLeave} />
         <Link
+          to='/projects'
+          className={styles.next}
           onMouseEnter={mouseEnter}
           onMouseLeave={mouseLeave}
-          className={styles.next}
-          to='/projects'
         >
           Work Experience <ChevronRight />
         </Link>

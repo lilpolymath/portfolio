@@ -57,7 +57,7 @@ const Menubar = ({ open, toggleMenubar, mouseEnter, mouseLeave }) => {
         <li>
           <a
             className={styles.menubar_link}
-            href='https://docs.google.com/document/d/11MZVyldGFcMEbaNKppo24DAvOJeXQ6JUfAjHKT3mCuo/edit?usp=sharing'
+            href='https://docs.google.com/document/d/1fYX4D_o81xmwviHHYrphuVNtZiaNn3J5ONvHli505o0/edit?usp=sharing'
             target='_blank'
             rel='noopener noreferrer'
           >

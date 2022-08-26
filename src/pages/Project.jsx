@@ -23,12 +23,12 @@ const Project = ({ style, mouseEnter, mouseLeave }) => {
       </div>
       <div className={styles.section_heading}>
         <div className={styles.main_container}>
-          <h2 className={styles.main}>Work Experience</h2>
+          <h2 className={styles.main}> </h2>
         </div>
       </div>
       <div className={styles.projects}>
-        {projects.map((project) => (
-          <div key={project.key} className={styles.project}>
+        {projects.map((project, index) => (
+          <div key={index} className={styles.project}>
             <div className={styles.project_image}>
               <img
                 src={project.image}
@@ -38,22 +38,31 @@ const Project = ({ style, mouseEnter, mouseLeave }) => {
             </div>
             <div className={styles.project_content}>
               <div>
-                {project.type && (
-                  <p className={styles.project_type}>{project.type}</p>
+                {project.company && (
+                  <a
+                    target='_blank'
+                    href={project.link}
+                    rel='noopener noreferrer'
+                    className={styles.project_type}
+                  >
+                    {project.company}
+                  </a>
                 )}
                 <h3 className={styles.project_name}>{project.name}</h3>
                 <p className={styles.project_desc}>{project.description}</p>
               </div>
-              <a
-                className={styles.project_link}
-                onMouseEnter={mouseEnter}
-                onMouseLeave={mouseLeave}
-                href={project.link}
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                View Project <ChevronRight />
-              </a>
+              {!project.company && (
+                <a
+                  target='_blank'
+                  href={project.link}
+                  onMouseEnter={mouseEnter}
+                  onMouseLeave={mouseLeave}
+                  rel='noopener noreferrer'
+                  className={styles.project_link}
+                >
+                  View Project <ChevronRight />
+                </a>
+              )}
             </div>
           </div>
         ))}

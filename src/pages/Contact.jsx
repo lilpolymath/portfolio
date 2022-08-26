@@ -55,13 +55,13 @@ const Intro = ({ style, mouseEnter, mouseLeave }) => {
               </a>
             </div>
             <div className={styles.contact_option}>
-              <p>WhatsApp</p>
+              <p>Twitter</p>
               <a
                 onMouseEnter={mouseEnter}
                 onMouseLeave={mouseLeave}
-                href='https://api.whatsapp.com/send?phone=2348143567540'
+                href='https://twitter.com/messages/compose?recipient_id=1249996578154328066&text=Hey!%20would%20love%20to%20talk%20to%20you%20about'
               >
-                +234 814 356 7540
+                @favourcodes
               </a>
             </div>
           </div>

@@ -23,27 +23,11 @@
   color: var(--text);
 }
 
-.section_heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.main_container {
-  display: flex;
-}
-
-.main {
-  font-size: 4rem;
-  font-weight: bold;
-  margin: 0.25em 0;
-}
-
 .projects {
   display: grid;
   gap: 5rem;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  margin: 16px 0px;
+  margin: 5rem 0px 16px;
   height: auto;
 }
 
@@ -76,6 +60,7 @@
 
 .project_image {
   height: 250px;
+  display: flex;
   margin-bottom: 1rem;
 }
 
@@ -98,9 +83,10 @@
   color: var(--main);
   font-size: 1.5rem;
   background-color: var(--text);
-  margin: 0.5rem 0;
+  /* margin: 0.5rem 0 ; */
   width: max-content;
   border-radius: 20px;
+  display: block;
 }
 
 .project_name {
@@ -157,7 +143,6 @@
     font-weight: bold;
     margin: 0.25em 0;
   }
-
   .projects {
     flex-direction: row;
     justify-content: space-between;
