@@ -1,6 +1,13 @@
 [
   {
-    "name": "Frontend Engineer",
+    "name": "Software Engineer II",
+    "image": "https://res.cloudinary.com/favourcodes/image/upload/v1706859883/Screenshot_2024-02-02_at_08.43.22_zzlhuv.png",
+    "description": "Collaborated with design and engineering teams to refine user interfaces, ensuring a seamless and intuitive experience. Key Contributor to Gandalf’s WordPress Plugin and Gandalf’s Connect Package.",
+    "link": "https://gandalf.page/",
+    "company": "Gandalf"
+  },
+  {
+    "name": "Software Engineer I",
     "image": "https://images.momenthouse.com/moment-banner.png",
     "description": "I was in charge of building and migrating the in-house design system named Momentum from version 1 to 2.",
     "link": "https://moment.co/",
